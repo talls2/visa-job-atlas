@@ -50,6 +50,8 @@ jobs:
         env:
           POLL: ${{ github.event_name == 'schedule' || inputs.poll || hashFiles('pipeline/data/atlas.db') == '' }}
         run: |
+          # Also poll when the cached data is stale or came from an interrupted run.
+          if [ "$POLL" != "true" ] && [ "$(python -m jobtracker fresh)" != "yes" ]; then POLL=true; fi
           if [ "$POLL" = "true" ]; then
             python -m jobtracker run
           else

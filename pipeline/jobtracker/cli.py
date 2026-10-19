@@ -87,6 +87,18 @@ def cmd_trend(args, con):
     print("Note: totals change when you add or remove employers.")
 
 
+def cmd_fresh(args, con):
+    """Print "yes" when the last poll is recent and covered most sources, else "no"."""
+    cfg = pipeline.load_config()
+    expected = sum(1 for c in cfg["companies"] if c.get("enabled", True)) + sum(1 for f in cfg["feeds"] if f.get("enabled", True))
+    row = con.execute("SELECT run_at, COUNT(*) n FROM snapshots GROUP BY run_at ORDER BY run_at DESC LIMIT 1").fetchone()
+    if not row:
+        print("no")
+        return
+    age_h = (dt.datetime.fromisoformat(db.now()) - dt.datetime.fromisoformat(row["run_at"])).total_seconds() / 3600
+    print("yes" if age_h < args.max_age and row["n"] >= 0.9 * expected else "no")
+
+
 def cmd_test(args, con):
     import unittest
     from pathlib import Path
@@ -133,6 +145,10 @@ def main(argv=None):
 
     s = sub.add_parser("trend", help="print totals per poll")
     s.set_defaults(fn=cmd_trend)
+
+    s = sub.add_parser("fresh", help='print "yes" if the last poll is recent and complete')
+    s.add_argument("--max-age", type=float, default=20, help="hours")
+    s.set_defaults(fn=cmd_fresh)
 
     s = sub.add_parser("test", help="run the regression tests")
     s.set_defaults(fn=cmd_test)
