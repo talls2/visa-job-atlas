@@ -8,6 +8,7 @@ or 1 for "licensed/recognised"). Raw downloads are cached under data/cache.
 
 import csv
 import datetime as dt
+import gzip
 import html
 import io
 import json
@@ -19,6 +20,7 @@ from . import xlsx
 from .http import FetchError, fetch, fetch_json, fetch_text
 
 CACHE_DIR = Path(__file__).resolve().parent.parent / "data" / "cache"
+BUNDLED_DIR = Path(__file__).resolve().parent.parent / "registers"
 MAX_AGE_DAYS = 6
 
 
@@ -30,8 +32,19 @@ def _cached(key, url_or_fn, force=False):
         age = dt.datetime.now() - dt.datetime.fromtimestamp(path.stat().st_mtime)
         if age.days < MAX_AGE_DAYS:
             return path.read_bytes()
-    url = url_or_fn() if callable(url_or_fn) else url_or_fn
-    data = fetch(url, timeout=180)
+    try:
+        url = url_or_fn() if callable(url_or_fn) else url_or_fn
+        data = fetch(url, timeout=180)
+    except Exception:
+        # Some government sites block cloud runners (USCIS returns 403 to
+        # GitHub Actions). Fall back to the last download, then to the copy
+        # bundled in pipeline/registers/.
+        if path.exists():
+            return path.read_bytes()
+        bundled = BUNDLED_DIR / (key + ".gz")
+        if bundled.exists():
+            return gzip.decompress(bundled.read_bytes())
+        raise
     path.write_bytes(data)
     return data
 

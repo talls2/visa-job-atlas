@@ -6,7 +6,7 @@ import json
 import os
 import sys
 
-from . import ats, db, export, pipeline
+from . import ats, db, export, pipeline, registers
 
 
 def _split(s):
@@ -36,7 +36,8 @@ def cmd_run(args, con):
     """Refresh stale registers, poll every board, export the site data."""
     stale = True
     row = con.execute("SELECT MIN(loaded_at) FROM register_loads").fetchone()[0]
-    if row:
+    loaded = con.execute("SELECT COUNT(*) FROM register_loads").fetchone()[0]
+    if row and loaded >= len(registers.LOADERS):
         stale = (dt.datetime.now() - dt.datetime.fromisoformat(row)).days >= 6
     if stale or args.force:
         args.only = None
