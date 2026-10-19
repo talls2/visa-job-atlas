@@ -1,0 +1,1249 @@
+{
+  "_help": "Employers and feeds to poll. ats: greenhouse|lever|ashby|smartrecruiters|workable|recruitee|personio|amazon|workday|google|microsoft. slug: board id (for amazon, the search text). query: search text for workday/smartrecruiters/google/microsoft (big boards are searched, not listed in full). aliases: extra legal names to match in sponsor registers. sponsorship: yes | no | null (unknown). enabled: false pauses one. Add employers with: python -m jobtracker discover \"Company\" --add",
+  "companies": [
+    {
+      "name": "1Password",
+      "ats": "ashby",
+      "slug": "1password",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Abnormal Security",
+      "ats": "greenhouse",
+      "slug": "abnormalsecurity",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Adyen",
+      "ats": "greenhouse",
+      "slug": "adyen",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Affirm",
+      "ats": "greenhouse",
+      "slug": "affirm",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Airbnb",
+      "ats": "greenhouse",
+      "slug": "airbnb",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Airwallex",
+      "ats": "ashby",
+      "slug": "airwallex",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Anthropic",
+      "ats": "greenhouse",
+      "slug": "anthropic",
+      "aliases": [],
+      "sponsorship": "yes",
+      "notes": "Postings say 'We do sponsor visas!' (not for every role)."
+    },
+    {
+      "name": "Apollo Research",
+      "ats": "lever",
+      "slug": "apolloresearch",
+      "aliases": [],
+      "sponsorship": "yes",
+      "notes": "Postings: 'We sponsor visas in both the UK and US'."
+    },
+    {
+      "name": "Bugcrowd",
+      "ats": "greenhouse",
+      "slug": "bugcrowd",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Bunq",
+      "ats": "recruitee",
+      "slug": "bunq",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Canonical",
+      "ats": "greenhouse",
+      "slug": "canonical",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Canva",
+      "ats": "smartrecruiters",
+      "slug": "Canva",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Catawiki",
+      "ats": "greenhouse",
+      "slug": "catawiki",
+      "aliases": [],
+      "sponsorship": "yes",
+      "notes": "Relocation package incl. visa services (Relocate.me)."
+    },
+    {
+      "name": "Celonis",
+      "ats": "greenhouse",
+      "slug": "celonis",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Chainguard",
+      "ats": "greenhouse",
+      "slug": "chainguard",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "ClickHouse",
+      "ats": "ashby",
+      "slug": "clickhouse",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Cloudflare",
+      "ats": "greenhouse",
+      "slug": "cloudflare",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Cockroach Labs",
+      "ats": "greenhouse",
+      "slug": "cockroachlabs",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Cohere",
+      "ats": "ashby",
+      "slug": "cohere",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Coinbase",
+      "ats": "greenhouse",
+      "slug": "coinbase",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Contentful",
+      "ats": "greenhouse",
+      "slug": "contentful",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Cursor",
+      "ats": "ashby",
+      "slug": "cursor",
+      "aliases": [
+        "Anysphere"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Databricks",
+      "ats": "greenhouse",
+      "slug": "databricks",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Datadog",
+      "ats": "greenhouse",
+      "slug": "datadog",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Delivery Hero",
+      "ats": "smartrecruiters",
+      "slug": "DeliveryHero",
+      "aliases": [
+        "Delivery Hero SE"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Discord",
+      "ats": "greenhouse",
+      "slug": "discord",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Doctolib",
+      "ats": "greenhouse",
+      "slug": "doctolib",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Drata",
+      "ats": "ashby",
+      "slug": "drata",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Dropbox",
+      "ats": "greenhouse",
+      "slug": "dropbox",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Duolingo",
+      "ats": "greenhouse",
+      "slug": "duolingo",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Elastic",
+      "ats": "greenhouse",
+      "slug": "elastic",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "ElevenLabs",
+      "ats": "ashby",
+      "slug": "elevenlabs",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Figma",
+      "ats": "greenhouse",
+      "slug": "figma",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Footprint",
+      "ats": "ashby",
+      "slug": "footprint",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": "HN: 'VISA (case by case)'."
+    },
+    {
+      "name": "GetYourGuide",
+      "ats": "greenhouse",
+      "slug": "getyourguide",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "GitLab",
+      "ats": "greenhouse",
+      "slug": "gitlab",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Grab",
+      "ats": "smartrecruiters",
+      "slug": "Grab",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Grafana Labs",
+      "ats": "greenhouse",
+      "slug": "grafanalabs",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Gusto",
+      "ats": "greenhouse",
+      "slug": "gusto",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "HackerOne",
+      "ats": "ashby",
+      "slug": "hackerone",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Harvey",
+      "ats": "ashby",
+      "slug": "harvey",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "HelloFresh",
+      "ats": "greenhouse",
+      "slug": "hellofresh",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Hugging Face",
+      "ats": "workable",
+      "slug": "huggingface",
+      "aliases": [
+        "Huggingface"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "ICEYE",
+      "ats": "ashby",
+      "slug": "iceye",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": "Defence-adjacent: some roles need EU citizenship/clearance."
+    },
+    {
+      "name": "Intercom",
+      "ats": "greenhouse",
+      "slug": "intercom",
+      "aliases": [
+        "Intercom R&D Unlimited Company",
+        "Intercom Software UK"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Intigriti",
+      "ats": "recruitee",
+      "slug": "intigriti",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Kraken",
+      "ats": "ashby",
+      "slug": "kraken.com",
+      "aliases": [
+        "Payward"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Linear",
+      "ats": "ashby",
+      "slug": "linear",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Lovable",
+      "ats": "ashby",
+      "slug": "lovable",
+      "aliases": [],
+      "sponsorship": "yes",
+      "notes": "Oct 2026 HN Who is hiring: 'we sponsor visas'."
+    },
+    {
+      "name": "Miro",
+      "ats": "greenhouse",
+      "slug": "realtimeboardglobal",
+      "aliases": [
+        "RealtimeBoard"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "MongoDB",
+      "ats": "greenhouse",
+      "slug": "mongodb",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Monzo",
+      "ats": "greenhouse",
+      "slug": "monzo",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": "Application form implies only some roles are sponsored."
+    },
+    {
+      "name": "N26",
+      "ats": "greenhouse",
+      "slug": "n26",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Notion",
+      "ats": "ashby",
+      "slug": "notion",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Okta",
+      "ats": "greenhouse",
+      "slug": "okta",
+      "aliases": [
+        "Okta Identity"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "OpenAI",
+      "ats": "ashby",
+      "slug": "openai",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Palantir",
+      "ats": "lever",
+      "slug": "palantir",
+      "aliases": [
+        "Palantir Technologies"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Perplexity",
+      "ats": "ashby",
+      "slug": "perplexity",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Pigment",
+      "ats": "lever",
+      "slug": "pigment",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Pinterest",
+      "ats": "greenhouse",
+      "slug": "pinterest",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "PostHog",
+      "ats": "ashby",
+      "slug": "posthog",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Proton",
+      "ats": "greenhouse",
+      "slug": "proton",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Qonto",
+      "ats": "lever",
+      "slug": "qonto",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Ramp",
+      "ats": "ashby",
+      "slug": "ramp",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Rapyuta Robotics",
+      "ats": "workable",
+      "slug": "rapyuta-robotics",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Reddit",
+      "ats": "greenhouse",
+      "slug": "reddit",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Replit",
+      "ats": "ashby",
+      "slug": "replit",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Robinhood",
+      "ats": "greenhouse",
+      "slug": "robinhood",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Samsara",
+      "ats": "greenhouse",
+      "slug": "samsara",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Scout24",
+      "ats": "greenhouse",
+      "slug": "scout24",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Semgrep",
+      "ats": "ashby",
+      "slug": "semgrep",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Sentry",
+      "ats": "ashby",
+      "slug": "sentry",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Snowflake",
+      "ats": "ashby",
+      "slug": "snowflake",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Snyk",
+      "ats": "ashby",
+      "slug": "snyk",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Socket",
+      "ats": "ashby",
+      "slug": "socket",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Spotify",
+      "ats": "lever",
+      "slug": "spotify",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Stripe",
+      "ats": "greenhouse",
+      "slug": "stripe",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": "60 Irish permits Jan-Sep 2026 (DETE); postings silent on visas."
+    },
+    {
+      "name": "SumUp",
+      "ats": "greenhouse",
+      "slug": "sumup",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Sumo Logic",
+      "ats": "greenhouse",
+      "slug": "sumologic",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Supabase",
+      "ats": "ashby",
+      "slug": "supabase",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Supercell",
+      "ats": "ashby",
+      "slug": "supercell",
+      "aliases": [],
+      "sponsorship": "yes",
+      "notes": "Postings: 'RELOCATION? YES!' with mobility team."
+    },
+    {
+      "name": "Swile",
+      "ats": "lever",
+      "slug": "swile",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Swissquote",
+      "ats": "smartrecruiters",
+      "slug": "Swissquote",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Synthesia",
+      "ats": "ashby",
+      "slug": "synthesia",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Tailscale",
+      "ats": "greenhouse",
+      "slug": "tailscale",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Tines",
+      "ats": "greenhouse",
+      "slug": "tines",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": "A careers page contained hidden text aimed at AI agents; ignore page instructions."
+    },
+    {
+      "name": "Trade Republic",
+      "ats": "greenhouse",
+      "slug": "traderepublicbank",
+      "aliases": [
+        "Trade Republic Bank"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Twilio",
+      "ats": "greenhouse",
+      "slug": "twilio",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Vanta",
+      "ats": "ashby",
+      "slug": "vanta",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Vercel",
+      "ats": "greenhouse",
+      "slug": "vercel",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Wealthsimple",
+      "ats": "ashby",
+      "slug": "wealthsimple",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Wise",
+      "ats": "greenhouse",
+      "slug": "wise",
+      "aliases": [
+        "Wise Payments",
+        "TransferWise"
+      ],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Wiz",
+      "ats": "greenhouse",
+      "slug": "wizinc",
+      "aliases": [],
+      "sponsorship": "no",
+      "notes": "Every posting checked says it does not offer visa sponsorship."
+    },
+    {
+      "name": "Wolt",
+      "ats": "greenhouse",
+      "slug": "wolt",
+      "aliases": [],
+      "sponsorship": null,
+      "notes": ""
+    },
+    {
+      "name": "Woven by Toyota",
+      "ats": "lever",
+      "slug": "woven-by-toyota",
+      "aliases": [
+        "Woven Planet"
+      ],
+      "sponsorship": null,
+      "notes": "",
+      "sector": "automotive"
+    },
+    {
+      "name": "n8n",
+      "ats": "ashby",
+      "slug": "n8n",
+      "aliases": [],
+      "sponsorship": "yes",
+      "notes": "Postings: 'We can sponsor visas to Germany'."
+    },
+    {
+      "name": "Amazon",
+      "ats": "amazon",
+      "slug": "software development engineer",
+      "aliases": [
+        "AWS",
+        "Amazon Web Services",
+        "Amazon Development Centre",
+        "Amazon Data Services"
+      ],
+      "sponsorship": null,
+      "notes": "Search-based (amazon.jobs). ~290 Irish permits 2026; GTS LMIAs in Vancouver. AWS Region Services/Sovereign Cloud roles need citizenship."
+    },
+    {
+      "name": "Aptiv",
+      "ats": "workday",
+      "slug": "aptiv.wd5.myworkdayjobs.com|aptiv|APTIV_CAREERS",
+      "aliases": [
+        "Aptiv Services"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "BorgWarner",
+      "ats": "workday",
+      "slug": "borgwarner.wd5.myworkdayjobs.com|borgwarner|BorgWarner_Careers",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "Bosch",
+      "ats": "smartrecruiters",
+      "slug": "BoschGroup",
+      "aliases": [
+        "Robert Bosch",
+        "Bosch"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "Continental",
+      "ats": "smartrecruiters",
+      "slug": "Continental",
+      "aliases": [
+        "Continental Automotive",
+        "Continental"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "CrowdStrike",
+      "ats": "workday",
+      "slug": "crowdstrike.wd5.myworkdayjobs.com|crowdstrike|crowdstrikecareers",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "security/tech",
+      "notes": "Some roles need US citizenship/clearance; read each posting.",
+      "query": "engineer"
+    },
+    {
+      "name": "General Motors",
+      "ats": "workday",
+      "slug": "generalmotors.wd5.myworkdayjobs.com|generalmotors|Careers_GM",
+      "aliases": [
+        "GM",
+        "General Motors"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "HARMAN",
+      "ats": "workday",
+      "slug": "harman.wd3.myworkdayjobs.com|harman|HARMAN",
+      "aliases": [
+        "Harman International",
+        "Harman Becker"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "Intel",
+      "ats": "workday",
+      "slug": "intel.wd1.myworkdayjobs.com|intel|External",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "security/tech",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "Kodiak",
+      "ats": "greenhouse",
+      "slug": "kodiak",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Lucid Motors",
+      "ats": "greenhouse",
+      "slug": "lucidmotors",
+      "aliases": [
+        "Lucid USA",
+        "Lucid Group"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Magna",
+      "ats": "workday",
+      "slug": "magna.wd3.myworkdayjobs.com|magna|Magna",
+      "aliases": [
+        "Magna International",
+        "Magna"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "Mastercard",
+      "ats": "workday",
+      "slug": "mastercard.wd1.myworkdayjobs.com|mastercard|CorporateCareers",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "security/tech",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "May Mobility",
+      "ats": "greenhouse",
+      "slug": "maymobility",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Mobileye",
+      "ats": "lever",
+      "slug": "mobileye",
+      "aliases": [
+        "Mobileye Vision"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Motional",
+      "ats": "greenhouse",
+      "slug": "motional",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "NVIDIA",
+      "ats": "workday",
+      "slug": "nvidia.wd5.myworkdayjobs.com|nvidia|NVIDIAExternalCareerSite",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "security/tech",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "NXP Semiconductors",
+      "ats": "workday",
+      "slug": "nxp.wd3.myworkdayjobs.com|nxp|careers",
+      "aliases": [
+        "NXP"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "Nuro",
+      "ats": "greenhouse",
+      "slug": "nuro",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Salesforce",
+      "ats": "workday",
+      "slug": "salesforce.wd12.myworkdayjobs.com|salesforce|External_Career_Site",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "security/tech",
+      "notes": "",
+      "query": "engineer"
+    },
+    {
+      "name": "Sonatus",
+      "ats": "greenhouse",
+      "slug": "sonatus",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Stack AV",
+      "ats": "greenhouse",
+      "slug": "stackav",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Torc Robotics",
+      "ats": "greenhouse",
+      "slug": "torcrobotics",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Waymo",
+      "ats": "greenhouse",
+      "slug": "waymo",
+      "aliases": [
+        "Waymo LLC"
+      ],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Wayve",
+      "ats": "ashby",
+      "slug": "wayve",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Zoox",
+      "ats": "lever",
+      "slug": "zoox",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": ""
+    },
+    {
+      "name": "Copart",
+      "ats": "workday",
+      "slug": "copart.wd12.myworkdayjobs.com|copart|Copart",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "vehicle-forensics",
+      "notes": "Salvage/used-vehicle auctions; fraud & vehicle data roles",
+      "query": "engineer"
+    },
+    {
+      "name": "Magnet Forensics",
+      "ats": "lever",
+      "slug": "magnetforensics",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "vehicle-forensics",
+      "notes": "Vehicle/infotainment forensics tooling (Autokey); Waterloo, Canada"
+    },
+    {
+      "name": "Shift Technology",
+      "ats": "greenhouse",
+      "slug": "shifttechnology",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "vehicle-forensics",
+      "notes": "Insurance fraud detection, Paris"
+    },
+    {
+      "name": "Tractable",
+      "ats": "ashby",
+      "slug": "tractable",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "vehicle-forensics",
+      "notes": "AI vehicle damage appraisal, London/Tokyo"
+    },
+    {
+      "name": "UTAC",
+      "ats": "smartrecruiters",
+      "slug": "UTAC",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "Vehicle homologation incl. UNECE R155 cyber"
+    },
+    {
+      "name": "Upstream Security",
+      "ats": "workable",
+      "slug": "upstream",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "automotive",
+      "notes": "Automotive VSOC / vehicle security"
+    },
+    {
+      "name": "Google",
+      "ats": "google",
+      "slug": "security",
+      "aliases": [
+        "Google Ireland",
+        "Google UK",
+        "Google Cloud EMEA",
+        "Google LLC",
+        "Google Switzerland"
+      ],
+      "sponsorship": null,
+      "sector": "security/tech",
+      "notes": "Search-based (careers results pages, newest 200). 254 Irish permits 2026 (Google Ireland).",
+      "query": "software engineer"
+    },
+    {
+      "name": "Microsoft",
+      "ats": "microsoft",
+      "slug": "security",
+      "aliases": [
+        "Microsoft Ireland Operations",
+        "Microsoft Ireland Research",
+        "Microsoft Corporation",
+        "Microsoft Limited"
+      ],
+      "sponsorship": null,
+      "sector": "security/tech",
+      "notes": "Search-based (careers API); rate-limited, so ~30-150 newest per run.",
+      "query": "software engineer"
+    }
+  ],
+  "feeds": [
+    {
+      "name": "Japan Dev",
+      "type": "japandev",
+      "notes": "Japan; sponsors_visas field"
+    },
+    {
+      "name": "TokyoDev",
+      "type": "tokyodev",
+      "notes": "Japan; 'Apply from abroad' tag"
+    },
+    {
+      "name": "HN Who is hiring",
+      "type": "hn_whoishiring",
+      "notes": "Monthly thread via Algolia API"
+    },
+    {
+      "name": "r/netsec hiring thread",
+      "type": "reddit_netsec",
+      "notes": "Quarterly; rules require visa terms"
+    },
+    {
+      "name": "Cyber Ireland",
+      "type": "cyber_ireland",
+      "notes": "Ireland cyber cluster job board RSS"
+    },
+    {
+      "name": "CyberSecurityJobsite",
+      "type": "cybersecurityjobsite",
+      "notes": "UK cyber board RSS"
+    },
+    {
+      "name": "ISACA Career Center",
+      "type": "isaca",
+      "notes": "Global GRC/audit RSS"
+    },
+    {
+      "name": "Arbeitnow",
+      "type": "arbeitnow",
+      "notes": "Germany/EU English roles"
+    },
+    {
+      "name": "Bundesagentur fuer Arbeit",
+      "type": "bundesagentur",
+      "notes": "German federal job board API v6"
+    },
+    {
+      "name": "GermanTechJobs",
+      "type": "germantechjobs",
+      "notes": "Germany, salary-transparent RSS"
+    },
+    {
+      "name": "JobTech Sweden",
+      "type": "jobtech",
+      "notes": "Swedish public employment service API"
+    },
+    {
+      "name": "Jobindex Denmark",
+      "type": "jobindex",
+      "notes": "Denmark RSS"
+    },
+    {
+      "name": "Landing.jobs",
+      "type": "landingjobs",
+      "notes": "EU tech; relocation_paid field"
+    },
+    {
+      "name": "Relocate.me",
+      "type": "relocateme",
+      "notes": "Relocation-package roles"
+    },
+    {
+      "name": "Mastodon job tags",
+      "type": "mastodon",
+      "notes": "#fedihire #securityjobs #infosecjobs"
+    },
+    {
+      "name": "MyCareersFuture (SG)",
+      "type": "mycareersfuture",
+      "notes": "Singapore government job portal; EP needs ~S$5,600+/month"
+    },
+    {
+      "name": "swissdevjobs (browser snapshot)",
+      "type": "swissdevjobs_snapshot",
+      "notes": "Cloudflare blocks automated access; enable only with a local browser snapshot",
+      "enabled": false
+    }
+  ]
+}

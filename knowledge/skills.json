@@ -1,0 +1,1514 @@
+{
+ "_help": "Skill dictionary shared by the pipeline (tags job descriptions) and the web app (reads CVs). patterns are case-insensitive regex fragments matched on word boundaries. families: which job families the skill signals.",
+ "skills": [
+  {
+   "id": "python",
+   "label": "Python",
+   "patterns": [
+    "python"
+   ],
+   "families": [
+    "software",
+    "data",
+    "security",
+    "devops",
+    "qa"
+   ]
+  },
+  {
+   "id": "java",
+   "label": "Java",
+   "patterns": [
+    "java(?!script)"
+   ],
+   "families": [
+    "software",
+    "data"
+   ]
+  },
+  {
+   "id": "kotlin",
+   "label": "Kotlin",
+   "patterns": [
+    "kotlin"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "javascript",
+   "label": "JavaScript",
+   "patterns": [
+    "javascript",
+    "ecmascript",
+    "es6"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "typescript",
+   "label": "TypeScript",
+   "patterns": [
+    "typescript"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "go",
+   "label": "Go",
+   "patterns": [
+    "golang",
+    "go(?= ?(lang|developer|engineer|programming|,|/))"
+   ],
+   "families": [
+    "software",
+    "devops"
+   ]
+  },
+  {
+   "id": "rust",
+   "label": "Rust",
+   "patterns": [
+    "rust(?!ic)"
+   ],
+   "families": [
+    "software",
+    "embedded",
+    "security"
+   ]
+  },
+  {
+   "id": "c",
+   "label": "C",
+   "patterns": [
+    "c(?= ?(/|and|&) ?c\\+\\+)",
+    "ansi c",
+    "embedded c",
+    "c programming",
+    "c99",
+    "c11"
+   ],
+   "families": [
+    "embedded",
+    "software",
+    "security"
+   ]
+  },
+  {
+   "id": "cpp",
+   "label": "C++",
+   "patterns": [
+    "c\\+\\+",
+    "cpp"
+   ],
+   "families": [
+    "software",
+    "embedded"
+   ]
+  },
+  {
+   "id": "csharp",
+   "label": "C#",
+   "patterns": [
+    "c#",
+    "csharp"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "dotnet",
+   "label": ".NET",
+   "patterns": [
+    "\\.net",
+    "dotnet",
+    "asp\\.net"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "php",
+   "label": "PHP",
+   "patterns": [
+    "php",
+    "laravel",
+    "symfony"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "ruby",
+   "label": "Ruby",
+   "patterns": [
+    "ruby",
+    "rails"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "scala",
+   "label": "Scala",
+   "patterns": [
+    "scala"
+   ],
+   "families": [
+    "data",
+    "software"
+   ]
+  },
+  {
+   "id": "swift",
+   "label": "Swift",
+   "patterns": [
+    "swift(?!ly)",
+    "swiftui"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "r-lang",
+   "label": "R",
+   "patterns": [
+    "r(?= ?(programming|language|studio))",
+    "rstudio",
+    "tidyverse"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "sql",
+   "label": "SQL",
+   "patterns": [
+    "sql",
+    "t-sql",
+    "pl/sql"
+   ],
+   "families": [
+    "data",
+    "software"
+   ]
+  },
+  {
+   "id": "bash",
+   "label": "Bash / shell",
+   "patterns": [
+    "bash",
+    "shell scripting",
+    "powershell"
+   ],
+   "families": [
+    "devops",
+    "security"
+   ]
+  },
+  {
+   "id": "react",
+   "label": "React",
+   "patterns": [
+    "react(\\.js|js)?(?! native)"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "react-native",
+   "label": "React Native",
+   "patterns": [
+    "react native"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "angular",
+   "label": "Angular",
+   "patterns": [
+    "angular"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "vue",
+   "label": "Vue",
+   "patterns": [
+    "vue(\\.js|js)?"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "nextjs",
+   "label": "Next.js",
+   "patterns": [
+    "next\\.js",
+    "nextjs"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "node",
+   "label": "Node.js",
+   "patterns": [
+    "node(\\.js|js)?",
+    "express\\.js",
+    "nestjs"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "django",
+   "label": "Django",
+   "patterns": [
+    "django"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "flask",
+   "label": "Flask / FastAPI",
+   "patterns": [
+    "flask",
+    "fastapi"
+   ],
+   "families": [
+    "software",
+    "data"
+   ]
+  },
+  {
+   "id": "spring",
+   "label": "Spring",
+   "patterns": [
+    "spring( boot)?"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "graphql",
+   "label": "GraphQL",
+   "patterns": [
+    "graphql"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "rest-api",
+   "label": "REST APIs",
+   "patterns": [
+    "rest(ful)? ?apis?",
+    "api design"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "microservices",
+   "label": "Microservices",
+   "patterns": [
+    "microservices?",
+    "distributed systems"
+   ],
+   "families": [
+    "software",
+    "devops"
+   ]
+  },
+  {
+   "id": "html-css",
+   "label": "HTML / CSS",
+   "patterns": [
+    "html5?",
+    "css3?",
+    "tailwind",
+    "sass"
+   ],
+   "families": [
+    "software",
+    "design"
+   ]
+  },
+  {
+   "id": "android",
+   "label": "Android",
+   "patterns": [
+    "android"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "ios",
+   "label": "iOS",
+   "patterns": [
+    "ios(?! xr)"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "flutter",
+   "label": "Flutter",
+   "patterns": [
+    "flutter",
+    "dart"
+   ],
+   "families": [
+    "software"
+   ]
+  },
+  {
+   "id": "postgres",
+   "label": "PostgreSQL",
+   "patterns": [
+    "postgres(ql)?"
+   ],
+   "families": [
+    "software",
+    "data"
+   ]
+  },
+  {
+   "id": "mysql",
+   "label": "MySQL",
+   "patterns": [
+    "mysql",
+    "mariadb"
+   ],
+   "families": [
+    "software",
+    "data"
+   ]
+  },
+  {
+   "id": "mongodb",
+   "label": "MongoDB",
+   "patterns": [
+    "mongo(db)?"
+   ],
+   "families": [
+    "software",
+    "data"
+   ]
+  },
+  {
+   "id": "redis",
+   "label": "Redis",
+   "patterns": [
+    "redis"
+   ],
+   "families": [
+    "software",
+    "devops"
+   ]
+  },
+  {
+   "id": "kafka",
+   "label": "Kafka",
+   "patterns": [
+    "kafka"
+   ],
+   "families": [
+    "data",
+    "software"
+   ]
+  },
+  {
+   "id": "elasticsearch",
+   "label": "Elasticsearch",
+   "patterns": [
+    "elastic(search)?",
+    "opensearch"
+   ],
+   "families": [
+    "software",
+    "data",
+    "security"
+   ]
+  },
+  {
+   "id": "aws",
+   "label": "AWS",
+   "patterns": [
+    "aws",
+    "amazon web services"
+   ],
+   "families": [
+    "devops",
+    "software",
+    "data",
+    "security"
+   ]
+  },
+  {
+   "id": "azure",
+   "label": "Azure",
+   "patterns": [
+    "azure"
+   ],
+   "families": [
+    "devops",
+    "software",
+    "data",
+    "security"
+   ]
+  },
+  {
+   "id": "gcp",
+   "label": "Google Cloud",
+   "patterns": [
+    "gcp",
+    "google cloud"
+   ],
+   "families": [
+    "devops",
+    "software",
+    "data"
+   ]
+  },
+  {
+   "id": "docker",
+   "label": "Docker",
+   "patterns": [
+    "docker",
+    "containers?"
+   ],
+   "families": [
+    "devops",
+    "software"
+   ]
+  },
+  {
+   "id": "kubernetes",
+   "label": "Kubernetes",
+   "patterns": [
+    "kubernetes",
+    "k8s",
+    "helm",
+    "openshift"
+   ],
+   "families": [
+    "devops",
+    "software"
+   ]
+  },
+  {
+   "id": "terraform",
+   "label": "Terraform / IaC",
+   "patterns": [
+    "terraform",
+    "infrastructure as code",
+    "iac",
+    "pulumi",
+    "cloudformation"
+   ],
+   "families": [
+    "devops"
+   ]
+  },
+  {
+   "id": "ansible",
+   "label": "Ansible",
+   "patterns": [
+    "ansible",
+    "puppet",
+    "chef"
+   ],
+   "families": [
+    "devops"
+   ]
+  },
+  {
+   "id": "ci-cd",
+   "label": "CI/CD",
+   "patterns": [
+    "ci/cd",
+    "ci ?cd",
+    "continuous (integration|delivery|deployment)",
+    "github actions",
+    "gitlab ci",
+    "jenkins",
+    "circleci"
+   ],
+   "families": [
+    "devops",
+    "software",
+    "qa"
+   ]
+  },
+  {
+   "id": "git",
+   "label": "Git",
+   "patterns": [
+    "git(hub|lab)?"
+   ],
+   "families": [
+    "software",
+    "devops"
+   ]
+  },
+  {
+   "id": "linux",
+   "label": "Linux",
+   "patterns": [
+    "linux",
+    "unix",
+    "ubuntu",
+    "debian",
+    "rhel"
+   ],
+   "families": [
+    "devops",
+    "security",
+    "embedded",
+    "software"
+   ]
+  },
+  {
+   "id": "networking",
+   "label": "Networking (TCP/IP)",
+   "patterns": [
+    "tcp/ip",
+    "networking",
+    "dns",
+    "bgp",
+    "routing",
+    "osi model",
+    "wireshark"
+   ],
+   "families": [
+    "devops",
+    "security"
+   ]
+  },
+  {
+   "id": "observability",
+   "label": "Monitoring / observability",
+   "patterns": [
+    "prometheus",
+    "grafana",
+    "datadog",
+    "observability",
+    "opentelemetry",
+    "new relic",
+    "splunk"
+   ],
+   "families": [
+    "devops"
+   ]
+  },
+  {
+   "id": "sre",
+   "label": "SRE practices",
+   "patterns": [
+    "site reliability",
+    "sre",
+    "slos?",
+    "incident management",
+    "on-call"
+   ],
+   "families": [
+    "devops"
+   ]
+  },
+  {
+   "id": "spark",
+   "label": "Spark",
+   "patterns": [
+    "spark",
+    "pyspark",
+    "databricks"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "airflow",
+   "label": "Airflow / orchestration",
+   "patterns": [
+    "airflow",
+    "dagster",
+    "prefect"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "dbt",
+   "label": "dbt",
+   "patterns": [
+    "dbt"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "data-warehouse",
+   "label": "Data warehousing",
+   "patterns": [
+    "snowflake",
+    "bigquery",
+    "redshift",
+    "data warehouse",
+    "lakehouse"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "etl",
+   "label": "ETL / data pipelines",
+   "patterns": [
+    "etl",
+    "elt",
+    "data pipelines?"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "pandas",
+   "label": "pandas / NumPy",
+   "patterns": [
+    "pandas",
+    "numpy"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "statistics",
+   "label": "Statistics",
+   "patterns": [
+    "statistic(s|al)",
+    "a/b testing",
+    "experimentation",
+    "hypothesis testing"
+   ],
+   "families": [
+    "data",
+    "product"
+   ]
+  },
+  {
+   "id": "machine-learning",
+   "label": "Machine learning",
+   "patterns": [
+    "machine learning",
+    "ml models?",
+    "scikit-learn",
+    "sklearn",
+    "xgboost"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "deep-learning",
+   "label": "Deep learning",
+   "patterns": [
+    "deep learning",
+    "neural networks?"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "pytorch",
+   "label": "PyTorch",
+   "patterns": [
+    "pytorch",
+    "torch"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "tensorflow",
+   "label": "TensorFlow",
+   "patterns": [
+    "tensorflow",
+    "keras"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "llm",
+   "label": "LLMs / GenAI",
+   "patterns": [
+    "llms?",
+    "large language models?",
+    "generative ai",
+    "genai",
+    "rag",
+    "prompt engineering",
+    "langchain",
+    "transformers"
+   ],
+   "families": [
+    "data",
+    "software"
+   ]
+  },
+  {
+   "id": "nlp",
+   "label": "NLP",
+   "patterns": [
+    "nlp",
+    "natural language processing"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "computer-vision",
+   "label": "Computer vision",
+   "patterns": [
+    "computer vision",
+    "opencv",
+    "image processing"
+   ],
+   "families": [
+    "data",
+    "embedded"
+   ]
+  },
+  {
+   "id": "mlops",
+   "label": "MLOps",
+   "patterns": [
+    "mlops",
+    "mlflow",
+    "kubeflow",
+    "model serving",
+    "sagemaker",
+    "vertex ai"
+   ],
+   "families": [
+    "data",
+    "devops"
+   ]
+  },
+  {
+   "id": "bi-tools",
+   "label": "BI tools",
+   "patterns": [
+    "power ?bi",
+    "tableau",
+    "looker",
+    "metabase",
+    "qlik"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "excel",
+   "label": "Excel",
+   "patterns": [
+    "excel",
+    "spreadsheets?"
+   ],
+   "families": [
+    "data",
+    "product"
+   ]
+  },
+  {
+   "id": "security-fundamentals",
+   "label": "Security fundamentals",
+   "patterns": [
+    "information security",
+    "cyber ?security",
+    "infosec"
+   ],
+   "families": [
+    "security"
+   ]
+  },
+  {
+   "id": "owasp",
+   "label": "OWASP / web security",
+   "patterns": [
+    "owasp",
+    "web application security",
+    "xss",
+    "sql injection",
+    "burp( suite)?"
+   ],
+   "families": [
+    "security"
+   ]
+  },
+  {
+   "id": "appsec",
+   "label": "Application security",
+   "patterns": [
+    "appsec",
+    "application security",
+    "secure code review",
+    "sast",
+    "dast",
+    "semgrep",
+    "secure sdlc",
+    "ssdlc"
+   ],
+   "families": [
+    "security"
+   ]
+  },
+  {
+   "id": "pentest",
+   "label": "Penetration testing",
+   "patterns": [
+    "penetration test(ing)?",
+    "pentest(ing)?",
+    "red team(ing)?",
+    "ethical hacking",
+    "metasploit",
+    "nmap"
+   ],
+   "families": [
+    "security"
+   ]
+  },
+  {
+   "id": "threat-modeling",
+   "label": "Threat modeling",
+   "patterns": [
+    "threat model(l)?ing",
+    "stride",
+    "attack trees?",
+    "tara"
+   ],
+   "families": [
+    "security",
+    "embedded"
+   ]
+  },
+  {
+   "id": "cloud-security",
+   "label": "Cloud security",
+   "patterns": [
+    "cloud security",
+    "cspm",
+    "cnapp",
+    "iam polic(y|ies)"
+   ],
+   "families": [
+    "security",
+    "devops"
+   ]
+  },
+  {
+   "id": "siem",
+   "label": "SIEM / detection",
+   "patterns": [
+    "siem",
+    "detection engineering",
+    "splunk",
+    "sentinel",
+    "elastic security",
+    "edr",
+    "xdr",
+    "soc"
+   ],
+   "families": [
+    "security"
+   ]
+  },
+  {
+   "id": "incident-response",
+   "label": "Incident response",
+   "patterns": [
+    "incident response",
+    "dfir",
+    "digital forensics",
+    "forensic analysis"
+   ],
+   "families": [
+    "security"
+   ]
+  },
+  {
+   "id": "grc",
+   "label": "GRC / compliance",
+   "patterns": [
+    "grc",
+    "iso ?27001",
+    "soc ?2",
+    "nist( csf)?",
+    "pci[- ]dss",
+    "gdpr",
+    "risk assessments?",
+    "audit"
+   ],
+   "families": [
+    "security",
+    "product"
+   ]
+  },
+  {
+   "id": "iam",
+   "label": "Identity and access",
+   "patterns": [
+    "identity and access",
+    "iam",
+    "okta",
+    "active directory",
+    "oauth",
+    "saml",
+    "sso"
+   ],
+   "families": [
+    "security",
+    "devops"
+   ]
+  },
+  {
+   "id": "cryptography",
+   "label": "Cryptography",
+   "patterns": [
+    "cryptograph(y|ic)",
+    "pki",
+    "tls",
+    "encryption"
+   ],
+   "families": [
+    "security",
+    "embedded"
+   ]
+  },
+  {
+   "id": "reverse-engineering",
+   "label": "Reverse engineering",
+   "patterns": [
+    "reverse engineering",
+    "ghidra",
+    "ida pro",
+    "binary analysis",
+    "malware analysis"
+   ],
+   "families": [
+    "security",
+    "embedded"
+   ]
+  },
+  {
+   "id": "fuzzing",
+   "label": "Fuzzing",
+   "patterns": [
+    "fuzz(ing|er)?",
+    "afl\\+\\+",
+    "libfuzzer"
+   ],
+   "families": [
+    "security"
+   ]
+  },
+  {
+   "id": "embedded-c",
+   "label": "Embedded C / firmware",
+   "patterns": [
+    "firmware",
+    "embedded c",
+    "bare[- ]metal",
+    "microcontrollers?",
+    "mcu",
+    "stm32",
+    "arm cortex"
+   ],
+   "families": [
+    "embedded"
+   ]
+  },
+  {
+   "id": "rtos",
+   "label": "RTOS",
+   "patterns": [
+    "rtos",
+    "freertos",
+    "zephyr",
+    "qnx",
+    "embedded linux",
+    "yocto"
+   ],
+   "families": [
+    "embedded"
+   ]
+  },
+  {
+   "id": "fpga",
+   "label": "FPGA / HDL",
+   "patterns": [
+    "fpga",
+    "verilog",
+    "vhdl",
+    "systemverilog"
+   ],
+   "families": [
+    "embedded"
+   ]
+  },
+  {
+   "id": "can-bus",
+   "label": "CAN / vehicle networks",
+   "patterns": [
+    "can[- ]?bus",
+    "can[- ]fd",
+    "uds",
+    "doip",
+    "lin bus",
+    "automotive ethernet",
+    "j1939",
+    "obd-?ii"
+   ],
+   "families": [
+    "embedded",
+    "security"
+   ]
+  },
+  {
+   "id": "autosar",
+   "label": "AUTOSAR",
+   "patterns": [
+    "autosar"
+   ],
+   "families": [
+    "embedded"
+   ]
+  },
+  {
+   "id": "iso-21434",
+   "label": "ISO/SAE 21434 / UNECE R155",
+   "patterns": [
+    "21434",
+    "r ?155",
+    "r ?156",
+    "wp\\.?29"
+   ],
+   "families": [
+    "security",
+    "embedded"
+   ]
+  },
+  {
+   "id": "functional-safety",
+   "label": "Functional safety (ISO 26262)",
+   "patterns": [
+    "iso ?26262",
+    "functional safety",
+    "asil",
+    "iec ?61508"
+   ],
+   "families": [
+    "embedded"
+   ]
+  },
+  {
+   "id": "robotics",
+   "label": "Robotics / ROS",
+   "patterns": [
+    "robotics",
+    "ros2?",
+    "slam",
+    "motion planning"
+   ],
+   "families": [
+    "embedded",
+    "data"
+   ]
+  },
+  {
+   "id": "electronics",
+   "label": "Electronics / PCB",
+   "patterns": [
+    "pcb",
+    "schematics?",
+    "altium",
+    "kicad",
+    "oscilloscope"
+   ],
+   "families": [
+    "embedded"
+   ]
+  },
+  {
+   "id": "test-automation",
+   "label": "Test automation",
+   "patterns": [
+    "test automation",
+    "automated tests?",
+    "test frameworks?",
+    "sdet"
+   ],
+   "families": [
+    "qa"
+   ]
+  },
+  {
+   "id": "selenium",
+   "label": "Selenium",
+   "patterns": [
+    "selenium",
+    "webdriver"
+   ],
+   "families": [
+    "qa"
+   ]
+  },
+  {
+   "id": "playwright",
+   "label": "Playwright / Cypress",
+   "patterns": [
+    "playwright",
+    "cypress"
+   ],
+   "families": [
+    "qa",
+    "software"
+   ]
+  },
+  {
+   "id": "unit-testing",
+   "label": "Unit testing",
+   "patterns": [
+    "unit tests?",
+    "pytest",
+    "junit",
+    "jest",
+    "tdd",
+    "test-driven"
+   ],
+   "families": [
+    "software",
+    "qa"
+   ]
+  },
+  {
+   "id": "performance-testing",
+   "label": "Performance testing",
+   "patterns": [
+    "performance testing",
+    "load testing",
+    "jmeter",
+    "k6",
+    "gatling",
+    "locust"
+   ],
+   "families": [
+    "qa",
+    "devops"
+   ]
+  },
+  {
+   "id": "api-testing",
+   "label": "API testing",
+   "patterns": [
+    "api testing",
+    "postman",
+    "rest assured"
+   ],
+   "families": [
+    "qa"
+   ]
+  },
+  {
+   "id": "agile",
+   "label": "Agile / Scrum",
+   "patterns": [
+    "agile",
+    "scrum",
+    "kanban",
+    "sprints?"
+   ],
+   "families": [
+    "product",
+    "software",
+    "qa"
+   ]
+  },
+  {
+   "id": "jira",
+   "label": "Jira",
+   "patterns": [
+    "jira",
+    "confluence"
+   ],
+   "families": [
+    "product",
+    "qa"
+   ]
+  },
+  {
+   "id": "roadmapping",
+   "label": "Roadmapping",
+   "patterns": [
+    "product roadmaps?",
+    "roadmapping",
+    "prioriti[sz]ation",
+    "okrs?"
+   ],
+   "families": [
+    "product"
+   ]
+  },
+  {
+   "id": "product-discovery",
+   "label": "Product discovery",
+   "patterns": [
+    "product discovery",
+    "customer interviews?",
+    "jobs to be done",
+    "jtbd",
+    "product-market fit"
+   ],
+   "families": [
+    "product",
+    "design"
+   ]
+  },
+  {
+   "id": "product-analytics",
+   "label": "Product analytics",
+   "patterns": [
+    "product analytics",
+    "amplitude",
+    "mixpanel",
+    "google analytics",
+    "funnels?"
+   ],
+   "families": [
+    "product",
+    "data"
+   ]
+  },
+  {
+   "id": "stakeholder-management",
+   "label": "Stakeholder management",
+   "patterns": [
+    "stakeholder management",
+    "cross-functional",
+    "stakeholders"
+   ],
+   "families": [
+    "product"
+   ]
+  },
+  {
+   "id": "figma",
+   "label": "Figma",
+   "patterns": [
+    "figma",
+    "sketch",
+    "adobe xd"
+   ],
+   "families": [
+    "design"
+   ]
+  },
+  {
+   "id": "user-research",
+   "label": "User research",
+   "patterns": [
+    "user research",
+    "usability testing",
+    "user interviews",
+    "ux research"
+   ],
+   "families": [
+    "design",
+    "product"
+   ]
+  },
+  {
+   "id": "prototyping",
+   "label": "Prototyping / wireframes",
+   "patterns": [
+    "prototyp(e|es|ing)",
+    "wireframes?",
+    "user flows?"
+   ],
+   "families": [
+    "design"
+   ]
+  },
+  {
+   "id": "design-systems",
+   "label": "Design systems",
+   "patterns": [
+    "design systems?",
+    "component library"
+   ],
+   "families": [
+    "design",
+    "software"
+   ]
+  },
+  {
+   "id": "accessibility",
+   "label": "Accessibility",
+   "patterns": [
+    "accessibility",
+    "wcag",
+    "a11y"
+   ],
+   "families": [
+    "design",
+    "software",
+    "qa"
+   ]
+  },
+  {
+   "id": "interaction-design",
+   "label": "Interaction / UI design",
+   "patterns": [
+    "interaction design",
+    "ui design",
+    "visual design",
+    "ux design",
+    "user experience"
+   ],
+   "families": [
+    "design"
+   ]
+  },
+  {
+   "id": "system-design",
+   "label": "System design",
+   "patterns": [
+    "system design",
+    "software architecture",
+    "scalab(le|ility)"
+   ],
+   "families": [
+    "software",
+    "devops"
+   ]
+  },
+  {
+   "id": "leadership",
+   "label": "Team leadership",
+   "patterns": [
+    "team lead(ership)?",
+    "people management",
+    "mentor(ing|ship)",
+    "managed a team"
+   ],
+   "families": [
+    "software",
+    "product",
+    "devops",
+    "data",
+    "security"
+   ]
+  },
+  {
+   "id": "data-modeling",
+   "label": "Data modeling",
+   "patterns": [
+    "data model(l)?ing",
+    "dimensional model(l)?ing",
+    "star schema"
+   ],
+   "families": [
+    "data"
+   ]
+  },
+  {
+   "id": "information-architecture",
+   "label": "Information architecture",
+   "patterns": [
+    "information architecture",
+    "card sorting"
+   ],
+   "families": [
+    "design"
+   ]
+  },
+  {
+   "id": "technical-writing",
+   "label": "Technical writing",
+   "patterns": [
+    "technical writing",
+    "documentation",
+    "specs?",
+    "prds?"
+   ],
+   "families": [
+    "product",
+    "software"
+   ]
+  },
+  {
+   "id": "test-design",
+   "label": "Test design",
+   "patterns": [
+    "test design",
+    "test cases?",
+    "test plans?",
+    "exploratory testing",
+    "boundary value"
+   ],
+   "families": [
+    "qa"
+   ]
+  },
+  {
+   "id": "misra-c",
+   "label": "MISRA C",
+   "patterns": [
+    "misra"
+   ],
+   "families": [
+    "embedded"
+   ]
+  }
+ ]
+}

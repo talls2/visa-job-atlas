@@ -1,0 +1,13 @@
+# Pipeline state (kept in the Actions cache, never committed)
+pipeline/data/
+__pycache__/
+*.pyc
+
+# Generated site data and builds
+site/public/data/
+site/dist/
+site/node_modules/
+
+.DS_Store
+Thumbs.db
+.env
