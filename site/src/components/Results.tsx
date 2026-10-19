@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState, type CSSProperties } from "react";
+import { useMemo, useRef, useState } from "react";
 import { countryName, languageName, useT, type StringKey } from "../i18n";
 import { COUNTRIES, KNOWLEDGE_AS_OF, TRACK, skillLabel, type Dataset } from "../data";
 import { rankCountries, type CountryFit } from "../engine/countries";
@@ -60,18 +60,6 @@ export default function Results(props: { cvText: string; profile: Profile; answe
   );
 }
 
-/** Split-flap text: one cell per character, flipping in on mount. */
-function Flaps({ text, width, dim = false }: { text: string; width: number; dim?: boolean }) {
-  const chars = text.toUpperCase().slice(0, width).padEnd(width, " ").split("");
-  return (
-    <span className={"flaps" + (dim ? " dim" : "")} aria-label={text}>
-      {chars.map((c, i) => (
-        <span key={i} aria-hidden="true" style={{ "--i": i } as CSSProperties}>{c === " " ? " " : c}</span>
-      ))}
-    </span>
-  );
-}
-
 function floorText(r: Route | undefined, lang: Lang, t: (k: StringKey) => string) {
   if (!r?.salaryMin) return null;
   const per = r.salaryMin.period.startsWith("month") ? t("perMonth") : r.salaryMin.period.startsWith("year") ? t("perYear") : `/${r.salaryMin.period}`;
@@ -90,29 +78,24 @@ function Overview({ plan, fits, matches, origin, onTab }: { plan: Plan; fits: Co
           <span>{t("departures")}</span>
           <Plane className="plane" size={22} />
         </div>
-        <table>
-          <thead>
-            <tr><th>{t("destination")}</th><th>Code</th><th>{t("routeLbl")}</th><th>{t("rolesLbl")}</th><th>{t("statusLbl")}</th></tr>
-          </thead>
-          <tbody>
-            {fits.slice(0, 6).map((f, i) => {
-              const route = f.freeMovement ? "EU" : (f.country.routes[0]?.name.en ?? "").replace(/\(.*?\)/g, "").trim();
-              return (
-                <tr key={f.country.code} className="row-btn" onClick={() => onTab("countries")}>
-                  <td><Flaps text={countryName(f.country.code, lang)} width={14} /></td>
-                  <td><Flaps text={hub(f.country.code)} width={3} /></td>
-                  <td><Flaps text={route} width={14} dim /></td>
-                  <td><Flaps text={String(f.freeMovement ? f.demand.jobs : f.demand.reachable)} width={4} /></td>
-                  <td>
-                    <span className={"st " + (f.freeMovement ? "go" : i === 0 ? "go blink" : "visa")}>
-                      {f.freeMovement ? t("stNoVisa") : i === 0 ? t("stBoarding") : t("stVisa")}
-                    </span>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <div className="deps">
+          {fits.slice(0, 6).map((f, i) => {
+            const route = f.freeMovement ? "EU free movement" : tx(f.country.routes[0]?.name ?? null);
+            return (
+              <button key={f.country.code} className="dep" onClick={() => onTab("countries")}>
+                <span className="dcode">{hub(f.country.code)}</span>
+                <span>
+                  <span className="dname">{countryName(f.country.code, lang)}</span>
+                  <span className="droute">{route}</span>
+                </span>
+                <span className="droles"><b>{f.freeMovement ? f.demand.jobs : f.demand.reachable}</b>{t("rolesLbl")}</span>
+                <span className={"st " + (f.freeMovement ? "go" : i === 0 ? "now" : "visa")}>
+                  {f.freeMovement ? t("stNoVisa") : i === 0 ? t("stBoarding") : t("stVisa")}
+                </span>
+              </button>
+            );
+          })}
+        </div>
         <p className="board-foot">{t("boardNote")}</p>
       </div>
 

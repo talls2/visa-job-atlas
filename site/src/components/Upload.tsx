@@ -42,7 +42,7 @@ export default function Upload({ onRead }: { onRead: (text: string, profile: Pro
     <section className="hero">
       <FlightArc from="YOU" to="???" />
       <span className="eyebrow">{t("heroEyebrow")}</span>
-      <h1>{t("heroTitle")}</h1>
+      <h1>{t("heroTitle")} <span className="grad">{t("heroTitleGrad")}</span></h1>
       <p className="lede">{t("tagline")}</p>
 
       <div
@@ -69,15 +69,19 @@ export default function Upload({ onRead }: { onRead: (text: string, profile: Pro
             <span>{t("passTitle")}</span>
             <span>VJA 2026</span>
           </div>
+          <div className="codes">
+            <span>YOU</span>
+            <span className="line"><Plane className="plane" size={22} /></span>
+            <span>???</span>
+          </div>
           <div className="fields">
             <div className="field"><b>{t("passenger")}</b><span>{t("yourCv")}</span></div>
-            <div className="field"><b>{t("fromLbl")}</b><span>HOME</span></div>
             <div className="field"><b>{t("toLbl")}</b><span>{t("anywhere")}</span></div>
             <div className="field"><b>{t("classLbl")}</b><span>{t("classTech")}</span></div>
           </div>
-          <div className="pass-cta">
-            <Plane size={22} />
-            <span>{busy ? t("reading") : t("dropCv")}</span>
+          <div className="row">
+            <span className="pass-cta">{busy ? t("reading") : t("choosePdf")}</span>
+            <span className="small" style={{ opacity: 0.85 }}>{t("orDrop")}</span>
           </div>
         </div>
         <div className="stub">
