@@ -34,6 +34,8 @@ def _cached(key, url_or_fn, force=False):
             return path.read_bytes()
     try:
         url = url_or_fn() if callable(url_or_fn) else url_or_fn
+        if not url:
+            raise FetchError("no download URL")
         data = fetch(url, timeout=180)
     except Exception:
         # Some government sites block cloud runners (USCIS returns 403 to
@@ -243,8 +245,17 @@ def _uscis_latest_url():
 
 
 def load_us(force=False):
-    url = _uscis_latest_url()
-    year = re.search(r"(\d{4})\.csv", url).group(1)
+    try:
+        url = _uscis_latest_url()
+        year = re.search(r"(\d{4})\.csv", url).group(1)
+    except Exception:
+        # The USCIS page itself is blocked for cloud runners: use the newest
+        # bundled export (pipeline/registers/us_h1b_<year>.csv.gz).
+        bundled = sorted(BUNDLED_DIR.glob("us_h1b_*.csv.gz"))
+        if not bundled:
+            raise
+        year = re.search(r"(\d{4})", bundled[-1].name).group(1)
+        url = None
     data = _cached(f"us_h1b_{year}.csv", url, force)
     agg = defaultdict(lambda: {"initial": 0, "continuing": 0, "cities": set()})
     for row in csv.DictReader(io.StringIO(data.decode("utf-8-sig", "replace"))):
