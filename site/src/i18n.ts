@@ -11,7 +11,7 @@ const STRINGS = {
     en: "Your CV is read inside your browser and never uploaded. Nothing leaves this page unless you choose the optional Claude step.",
     pt: "Seu CV é lido dentro do seu navegador e nunca é enviado. Nada sai desta página, a menos que você use a etapa opcional com o Claude.",
   },
-  heroEyebrow: { en: "Tech jobs abroad · visa sponsorship", pt: "Vagas de tecnologia no exterior · visto patrocinado" },
+  heroEyebrow: { en: "Tech and creative jobs abroad · visa sponsorship", pt: "Vagas de tecnologia e criação no exterior · visto patrocinado" },
   heroTitle: { en: "Where are you flying", pt: "Para onde você" },
   heroTitleGrad: { en: "next?", pt: "vai voar?" },
   choosePdf: { en: "Choose your CV", pt: "Escolher seu CV" },

@@ -79,6 +79,21 @@ class Families(unittest.TestCase):
         self.assertIsNone(f("Solutions Engineer"))
         self.assertIsNone(f("Talent Acquisition Partner"))
 
+    def test_creative_families(self):
+        f = families.job_family
+        self.assertEqual(f("Video Editor, Marketing"), "video")
+        self.assertEqual(f("Senior Motion Designer"), "video")
+        self.assertEqual(f("Colorist"), "video")
+        self.assertEqual(f("Cutter (m/w/d)"), "video")
+        self.assertEqual(f("Mediengestalter Bild und Ton (m/w/d)"), "video")
+        self.assertEqual(f("Graphic Designer"), "design")
+        self.assertEqual(f("Brand Designer (m/w/d)"), "design")
+        self.assertEqual(f("Senior Product Designer, Growth"), "design")
+        self.assertIsNone(f("Hardware Designer"))
+        self.assertIsNone(f("Instructional Designer"))
+        self.assertIsNone(f("Recruiter, Design"))
+        self.assertIsNone(f("Product Marketing Manager"))
+
     def test_skills(self):
         s = families.skills("We use Python, Django and PostgreSQL on AWS with Kubernetes. Java is a plus. C++ too.")
         for sid in ("python", "django", "postgres", "aws", "kubernetes", "java", "cpp"):

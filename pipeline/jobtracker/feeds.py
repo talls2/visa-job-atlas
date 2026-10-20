@@ -252,7 +252,8 @@ def arbeitnow(pages=3):
 # ------------------------------------------- Germany: Bundesagentur für Arbeit
 BA_QUERIES = ["Software Engineer", "Softwareentwickler", "Backend Developer", "Frontend Developer", "DevOps",
               "Data Engineer", "Data Scientist", "Machine Learning", "IT-Sicherheit", "Security Engineer",
-              "Embedded Software", "Testautomatisierung", "Product Manager", "UX Designer"]
+              "Embedded Software", "Testautomatisierung", "Product Manager", "UX Designer",
+              "Grafikdesigner", "Mediengestalter", "Motion Designer", "Video Editor", "Cutter"]
 
 
 def bundesagentur(queries=None, size=100):
@@ -292,7 +293,8 @@ def germantechjobs():
 
 
 # -------------------------------------------------------- Sweden: JobTech API
-def jobtech(queries=("utvecklare", "software engineer", "devops", "data engineer", "security", "it-säkerhet", "embedded", "testare", "product manager", "ux")):
+def jobtech(queries=("utvecklare", "software engineer", "devops", "data engineer", "security", "it-säkerhet", "embedded", "testare", "product manager", "ux",
+                         "grafisk designer", "motion designer", "videoredigerare")):
     out = {}
     for q in queries:
         data = fetch_json(f"https://jobsearch.api.jobtechdev.se/search?q={quote_plus(q)}&limit=100")
@@ -307,7 +309,7 @@ def jobtech(queries=("utvecklare", "software engineer", "devops", "data engineer
 
 
 # ------------------------------------------------------- Denmark: Jobindex
-def jobindex(queries=("udvikler", "software engineer", "devops", "data engineer", "security", "sikkerhed")):
+def jobindex(queries=("udvikler", "software engineer", "devops", "data engineer", "security", "sikkerhed", "grafisk designer", "video")):
     out = {}
     for q in queries:
         for i in _rss_items(f"https://www.jobindex.dk/jobsoegning.rss?q={quote_plus(q)}"):
@@ -339,7 +341,7 @@ def landingjobs(pages=3):
 
 
 # ------------------------------------------------------------------ Relocate.me
-def relocateme(terms=("software engineer", "backend", "frontend", "mobile", "data", "machine learning", "devops", "security", "qa", "product")):
+def relocateme(terms=("software engineer", "backend", "frontend", "mobile", "data", "machine learning", "devops", "security", "qa", "product", "designer", "video", "motion")):
     out = {}
     for t in terms:
         page = fetch_text(f"https://relocate.me/search/{quote_plus(t)}")
@@ -369,7 +371,8 @@ def mastodon_tags(tags=("fedihire", "getfedihired", "techjobs", "securityjobs", 
 
 
 # ----------------------------------------------------- Singapore: MyCareersFuture
-def mycareersfuture(queries=("software engineer", "developer", "data engineer", "devops", "cyber security", "product manager")):
+def mycareersfuture(queries=("software engineer", "developer", "data engineer", "devops", "cyber security", "product manager",
+                            "graphic designer", "video editor", "motion designer")):
     """Singapore's government job portal (search API used by its own site). The
     Employment Pass needs roughly S$5,600+/month, so salary is shown for screening."""
     out = {}

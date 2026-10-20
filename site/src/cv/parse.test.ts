@@ -99,5 +99,36 @@ describe("helpers", () => {
     expect(jobFamily("Softwareentwickler Java (m/w/d)")).toBe("software");
     expect(jobFamily("Solutions Engineer")).toBeNull();
     expect(jobFamily("Mechanical Engineer")).toBeNull();
+    expect(jobFamily("Video Editor, Marketing")).toBe("video");
+    expect(jobFamily("Editor de Vídeo")).toBe("video");
+    expect(jobFamily("Senior Motion Designer")).toBe("video");
+    expect(jobFamily("Graphic Designer")).toBe("design");
+    expect(jobFamily("Hardware Designer")).toBeNull();
+    expect(jobFamily("Recruiter, Design")).toBeNull();
+  });
+});
+
+const CV_VIDEO = `Marina Costa
+Editora de Vídeo e Motion Designer
+Experiência Profissional
+Editor de Vídeo - Agência Exemplo
+mai 2021 - atual
+Edição no Premiere Pro e DaVinci Resolve, motion graphics no After Effects, color grading.
+Designer Gráfico - Estúdio Exemplo
+fev 2019 - abr 2021
+Identidade visual e branding no Illustrator e Photoshop.
+Formação Acadêmica
+Bacharelado em Design
+2015 - 2018
+Idiomas
+Português - Nativo
+Inglês - Intermediário`;
+
+describe("creative CVs", () => {
+  it("detects a video editor", () => {
+    const p = parseCv(CV_VIDEO, SKILLS, NOW);
+    expect(p.families[0]).toBe("video");
+    expect(p.skills).toEqual(expect.arrayContaining(["premiere-pro", "davinci-resolve", "after-effects", "motion-graphics", "color-grading", "illustrator", "photoshop", "branding"]));
+    expect(p.degree).toBe("bachelor");
   });
 });

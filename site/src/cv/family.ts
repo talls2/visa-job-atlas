@@ -20,8 +20,23 @@ const PRODUCT = rx(
 );
 const DESIGN = rx(
   "\\b(ux|ui|user experience|user interface|product designer|interaction designer|visual designer|" +
-    "ux research\\w*|user research\\w*|design (lead|manager|director)|service designer|content designer)\\b",
+    "ux research\\w*|user research\\w*|design (lead|manager|director)|service designer|content designer|" +
+    "graphic designer|graphic design|brand designer|brand design|marketing designer|web designer|" +
+    "communication designer|art director|illustrator|grafikdesigner\\w*|mediengestalter\\w*|" +
+    "designer gr[aá]fico|designer)\\b",
 );
+// Video editing, motion and post-production.
+const VIDEO = rx(
+  "\\b(video editor|film editor|editor de v[ií]deo|videoeditor\\w*|cutter|post[- ]?production|p[oó]s[- ]produ[çc][aã]o|" +
+    "motion (designer|graphics|graphic designer|artist)|animator|animador\\w*|animation artist|2d artist|3d artist|" +
+    "colou?rist|vfx|compositor|videographer|video producer|video production|video content|editor de v[ií]deos|" +
+    "video creator|content creator|mediengestalter\\w* bild und ton)\\b",
+);
+const NOT_DESIGN = rx(
+  "\\b(hardware|circuit|chip|asic|fpga|pcb|solutions?|instructional|interior|fashion|" +
+    "kitchen|landscape|mechanical|electrical|database|network)\\s+designer",
+);
+const NOT_CREATIVE = rx("\\b(recruit\\w*|sales|account (executive|manager)|talent|customer success)\\b");
 const DATA = rx(
   "\\b(data (engineer|scientist|analyst|architect|platform|science|engineering|analytics)\\w*|analytics engineer|" +
     "machine learning|ml engineer|mlops|ml ops|ai engineer|ai/ml|applied scientist|research scientist|" +
@@ -62,7 +77,8 @@ const NON_TECH = rx(
 
 const ORDER: [Family, RegExp, RegExp | null][] = [
   ["product", PRODUCT, null],
-  ["design", DESIGN, null],
+  ["video", VIDEO, null],
+  ["design", DESIGN, NOT_DESIGN],
   ["security", SECURITY, NOT_SECURITY],
   ["data", DATA, null],
   ["qa", QA, null],
@@ -71,8 +87,18 @@ const ORDER: [Family, RegExp, RegExp | null][] = [
   ["software", SOFTWARE, NOT_SOFTWARE],
 ];
 
+// Creative roles often sit in marketing teams ("Video Editor, Marketing"), so they
+// are matched before the non-tech filter.
+const CREATIVE: [Family, RegExp, RegExp | null][] = [["video", VIDEO, null], ["design", DESIGN, NOT_DESIGN]];
+
 export function jobFamily(title: string): Family | null {
-  if (!title || NON_TECH.test(title)) return null;
+  if (!title) return null;
+  if (!NOT_CREATIVE.test(title)) {
+    for (const [family, re, veto] of CREATIVE) {
+      if (re.test(title) && !(veto && veto.test(title))) return family;
+    }
+  }
+  if (NON_TECH.test(title)) return null;
   for (const [family, re, veto] of ORDER) {
     if (re.test(title) && !(veto && veto.test(title))) return family;
   }

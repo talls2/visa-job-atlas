@@ -49,7 +49,7 @@ Bilingual text is always an object `{"en": "...", "pt": "..."}` ("L10n" below). 
 
 ## knowledge/tracks.json (curated)
 
-One track per job family. Family ids (shared with the pipeline): `security`, `software`, `data`, `devops`, `embedded`, `qa`, `product`, `design`.
+One track per job family. Family ids (shared with the pipeline): `security`, `software`, `data`, `devops`, `embedded`, `qa`, `product`, `design` (UX/UI, product, graphic and brand design), `video` (video editing, motion, colour, post-production).
 
 ```jsonc
 {

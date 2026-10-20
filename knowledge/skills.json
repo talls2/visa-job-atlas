@@ -1509,6 +1509,192 @@
    "families": [
     "embedded"
    ]
+  },
+  {
+   "id": "premiere-pro",
+   "label": "Premiere Pro",
+   "patterns": [
+    "premiere( pro)?",
+    "adobe premiere"
+   ],
+   "families": [
+    "video"
+   ]
+  },
+  {
+   "id": "after-effects",
+   "label": "After Effects",
+   "patterns": [
+    "after effects"
+   ],
+   "families": [
+    "video",
+    "design"
+   ]
+  },
+  {
+   "id": "davinci-resolve",
+   "label": "DaVinci Resolve",
+   "patterns": [
+    "davinci( resolve)?"
+   ],
+   "families": [
+    "video"
+   ]
+  },
+  {
+   "id": "final-cut",
+   "label": "Final Cut Pro",
+   "patterns": [
+    "final cut( pro)?"
+   ],
+   "families": [
+    "video"
+   ]
+  },
+  {
+   "id": "motion-graphics",
+   "label": "Motion graphics",
+   "patterns": [
+    "motion graphics",
+    "motion design",
+    "2d animation",
+    "3d animation",
+    "animation"
+   ],
+   "families": [
+    "video",
+    "design"
+   ]
+  },
+  {
+   "id": "color-grading",
+   "label": "Color grading",
+   "patterns": [
+    "colou?r grading",
+    "colou?r correction",
+    "colou?rist"
+   ],
+   "families": [
+    "video"
+   ]
+  },
+  {
+   "id": "sound-editing",
+   "label": "Sound editing / mixing",
+   "patterns": [
+    "sound (editing|design|mixing)",
+    "audio (editing|mixing|post)",
+    "pro tools"
+   ],
+   "families": [
+    "video"
+   ]
+  },
+  {
+   "id": "video-production",
+   "label": "Video production",
+   "patterns": [
+    "video production",
+    "videography",
+    "filming",
+    "camera operat\\w*",
+    "shooting video",
+    "post[- ]production"
+   ],
+   "families": [
+    "video"
+   ]
+  },
+  {
+   "id": "storyboarding",
+   "label": "Storyboarding",
+   "patterns": [
+    "storyboard(s|ing)?"
+   ],
+   "families": [
+    "video",
+    "design"
+   ]
+  },
+  {
+   "id": "photoshop",
+   "label": "Photoshop",
+   "patterns": [
+    "photoshop"
+   ],
+   "families": [
+    "design",
+    "video"
+   ]
+  },
+  {
+   "id": "illustrator",
+   "label": "Illustrator",
+   "patterns": [
+    "adobe illustrator",
+    "illustrator"
+   ],
+   "families": [
+    "design"
+   ]
+  },
+  {
+   "id": "indesign",
+   "label": "InDesign",
+   "patterns": [
+    "indesign"
+   ],
+   "families": [
+    "design"
+   ]
+  },
+  {
+   "id": "typography",
+   "label": "Typography",
+   "patterns": [
+    "typography",
+    "type design"
+   ],
+   "families": [
+    "design"
+   ]
+  },
+  {
+   "id": "branding",
+   "label": "Branding / visual identity",
+   "patterns": [
+    "branding",
+    "brand identity",
+    "visual identity",
+    "brand design"
+   ],
+   "families": [
+    "design"
+   ]
+  },
+  {
+   "id": "blender",
+   "label": "Blender",
+   "patterns": [
+    "blender"
+   ],
+   "families": [
+    "video",
+    "design"
+   ]
+  },
+  {
+   "id": "cinema-4d",
+   "label": "Cinema 4D",
+   "patterns": [
+    "cinema ?4d",
+    "c4d"
+   ],
+   "families": [
+    "video",
+    "design"
+   ]
   }
  ]
 }

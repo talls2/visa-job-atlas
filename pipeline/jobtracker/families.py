@@ -8,7 +8,7 @@ import json
 import re
 from pathlib import Path
 
-FAMILIES = ("security", "software", "data", "devops", "embedded", "qa", "product", "design")
+FAMILIES = ("security", "software", "data", "devops", "embedded", "qa", "product", "design", "video")
 
 SECURITY = re.compile(
     r"\b(security|secops|devsecops|appsec|infosec|cyber\w*|soc\b|siem|detection engineer\w*|incident respon\w*|"
@@ -28,7 +28,19 @@ PRODUCT = re.compile(
     r"(technical )?program manager|tpm|product operations)\b", re.I)
 DESIGN = re.compile(
     r"\b(ux|ui|user experience|user interface|product designer|interaction designer|visual designer|"
-    r"ux research\w*|user research\w*|design (lead|manager|director)|service designer|content designer)\b", re.I)
+    r"ux research\w*|user research\w*|design (lead|manager|director)|service designer|content designer|"
+    r"graphic designer|graphic design|brand designer|brand design|marketing designer|web designer|"
+    r"communication designer|art director|illustrator|grafikdesigner\w*|mediengestalter\w*|"
+    r"designer gr[aá]fico|designer)\b", re.I)
+# Video editing, motion and post-production.
+VIDEO = re.compile(
+    r"\b(video editor|film editor|editor de v[ií]deo|videoeditor\w*|cutter|post[- ]?production|"
+    r"motion (designer|graphics|graphic designer|artist)|animator|animation artist|2d artist|3d artist|"
+    r"colou?rist|vfx|compositor|videographer|video producer|video production|video content|"
+    r"video creator|content creator|mediengestalter\w* bild und ton)\b", re.I)
+# "Designer" titles that aren't graphic, product or UX design.
+NOT_DESIGN = re.compile(r"\b(hardware|circuit|chip|asic|fpga|pcb|solutions?|instructional|interior|fashion|"
+                        r"kitchen|landscape|mechanical|electrical|database|network)\s+designer", re.I)
 DATA = re.compile(
     r"\b(data (engineer|scientist|analyst|architect|platform|science|engineering|analytics)\w*|analytics engineer|"
     r"machine learning|ml engineer|mlops|ml ops|ai engineer|ai/ml|applied scientist|research scientist|"
@@ -65,14 +77,26 @@ NON_TECH = re.compile(
     re.I,
 )
 
-_ORDER = [("product", PRODUCT, None), ("design", DESIGN, None), ("security", SECURITY, NOT_SECURITY),
+_ORDER = [("product", PRODUCT, None), ("video", VIDEO, None), ("design", DESIGN, NOT_DESIGN), ("security", SECURITY, NOT_SECURITY),
           ("data", DATA, None), ("qa", QA, None), ("devops", DEVOPS, None), ("embedded", EMBEDDED, None),
           ("software", SOFTWARE, NOT_SOFTWARE)]
 
 
+# Creative roles often sit in marketing or communications teams ("Video Editor,
+# Marketing"), so they are matched before the non-tech filter.
+_CREATIVE = [("video", VIDEO, None), ("design", DESIGN, NOT_DESIGN)]
+NOT_CREATIVE = re.compile(r"\b(recruit\w*|sales|account (executive|manager)|talent|customer success)\b", re.I)
+
+
 def job_family(title):
-    """The job family of a posting title, or None when it isn't a tech role."""
-    if not title or NON_TECH.search(title):
+    """The job family of a posting title, or None when it isn't a tech or creative role."""
+    if not title:
+        return None
+    if not NOT_CREATIVE.search(title):
+        for family, rx, veto in _CREATIVE:
+            if rx.search(title) and not (veto and veto.search(title)):
+                return family
+    if NON_TECH.search(title):
         return None
     for family, rx, veto in _ORDER:
         if rx.search(title) and not (veto and veto.search(title)):

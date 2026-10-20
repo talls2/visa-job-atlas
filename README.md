@@ -13,7 +13,7 @@ Your CV is read inside your browser and never uploaded. The site is static: ther
    - citizenships (an EU passport changes everything)
    - where you live and where you'd like to go
    - what matters most to you
-   - whether you're staying in your field or switching (security, software, data, DevOps, embedded, QA, product, design)
+   - whether you're staying in your field or switching (security, software, data, DevOps, embedded, QA, product, design, video)
    - willingness to learn a language
    - hours per week, budget and timeline
 3. **Ranks 22 countries** with an explanation for every point: visa openness, live demand for your field, language fit, degree rules, free movement for EU citizens.
@@ -77,7 +77,7 @@ Pipeline commands: `registers`, `poll`, `export`, `run`, `sponsor <name>` (look 
 | Path | What |
 |---|---|
 | `pipeline/` | Job-data pipeline: ATS and feed fetchers, sponsor-register loaders, family/skill/language/visa tagging, SQLite history, JSON export |
-| `knowledge/` | Curated, bilingual knowledge: `countries.json` (visa routes, thresholds, residence paths, CV conventions), `tracks.json` (8 career tracks), `skills.json` |
+| `knowledge/` | Curated, bilingual knowledge: `countries.json` (visa routes, thresholds, residence paths, CV conventions), `tracks.json` (9 career tracks, from software and security to design and video editing), `skills.json` |
 | `site/` | The web app: Vite + React + TypeScript; CV parsing (`src/cv`), matching and planning (`src/engine`) |
 | `docs/DATA.md` | Data contract between the pipeline and the app |
 | `.github/workflows/` | CI (tests + build) and the daily refresh-and-deploy job |

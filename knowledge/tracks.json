@@ -2308,12 +2308,12 @@
   {
    "id": "design",
    "name": {
-    "en": "UX & product design",
-    "pt": "UX e design de produto"
+    "en": "Design: UX, product & graphic",
+    "pt": "Design: UX, produto e gráfico"
    },
    "summary": {
-    "en": "Shape how products work and feel through research, interaction and visual design. Hiring is portfolio-driven; certificates count for little.",
-    "pt": "Definir como os produtos funcionam e parecem, com pesquisa, design de interação e design visual. A contratação é guiada por portfólio; certificados contam pouco."
+    "en": "Shape how products and brands look and work: UX research, interfaces, and graphic, brand and marketing design. Hiring is portfolio-driven; certificates count for little.",
+    "pt": "Definir como produtos e marcas funcionam e se apresentam: pesquisa UX, interfaces e design gráfico, de marca e de marketing. A contratação é guiada por portfólio; certificados contam pouco."
    },
    "niches": [
     {
@@ -2373,6 +2373,47 @@
       "qualitative research",
       "user interviews"
      ]
+    },
+    {
+     "id": "graphic-brand",
+     "name": {
+      "en": "Graphic & brand design",
+      "pt": "Design gráfico e de marca"
+     },
+     "summary": {
+      "en": "Visual identities, print and campaign work, mostly in Illustrator, Photoshop and InDesign. Agency roles are rarely sponsored; in-house brand teams at larger companies are the better bet.",
+      "pt": "Identidades visuais, peças impressas e campanhas, sobretudo em Illustrator, Photoshop e InDesign. Vagas em agência raramente são patrocinadas; times de marca internos em empresas maiores são a melhor aposta."
+     },
+     "keywords": [
+      "graphic designer",
+      "brand designer",
+      "visual identity",
+      "brand identity",
+      "print design",
+      "illustrator",
+      "indesign",
+      "art director"
+     ]
+    },
+    {
+     "id": "visual-marketing",
+     "name": {
+      "en": "Marketing & visual design",
+      "pt": "Design de marketing e visual"
+     },
+     "summary": {
+      "en": "Landing pages, ads, social and email creatives for growth and marketing teams. Plenty of openings and remote contracts, but sponsorship is mostly for mid-level hires at tech companies.",
+      "pt": "Landing pages, anúncios, peças para redes sociais e e-mail para times de growth e marketing. Muitas vagas e contratos remotos, mas o patrocínio costuma ser para nível pleno em empresas de tecnologia."
+     },
+     "keywords": [
+      "visual designer",
+      "marketing designer",
+      "digital designer",
+      "web designer",
+      "social media designer",
+      "growth designer",
+      "campaign design"
+     ]
     }
    ],
    "coreSkills": [
@@ -2384,7 +2425,11 @@
     "information-architecture",
     "accessibility",
     "html-css",
-    "product-analytics"
+    "product-analytics",
+    "photoshop",
+    "illustrator",
+    "typography",
+    "branding"
    ],
    "certs": [
     {
@@ -2408,6 +2453,39 @@
       "pt": "Conhecida em mercados de língua alemã e na Europa como vocabulário comum de UX; um pequeno diferencial ao lado do portfólio."
      },
      "url": "https://www.uxqb.org/ux-training-and-certification/cpux-f/"
+    },
+    {
+     "name": "Adobe Certified Professional: Photoshop",
+     "provider": "Adobe / Certiport",
+     "level": "entry",
+     "cost": "~US$150 per exam; regional prices in the Certiport store (check current price)",
+     "why": {
+      "en": "Proves solid Photoshop basics for image editing and compositing. Useful early on or for agency HR filters; the portfolio still decides.",
+      "pt": "Comprova uma base sólida de Photoshop para edição e composição de imagens. Útil no início ou para filtros de RH de agências; o portfólio continua decidindo."
+     },
+     "url": "https://certifiedprofessional.adobe.com/photoshop"
+    },
+    {
+     "name": "Adobe Certified Professional: Illustrator",
+     "provider": "Adobe / Certiport",
+     "level": "entry",
+     "cost": "~US$150 per exam; regional prices in the Certiport store (check current price)",
+     "why": {
+      "en": "Covers vector, logo and layout skills used in brand work. A small plus next to an identity project in your portfolio.",
+      "pt": "Cobre habilidades de vetor, logotipo e layout usadas em trabalhos de marca. Um pequeno diferencial ao lado de um projeto de identidade no portfólio."
+     },
+     "url": "https://certifiedprofessional.adobe.com/illustrator"
+    },
+    {
+     "name": "Adobe Certified Professional: InDesign",
+     "provider": "Adobe / Certiport",
+     "level": "entry",
+     "cost": "~US$150 per exam; regional prices in the Certiport store (check current price)",
+     "why": {
+      "en": "Shows print and editorial layout skills. Most relevant for publishing, packaging and print-heavy brand roles.",
+      "pt": "Mostra habilidades de diagramação para impresso e editorial. Mais relevante para vagas de editoras, embalagens e marcas com muito material impresso."
+     },
+     "url": "https://certifiedprofessional.adobe.com/indesign"
     },
     {
      "name": "NN/g UX Certification",
@@ -2568,6 +2646,366 @@
      {
       "en": "At least one offer with visa sponsorship.",
       "pt": "Pelo menos uma oferta com patrocínio de visto."
+     }
+    ]
+   }
+  },
+  {
+   "id": "video",
+   "name": {
+    "en": "Video editing & motion",
+    "pt": "Edição de vídeo e motion"
+   },
+   "summary": {
+    "en": "Edit, animate, grade and finish video for brands, products, film and social. Hiring runs on your reel and credits; certificates are a minor plus.",
+    "pt": "Editar, animar, colorir e finalizar vídeos para marcas, produtos, cinema e redes sociais. A contratação depende do seu reel e dos seus créditos; certificados são um pequeno diferencial."
+   },
+   "niches": [
+    {
+     "id": "video-editing",
+     "name": {
+      "en": "Video editing",
+      "pt": "Edição de vídeo"
+     },
+     "summary": {
+      "en": "Cutting commercials, branded content, social video and long-form film or documentary. The largest niche, but very competitive and freelance-heavy.",
+      "pt": "Edição de comerciais, conteúdo de marca, vídeos para redes sociais e longas ou documentários. O maior nicho, mas muito concorrido e com muito trabalho freelance."
+     },
+     "keywords": [
+      "video editor",
+      "editor",
+      "offline editor",
+      "assistant editor",
+      "social video editor",
+      "premiere pro",
+      "avid"
+     ]
+    },
+    {
+     "id": "motion-design",
+     "name": {
+      "en": "Motion graphics & animation",
+      "pt": "Motion graphics e animação"
+     },
+     "summary": {
+      "en": "Animated explainers, UI and product motion, titles and 2D/3D animation. Tech and product companies hire in-house motion designers, which makes this the most sponsorable niche.",
+      "pt": "Vídeos explicativos animados, motion de interface e produto, vinhetas e animação 2D/3D. Empresas de tecnologia contratam motion designers internos, o que torna este o nicho com mais chance de patrocínio."
+     },
+     "keywords": [
+      "motion designer",
+      "motion graphics",
+      "animator",
+      "2d animator",
+      "3d motion",
+      "after effects",
+      "cinema 4d"
+     ]
+    },
+    {
+     "id": "color-finishing",
+     "name": {
+      "en": "Colour grading & finishing",
+      "pt": "Colorização e finalização"
+     },
+     "summary": {
+      "en": "Grading, conform and final delivery for film, series and commercials. A small, senior-leaning niche built on credits and relationships with post houses.",
+      "pt": "Color grading, conform e entrega final de filmes, séries e comerciais. Um nicho pequeno e mais sênior, construído com créditos e relacionamento com produtoras de pós."
+     },
+     "keywords": [
+      "colorist",
+      "colourist",
+      "color grading",
+      "colour grading",
+      "finishing editor",
+      "online editor",
+      "davinci resolve"
+     ]
+    },
+    {
+     "id": "vfx-compositing",
+     "name": {
+      "en": "Post-production & VFX compositing",
+      "pt": "Pós-produção e composição de VFX"
+     },
+     "summary": {
+      "en": "Compositing, roto, cleanup and VFX shots for film, series and games. Large VFX studios in the UK and Canada do sponsor, usually after a junior or runner stage.",
+      "pt": "Composição, rotoscopia, limpeza de imagem e planos de VFX para cinema, séries e games. Grandes estúdios de VFX no Reino Unido e no Canadá patrocinam visto, geralmente depois de uma fase júnior ou de assistente."
+     },
+     "keywords": [
+      "compositor",
+      "vfx artist",
+      "roto artist",
+      "prep artist",
+      "nuke",
+      "post-production",
+      "visual effects"
+     ]
+    },
+    {
+     "id": "videography",
+     "name": {
+      "en": "Video production & videography",
+      "pt": "Produção de vídeo e videomaker"
+     },
+     "summary": {
+      "en": "Shooting, lighting and producing videos end to end, often as a one-person crew. Mostly local and freelance work, so it is the hardest niche to get sponsored in.",
+      "pt": "Captação, iluminação e produção de vídeos de ponta a ponta, muitas vezes sozinho. É sobretudo trabalho local e freelance, por isso é o nicho mais difícil para conseguir patrocínio."
+     },
+     "keywords": [
+      "videographer",
+      "video producer",
+      "content producer",
+      "camera operator",
+      "shooter editor",
+      "video production"
+     ]
+    }
+   ],
+   "coreSkills": [
+    "premiere-pro",
+    "after-effects",
+    "davinci-resolve",
+    "final-cut",
+    "motion-graphics",
+    "color-grading",
+    "sound-editing",
+    "video-production",
+    "storyboarding",
+    "typography",
+    "cinema-4d",
+    "blender"
+   ],
+   "certs": [
+    {
+     "name": "Adobe Certified Professional: Premiere (Digital Video Using Adobe Premiere)",
+     "provider": "Adobe / Certiport",
+     "level": "entry",
+     "cost": "~US$150 per exam; regional prices in the Certiport store (check current price)",
+     "why": {
+      "en": "A recognised baseline for editing in Premiere, the most common editor in job ads. Helps with HR filters; the reel decides.",
+      "pt": "Uma base reconhecida de edição no Premiere, o editor mais citado em vagas. Ajuda nos filtros de RH; quem decide é o reel."
+     },
+     "url": "https://certifiedprofessional.adobe.com/premiere"
+    },
+    {
+     "name": "DaVinci Resolve Certified Editor",
+     "provider": "Blackmagic Design",
+     "level": "entry",
+     "cost": "Official training books are free PDFs; online exam reported free (check current price)",
+     "why": {
+      "en": "Free official curriculum with an exam at the end of each book. A cheap, credible way to learn Resolve end to end.",
+      "pt": "Currículo oficial gratuito, com uma prova ao fim de cada livro. Um jeito barato e confiável de aprender o Resolve de ponta a ponta."
+     },
+     "url": "https://www.blackmagicdesign.com/products/davinciresolve/training"
+    },
+    {
+     "name": "Adobe Certified Professional: After Effects (Visual Effects & Motion Graphics)",
+     "provider": "Adobe / Certiport",
+     "level": "mid",
+     "cost": "~US$150 per exam; regional prices in the Certiport store (check current price)",
+     "why": {
+      "en": "Covers the motion and compositing basics most motion roles expect. Worth it if you move from editing into motion design.",
+      "pt": "Cobre o básico de motion e composição que a maioria das vagas de motion exige. Vale a pena se você estiver migrando da edição para o motion design."
+     },
+     "url": "https://certifiedprofessional.adobe.com/after-effects"
+    },
+    {
+     "name": "DaVinci Resolve Certified Colorist",
+     "provider": "Blackmagic Design",
+     "level": "mid",
+     "cost": "Official training books are free PDFs; online exam reported free (check current price)",
+     "why": {
+      "en": "Structured path through Resolve's colour tools, the industry standard for grading. Pair it with before/after grades in your reel.",
+      "pt": "Caminho estruturado pelas ferramentas de cor do Resolve, padrão da indústria em color grading. Combine com comparações de antes e depois no seu reel."
+     },
+     "url": "https://www.blackmagicdesign.com/products/davinciresolve/training"
+    },
+    {
+     "name": "Final Cut Pro certification (IntroPro to Post-ProductionPro)",
+     "provider": "Apple / FMC",
+     "level": "mid",
+     "cost": "US$149 per exam, taken online; expires after 2 years",
+     "why": {
+      "en": "Official Apple certification in five tiers, from intro to post-production. Only worth it if you target Mac-based shops or social video teams that use Final Cut.",
+      "pt": "Certificação oficial da Apple em cinco níveis, do introdutório à pós-produção. Só vale se o seu alvo forem produtoras que usam Mac ou times de vídeo social que trabalham com Final Cut."
+     },
+     "url": "https://fcpcertification.com/certifications"
+    }
+   ],
+   "projects": [
+    {
+     "title": {
+      "en": "Showreel",
+      "pt": "Showreel"
+     },
+     "description": {
+      "en": "A 60-90 second reel of your best work, opening with your strongest shot, with a breakdown page listing your role on each clip.",
+      "pt": "Um reel de 60 a 90 segundos com seus melhores trabalhos, abrindo com o plano mais forte, e uma página de breakdown indicando sua função em cada trecho."
+     },
+     "level": "entry"
+    },
+    {
+     "title": {
+      "en": "Client-style spots",
+      "pt": "Peças no estilo de cliente"
+     },
+     "description": {
+      "en": "Two or three 15-30 second ads cut to a real-looking brief, delivered in 16:9, 9:16 and 1:1 with captions.",
+      "pt": "Dois ou três anúncios de 15 a 30 segundos editados a partir de um briefing realista, entregues em 16:9, 9:16 e 1:1, com legendas."
+     },
+     "level": "entry"
+    },
+    {
+     "title": {
+      "en": "Social video series",
+      "pt": "Série de vídeos para redes sociais"
+     },
+     "description": {
+      "en": "A consistent 5-8 episode short-form series for a real or invented brand, with templates and retention numbers if published.",
+      "pt": "Uma série curta e consistente de 5 a 8 episódios para uma marca real ou fictícia, com templates e números de retenção, se publicada."
+     },
+     "level": "entry"
+    },
+    {
+     "title": {
+      "en": "Motion package",
+      "pt": "Pacote de motion"
+     },
+     "description": {
+      "en": "A brand motion toolkit: logo animation, lower thirds, transitions and a product explainer, built as reusable templates.",
+      "pt": "Um kit de motion para uma marca: animação de logo, lower thirds, transições e um vídeo explicativo de produto, montados como templates reutilizáveis."
+     },
+     "level": "mid"
+    },
+    {
+     "title": {
+      "en": "Colour grade before/after",
+      "pt": "Antes e depois de colorização"
+     },
+     "description": {
+      "en": "Grade footage from free camera-original clips into two or three distinct looks, shown as split-screen before/after with notes on your node tree.",
+      "pt": "Colorize clipes originais de câmera disponíveis gratuitamente em dois ou três looks diferentes, mostrados em tela dividida de antes e depois, com notas sobre sua árvore de nós."
+     },
+     "level": "mid"
+    }
+   ],
+   "firstSponsoredRoles": {
+    "en": "Video and creative roles are rarely visa-sponsored. The best odds are in-house motion or video roles at tech and product companies, and junior compositor or VFX roles at large games and VFX studios in the UK, Canada and Germany. For most people, remote contract work for foreign clients is the bridge that builds the credits a sponsor wants.",
+    "pt": "Vagas de vídeo e criação raramente têm patrocínio de visto. As melhores chances são vagas internas de motion ou vídeo em empresas de tecnologia e produto, e vagas júnior de composição ou VFX em grandes estúdios de games e VFX no Reino Unido, no Canadá e na Alemanha. Para a maioria, trabalhos remotos para clientes estrangeiros são a ponte que gera os créditos que um patrocinador procura."
+   },
+   "switchTips": {
+    "design": {
+     "en": "Your layout, type and brand sense carry straight into motion design. Learn After Effects and animate your existing portfolio pieces.",
+     "pt": "Seu domínio de layout, tipografia e marca vai direto para o motion design. Aprenda After Effects e anime as peças que você já tem no portfólio."
+    },
+    "software": {
+     "en": "Scripting and pipeline skills are valued in VFX and post-production. Aim at pipeline TD or technical artist roles, where sponsorship is more common.",
+     "pt": "Habilidades de script e pipeline são valorizadas em VFX e pós-produção. Mire em vagas de pipeline TD ou technical artist, onde o patrocínio é mais comum."
+    },
+    "product": {
+     "en": "You know how features are launched. Product video, demos and launch content for tech companies is your natural entry point.",
+     "pt": "Você sabe como funcionalidades são lançadas. Vídeos de produto, demos e conteúdo de lançamento para empresas de tecnologia são sua porta de entrada natural."
+    },
+    "data": {
+     "en": "Use your analytics skills on retention and A/B tests for social and ad video. Performance-minded editors stand out in marketing teams.",
+     "pt": "Use sua habilidade com dados em retenção e testes A/B de vídeos para redes e anúncios. Editores que pensam em performance se destacam em times de marketing."
+    }
+   },
+   "weeklyQuests": [
+    {
+     "en": "Finish one short edit or motion piece and add it to your reel folder.",
+     "pt": "Finalize uma edição curta ou peça de motion e adicione à pasta do seu reel."
+    },
+    {
+     "en": "Recreate one shot, title or transition from a piece you admire.",
+     "pt": "Recrie um plano, vinheta ou transição de um trabalho que você admira."
+    },
+    {
+     "en": "Post one clip or breakdown on Vimeo, Behance or LinkedIn showing your process.",
+     "pt": "Publique um clipe ou breakdown no Vimeo, Behance ou LinkedIn mostrando seu processo."
+    },
+    {
+     "en": "Send 10 targeted connection requests to video leads, post producers and creative recruiters at sponsoring companies.",
+     "pt": "Envie 10 pedidos de conexão direcionados a líderes de vídeo, produtores de pós e recrutadores de criação em empresas que patrocinam visto."
+    },
+    {
+     "en": "Pitch or apply for one remote contract with a foreign client.",
+     "pt": "Faça uma proposta ou candidate-se a um contrato remoto com um cliente estrangeiro."
+    },
+    {
+     "en": "Spend one hour on a free official training chapter (Resolve or Adobe).",
+     "pt": "Dedique uma hora a um capítulo de treinamento oficial gratuito (Resolve ou Adobe)."
+    },
+    {
+     "en": "From month 4: apply to 2+ in-house or studio roles with a visa signal.",
+     "pt": "A partir do mês 4: candidate-se a 2 ou mais vagas internas ou em estúdios com sinal de visto."
+    }
+   ],
+   "milestones": {
+    "m3": [
+     {
+      "en": "First 60-90 second showreel online with a breakdown page in English.",
+      "pt": "Primeiro showreel de 60 a 90 segundos no ar, com página de breakdown em inglês."
+     },
+     {
+      "en": "Two client-style spots delivered in three aspect ratios.",
+      "pt": "Duas peças no estilo de cliente entregues em três formatos de tela."
+     },
+     {
+      "en": "One certification passed (Premiere or DaVinci Resolve Editor).",
+      "pt": "Uma certificação concluída (Premiere ou DaVinci Resolve Editor)."
+     },
+     {
+      "en": "3 reel reviews from working editors or motion designers.",
+      "pt": "3 revisões do reel feitas por editores ou motion designers em atividade."
+     },
+     {
+      "en": "120 targeted connections and 12 posts published.",
+      "pt": "120 conexões direcionadas e 12 posts publicados."
+     }
+    ],
+    "m6": [
+     {
+      "en": "First paid remote job or contract for a foreign client.",
+      "pt": "Primeiro trabalho remoto pago ou contrato com um cliente estrangeiro."
+     },
+     {
+      "en": "Motion package or colour grade before/after added to the reel.",
+      "pt": "Pacote de motion ou antes e depois de colorização adicionado ao reel."
+     },
+     {
+      "en": "Reel updated and cut into a shorter niche version (motion, edit or VFX).",
+      "pt": "Reel atualizado e com uma versão mais curta para o seu nicho (motion, edição ou VFX)."
+     },
+     {
+      "en": "30 targeted applications sent to in-house and studio roles with a visa signal.",
+      "pt": "30 candidaturas direcionadas enviadas para vagas internas e em estúdios com sinal de visto."
+     },
+     {
+      "en": "At least 3 first-round interviews or test assignments.",
+      "pt": "Pelo menos 3 entrevistas de primeira fase ou testes práticos."
+     }
+    ],
+    "m12": [
+     {
+      "en": "80+ applications in total with an interview rate of 10% or more.",
+      "pt": "Mais de 80 candidaturas no total, com taxa de entrevista de 10% ou mais."
+     },
+     {
+      "en": "Reel built mostly from paid or published client work, with credits listed.",
+      "pt": "Reel formado principalmente por trabalhos pagos ou publicados para clientes, com créditos listados."
+     },
+     {
+      "en": "Ongoing remote clients covering part of your income.",
+      "pt": "Clientes remotos recorrentes cobrindo parte da sua renda."
+     },
+     {
+      "en": "A second certification in your niche (After Effects, Resolve Colorist or Final Cut).",
+      "pt": "Uma segunda certificação no seu nicho (After Effects, Resolve Colorist ou Final Cut)."
+     },
+     {
+      "en": "At least one offer with visa sponsorship or a relocation-backed contract.",
+      "pt": "Pelo menos uma oferta com patrocínio de visto ou um contrato com apoio para relocação."
      }
     ]
    }

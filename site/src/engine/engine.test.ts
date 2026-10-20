@@ -34,7 +34,7 @@ const job = (over: Partial<Job>): Job => ({
 
 describe("knowledge files", () => {
   it("have every track and bilingual text", () => {
-    expect(TRACKS.map((t) => t.id).sort()).toEqual(["data", "design", "devops", "embedded", "product", "qa", "security", "software"]);
+    expect(TRACKS.map((t) => t.id).sort()).toEqual(["data", "design", "devops", "embedded", "product", "qa", "security", "software", "video"]);
     for (const c of COUNTRIES) {
       expect(c.name.en && c.name.pt).toBeTruthy();
       expect(c.openness).toBeGreaterThanOrEqual(1);

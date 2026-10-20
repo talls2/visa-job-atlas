@@ -62,7 +62,9 @@ export function buildPlan(
   const p1: PlanItem[] = [
     { kind: "profile", text: L("Rewrite your CV and LinkedIn for the target market", "Reescreva seu CV e LinkedIn para o mercado-alvo"),
       detail: top[0] ? top[0].country.cvTips : undefined },
-    { kind: "profile", text: L("Put your public work in one place: GitHub profile README, pinned projects and a simple website", "Reúna seu trabalho público em um lugar: README do perfil no GitHub, projetos fixados e um site simples") },
+    track.id === "design" || track.id === "video"
+      ? { kind: "profile", text: L("Put your best work in one place: a short portfolio site or reel (Vimeo, Behance) and LinkedIn Featured", "Reúna seus melhores trabalhos em um lugar: um portfólio ou reel curto (Vimeo, Behance) e o Destaque do LinkedIn") }
+      : { kind: "profile", text: L("Put your public work in one place: GitHub profile README, pinned projects and a simple website", "Reúna seu trabalho público em um lugar: README do perfil no GitHub, projetos fixados e um site simples") },
   ];
   if (gaps.length)
     p1.push({ kind: "skill", text: L(`Start the most-requested skill you're missing: ${label(gaps[0].id)}`, `Comece pela habilidade mais pedida que você ainda não mostra: ${label(gaps[0].id)}`),

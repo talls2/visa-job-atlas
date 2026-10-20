@@ -3,8 +3,8 @@
 export type Lang = "en" | "pt";
 export type L10n = { en: string; pt: string };
 
-export type Family = "security" | "software" | "data" | "devops" | "embedded" | "qa" | "product" | "design";
-export const FAMILIES: Family[] = ["software", "data", "devops", "security", "embedded", "qa", "product", "design"];
+export type Family = "security" | "software" | "data" | "devops" | "embedded" | "qa" | "product" | "design" | "video";
+export const FAMILIES: Family[] = ["software", "data", "devops", "security", "embedded", "qa", "product", "design", "video"];
 
 export type Level = "entry" | "junior" | "mid" | "senior" | "lead";
 export type Degree = "none" | "technical" | "bachelor" | "master" | "phd";
