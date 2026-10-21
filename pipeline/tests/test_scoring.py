@@ -91,6 +91,7 @@ class Families(unittest.TestCase):
         self.assertEqual(f("Senior Product Designer, Growth"), "design")
         self.assertIsNone(f("Hardware Designer"))
         self.assertIsNone(f("Instructional Designer"))
+        self.assertIsNone(f("Senior Learning Designer, Indian Languages"))
         self.assertIsNone(f("Recruiter, Design"))
         self.assertIsNone(f("Product Marketing Manager"))
 
