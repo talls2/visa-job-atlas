@@ -40,7 +40,7 @@ VIDEO = re.compile(
     r"video creator|content creator|mediengestalter\w* bild und ton)\b", re.I)
 # "Designer" titles that aren't graphic, product or UX design.
 NOT_DESIGN = re.compile(r"\b(hardware|circuit|chip|asic|fpga|pcb|solutions?|instructional|interior|fashion|"
-                        r"kitchen|landscape|mechanical|electrical|database|network)\s+designer", re.I)
+                        r"kitchen|landscape|mechanical|electrical|database|network|learning|curriculum|course)\s+designer", re.I)
 DATA = re.compile(
     r"\b(data (engineer|scientist|analyst|architect|platform|science|engineering|analytics)\w*|analytics engineer|"
     r"machine learning|ml engineer|mlops|ml ops|ai engineer|ai/ml|applied scientist|research scientist|"

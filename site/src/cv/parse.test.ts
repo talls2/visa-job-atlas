@@ -104,6 +104,7 @@ describe("helpers", () => {
     expect(jobFamily("Senior Motion Designer")).toBe("video");
     expect(jobFamily("Graphic Designer")).toBe("design");
     expect(jobFamily("Hardware Designer")).toBeNull();
+    expect(jobFamily("Senior Learning Designer")).toBeNull();
     expect(jobFamily("Recruiter, Design")).toBeNull();
   });
 });

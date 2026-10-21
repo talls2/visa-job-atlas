@@ -34,7 +34,7 @@ const VIDEO = rx(
 );
 const NOT_DESIGN = rx(
   "\\b(hardware|circuit|chip|asic|fpga|pcb|solutions?|instructional|interior|fashion|" +
-    "kitchen|landscape|mechanical|electrical|database|network)\\s+designer",
+    "kitchen|landscape|mechanical|electrical|database|network|learning|curriculum|course)\\s+designer",
 );
 const NOT_CREATIVE = rx("\\b(recruit\\w*|sales|account (executive|manager)|talent|customer success)\\b");
 const DATA = rx(
