@@ -133,6 +133,55 @@ Idiomas
 Português - Nativo
 Inglês - Intermediário`;
 
+// LinkedIn "Save to PDF" layout: Top Skills block first, then experience.
+const CV_MECH = `Contact
+www.linkedin.com/in/example
+Top Skills
+Environment, Health, and Safety (EHS)
+Tolerance Analysis
+Alex Example
+Mechanical Engineer
+Experience
+Example Lithography
+Mechanical Engineer
+January 2023 - Present (3 years 10 months)
+· Designed mechanical sub-modules with cross-disciplinary teams and suppliers.
+· Lead NX Key-User supporting colleagues with CAD issues.
+Example Tyres
+Mechanical Engineer
+July 2022 - December 2022 (6 months)
+· Designed components using SolidWorks; applied FMEA; managed Teamcenter vaults.
+Education
+Bachelor's degree, Aerospace Engineering · (2018 - 2022)`;
+
+const CV_MKT = `Bruna Exemplo
+Performance Marketing Manager
+Experience
+Growth Marketing Manager - Example Fintech
+Mar 2021 - Present
+Google Ads and Meta Ads budgets, SEO with Semrush, GA4 dashboards in Looker Studio, HubSpot lifecycle emails, A/B testing.
+Marketing Analyst - Example Retail
+Jan 2018 - Feb 2021
+Education
+Bachelor's degree in Marketing (2014 - 2017)
+Languages
+Portuguese - Native
+English - Fluent`;
+
+describe("engineering and business CVs", () => {
+  it("detects a mechanical engineer and their tools", () => {
+    const p = parseCv(CV_MECH, SKILLS, NOW);
+    expect(p.families[0]).toBe("mechanical");
+    expect(p.skills).toEqual(expect.arrayContaining(["siemens-nx", "solidworks", "fmea", "plm", "gdt", "ehs", "cad"]));
+    expect(p.skills).not.toContain("employee-relations"); // "cross-disciplinary" isn't HR
+  });
+  it("detects a marketer", () => {
+    const p = parseCv(CV_MKT, SKILLS, NOW);
+    expect(p.families[0]).toBe("marketing");
+    expect(p.skills).toEqual(expect.arrayContaining(["google-ads", "meta-ads", "seo", "ga4", "hubspot"]));
+  });
+});
+
 describe("creative CVs", () => {
   it("detects a video editor", () => {
     const p = parseCv(CV_VIDEO, SKILLS, NOW);

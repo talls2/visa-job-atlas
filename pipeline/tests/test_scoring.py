@@ -94,6 +94,8 @@ class Families(unittest.TestCase):
         self.assertEqual(f("Quantity Surveyor"), "civil")
         # Chip, software and test-automation roles stay where they were.
         self.assertEqual(f("Hardware Design Engineer"), "embedded")
+        self.assertEqual(f("Memory Circuit Design Engineer"), "embedded")
+        self.assertEqual(f("Mechanical Design Engineer (Semiconductor Automation)"), "mechanical")
         self.assertEqual(f("Software Design Engineer"), "software")
         self.assertEqual(f("Test Automation Engineer"), "qa")
         self.assertEqual(f("Quality Engineer"), "qa")

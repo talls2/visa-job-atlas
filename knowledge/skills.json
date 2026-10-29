@@ -1724,7 +1724,8 @@
       "patterns": [
         "siemens nx",
         "nx cad",
-        "unigraphics"
+        "unigraphics",
+        "nx (?:cad|cam|key[- ]users?|users?|designer|modell?ing)"
       ],
       "families": [
         "mechanical"
@@ -1815,7 +1816,9 @@
         "geometric dimensioning",
         "asme y14\\.5",
         "tolerance stack(-| )?ups?",
-        "iso gps"
+        "iso gps",
+        "tolerance analysis",
+        "tolerancing"
       ],
       "families": [
         "mechanical"
@@ -3111,8 +3114,8 @@
       "patterns": [
         "employee relations",
         "grievances?",
-        "disciplinary",
-        "workplace investigations?"
+        "workplace investigations?",
+        "disciplinary (?:action|procedures?|hearings?|matters)"
       ],
       "families": [
         "people"
@@ -4083,6 +4086,37 @@
       ],
       "families": [
         "healthcare"
+      ]
+    },
+    {
+      "id": "cad",
+      "label": "CAD / technical drawings",
+      "patterns": [
+        "cad",
+        "computer[- ]aided design",
+        "technical drawings?",
+        "engineering drawings?"
+      ],
+      "families": [
+        "mechanical",
+        "electrical",
+        "civil"
+      ]
+    },
+    {
+      "id": "ehs",
+      "label": "EHS / health & safety",
+      "patterns": [
+        "ehs",
+        "hse",
+        "environment(?:al)?,? health,? (?:and|&) safety",
+        "health (?:and|&) safety",
+        "occupational safety"
+      ],
+      "families": [
+        "mechanical",
+        "civil",
+        "operations"
       ]
     }
   ]

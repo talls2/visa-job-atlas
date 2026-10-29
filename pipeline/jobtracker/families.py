@@ -62,7 +62,7 @@ DEVOPS = _rx(
     r"network engineer\w*|systems engineer\w*|system administrator|sysadmin|kubernetes|production engineer\w*|"
     r"reliability|database administrator|dba|release engineer\w*|build engineer\w*|systemadministrator\w*|infraestrutura)\b")
 EMBEDDED = _rx(
-    r"\b(embedded|firmware|fpga|asic|hardware (design )?engineer\w*|electronics?|robotics?|autonomy|autosar|ecu|rtos|"
+    r"\b(embedded|firmware|fpga|asic|hardware (design )?engineer\w*|circuit design\w*|ic design\w*|vlsi|electronics?|robotics?|autonomy|autosar|ecu|rtos|"
     r"silicon|verification engineer|pcb|mechatronic\w*|bsp|device driver\w*|embarcad[oa]s?)\b")
 SOFTWARE = _rx(
     r"\b(software|developer|programmer|swe|sde|(back|front)[- ]?end|full[- ]?stack|mobile|ios|android|"
@@ -89,7 +89,7 @@ ELECTRICAL = _rx(
 # Test-automation and marketing-automation roles aren't controls engineering.
 NOT_ELECTRICAL = _rx(r"\b(test automation|marketing automation|qa automation|software|cloud|devops)\b")
 # Chip, firmware and software design stay with embedded or software.
-NOT_HARD_ENG = _rx(r"\b(software|firmware|embedded|asic|fpga|chip|silicon|analog|digital|rtl|pcb|hardware|cloud|data|ml|ai)\b")
+NOT_HARD_ENG = _rx(r"\b(software|firmware|embedded|asic|fpga|chip|silicon|analog|digital|rtl|pcb|hardware|circuit|memory|vlsi|cloud|data|ml|ai)\b")
 MECHANICAL = _rx(
     r"\b(mechanical (engineer\w*|design\w*|lead|technician)|mechanical engineering|mechanics engineer|"
     r"manufacturing (engineer\w*|technician|manager)|process engineer\w*|industrial engineer\w*|production engineering|"

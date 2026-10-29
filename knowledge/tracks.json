@@ -3145,6 +3145,7 @@
         }
       ],
       "coreSkills": [
+        "cad",
         "solidworks",
         "catia",
         "autocad",
@@ -3158,7 +3159,8 @@
         "dfm",
         "iso-9001",
         "plm",
-        "python"
+        "python",
+        "ehs"
       ],
       "certs": [
         {
@@ -3978,7 +3980,8 @@
         "primavera",
         "ms-project",
         "construction-management",
-        "arcgis"
+        "arcgis",
+        "ehs"
       ],
       "certs": [
         {
