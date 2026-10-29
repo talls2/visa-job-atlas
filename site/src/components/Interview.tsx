@@ -22,6 +22,15 @@ export function defaultAnswers(profile: Profile): Answers {
   };
 }
 
+// Fields grouped for the picker; a track missing from knowledge/tracks.json is skipped.
+const GROUPS: [StringKey, Family[]][] = [
+  ["groupTech", ["software", "data", "devops", "security", "embedded", "qa", "product"]],
+  ["groupCreative", ["design", "video"]],
+  ["groupEngineering", ["mechanical", "electrical", "civil"]],
+  ["groupBusiness", ["marketing", "sales", "finance", "operations", "people"]],
+  ["groupHealth", ["healthcare"]],
+];
+
 const PRIORITIES: [Priority, StringKey][] = [
   ["visa", "prVisa"], ["english", "prEnglish"], ["salary", "prSalary"], ["residence", "prResidence"], ["quality", "prQuality"],
 ];
@@ -110,15 +119,24 @@ export default function Interview(props: { profile: Profile; answers: Answers; o
 
       <div className="q">
         <h3>{t("qFamily")}</h3>
-        <div className="tracks">
-          {TRACKS.map((tr) => (
-            <button key={tr.id} className={"track" + (a.family === tr.id ? " on" : "")} aria-pressed={a.family === tr.id} onClick={() => set({ family: tr.id as Family, niche: "" })}>
-              <b>{tx(tr.name)}</b>
-              {(a.direction !== "stay" || a.family === tr.id) && <span>{tx(tr.summary)}</span>}
-              {props.profile.families[0] === tr.id && <em className="tag">{t("detectedField")}</em>}
-            </button>
-          ))}
-        </div>
+        {GROUPS.map(([label, ids]) => {
+          const group = ids.map((id) => TRACKS.find((tr) => tr.id === id)).filter((tr) => tr !== undefined);
+          if (!group.length) return null;
+          return (
+            <div key={label} className="track-group">
+              <h4>{t(label)}</h4>
+              <div className="tracks">
+                {group.map((tr) => (
+                  <button key={tr.id} className={"track" + (a.family === tr.id ? " on" : "")} aria-pressed={a.family === tr.id} onClick={() => set({ family: tr.id as Family, niche: "" })}>
+                    <b>{tx(tr.name)}</b>
+                    {a.family === tr.id && <span>{tx(tr.summary)}</span>}
+                    {props.profile.families[0] === tr.id && <em className="tag">{t("detectedField")}</em>}
+                  </button>
+                ))}
+              </div>
+            </div>
+          );
+        })}
         {track && track.niches.length > 0 && (
           <label className="niche">
             {t("qNiche")}

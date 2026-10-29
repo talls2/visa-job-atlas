@@ -210,6 +210,10 @@ h1 .grad { background: linear-gradient(90deg, var(--pass-a), var(--pass-b) 60%, 
 .track b { font-weight: 600; }
 .track span { color: var(--muted); font-size: 14px; }
 .track.on { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.track-group + .track-group { margin-top: 16px; }
+.track-group h4 { margin: 0 0 8px; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--faint); }
+.field-note { background: var(--accent-soft); border-radius: 12px; padding: 4px 14px 2px; margin-bottom: 12px; }
+.field-note h4 { margin-top: 10px; }
 .niche { margin-top: 14px; max-width: 420px; }
 input[type="range"] { width: 100%; accent-color: var(--accent); }
 

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import countriesJson from "../../../knowledge/countries.json";
 import tracksJson from "../../../knowledge/tracks.json";
-import type { Answers, Country, Job, Market, Profile, Track } from "../types";
+import { FAMILIES, type Answers, type Country, type Job, type Market, type Profile, type Track } from "../types";
 import { rankCountries } from "./countries";
 import { matchJobs, skillGaps } from "./jobs";
 import { buildPlan } from "./plan";
@@ -34,7 +34,15 @@ const job = (over: Partial<Job>): Job => ({
 
 describe("knowledge files", () => {
   it("have every track and bilingual text", () => {
-    expect(TRACKS.map((t) => t.id).sort()).toEqual(["data", "design", "devops", "embedded", "product", "qa", "security", "software", "video"]);
+    expect(TRACKS.map((t) => t.id).sort()).toEqual([...FAMILIES].sort());
+    const codes = new Set(COUNTRIES.map((c) => c.code));
+    for (const t of TRACKS) {
+      expect(t.name.en && t.name.pt && t.firstSponsoredRoles.en && t.firstSponsoredRoles.pt).toBeTruthy();
+      for (const [code, note] of Object.entries(t.countryNotes ?? {})) {
+        expect(codes.has(code)).toBe(true);
+        expect(note.en && note.pt).toBeTruthy();
+      }
+    }
     for (const c of COUNTRIES) {
       expect(c.name.en && c.name.pt).toBeTruthy();
       expect(c.openness).toBeGreaterThanOrEqual(1);

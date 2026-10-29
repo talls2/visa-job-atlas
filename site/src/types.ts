@@ -3,8 +3,13 @@
 export type Lang = "en" | "pt";
 export type L10n = { en: string; pt: string };
 
-export type Family = "security" | "software" | "data" | "devops" | "embedded" | "qa" | "product" | "design" | "video";
-export const FAMILIES: Family[] = ["software", "data", "devops", "security", "embedded", "qa", "product", "design", "video"];
+export type Family =
+  | "security" | "software" | "data" | "devops" | "embedded" | "qa" | "product" | "design" | "video"
+  | "mechanical" | "electrical" | "civil" | "marketing" | "sales" | "finance" | "operations" | "people" | "healthcare";
+export const FAMILIES: Family[] = [
+  "software", "data", "devops", "security", "embedded", "qa", "product", "design", "video",
+  "mechanical", "electrical", "civil", "marketing", "sales", "finance", "operations", "people", "healthcare",
+];
 
 export type Level = "entry" | "junior" | "mid" | "senior" | "lead";
 export type Degree = "none" | "technical" | "bachelor" | "master" | "phd";
@@ -65,6 +70,8 @@ export interface Track {
   switchTips: Partial<Record<Family, L10n>>;
   weeklyQuests: L10n[];
   milestones: { m3: L10n[]; m6: L10n[]; m12: L10n[] };
+  // Licensing, recognition and route notes for this field in specific countries.
+  countryNotes?: Record<string, L10n>;
 }
 
 export interface Skill {

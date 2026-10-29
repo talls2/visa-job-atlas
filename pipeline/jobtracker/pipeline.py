@@ -61,19 +61,49 @@ def sponsor_matches(con, aliases, country=None):
 
 
 # ---------------------------------------------------------------------- poll
-def _fetch_company(company):
+MAX_NEW_DETAILS = 120  # per board and run
+
+
+def _fetch_company(company, known=frozenset()):
+    """`known` holds the uids already in the database: boards that need one
+    request per posting for its description (Workday, SmartRecruiters) only
+    make it for new postings."""
+    fetch = ats.FETCHERS[company["ats"]]
+    prefix = f"{company['ats']}:{company['slug']}:"
+    # Big boards are searched, not listed. "query" may hold several searches
+    # separated by ";" (e.g. "engineer;marketing;finance"); results are merged.
+    queries = [q.strip() for q in (company.get("query") or "").split(";") if q.strip()]
     if company["ats"] in ("google", "microsoft"):
-        # These boards are searched, not listed: the first argument is the search text.
-        jobs = ats.FETCHERS[company["ats"]](company.get("query") or "software engineer")
+        calls = [((q,), {}) for q in queries or ["software engineer"]]
+    elif company["ats"] == "amazon":
+        calls = [((q,), {}) for q in [company["slug"]] + queries]
+    elif queries and company["ats"] in ("workday", "smartrecruiters"):
+        calls = [((company["slug"],), {"query": q}) for q in queries]
     else:
-        kwargs = {"query": company["query"]} if company.get("query") and company["ats"] in ("workday", "smartrecruiters") else {}
-        jobs = ats.FETCHERS[company["ats"]](company["slug"], **kwargs)
-    relevant = []
+        calls = [((company["slug"],), {})]
+    jobs, seen = [], set()
+    for args, kwargs in calls:
+        for j in fetch(*args, **kwargs):
+            key = j.get("url") or j.get("ext_id")
+            if key not in seen:
+                seen.add(key)
+                jobs.append(j)
+    relevant, details = [], 0
     for j in jobs:
         family = families.job_family(j["title"])
         if family:
             j["family"] = family
-            relevant.append(ats.fetch_description(j))
+            if j.get("description") is None and prefix + j["ext_id"] in known:
+                j["_known"] = True  # keep the details stored on the first sighting
+                relevant.append(j)
+            elif j.get("description") is None and j.get("_detail"):
+                # New postings that need their own request: a few a run, the rest
+                # wait for the next run, so a big new board fills in over days.
+                if details < MAX_NEW_DETAILS:
+                    details += 1
+                    relevant.append(ats.fetch_description(j))
+            else:
+                relevant.append(j)
     return jobs, relevant
 
 
@@ -82,7 +112,8 @@ def _fetch_feed(feed):
     relevant = []
     for j in jobs:
         # Community posts (HN, Mastodon) put the role in the body, not a title field.
-        family = families.job_family(j["title"]) or (families.job_family(j["description"][:200]) if not j.get("company") else None)
+        # The title decides; a feed's official occupation code (EURES) is the fallback.
+        family = families.job_family(j["title"]) or j.get("family") or (families.job_family(j["description"][:200]) if not j.get("company") else None)
         if family:
             j["family"] = family
             relevant.append(j)
@@ -104,8 +135,16 @@ def poll(con, cfg, only=None, workers=8, log=print):
         return evidence_cache[key]
 
     totals = {"sources": 0, "failed": 0, "relevant": 0, "new": 0}
+    # Postings from a paused board are no longer checked, so stop showing them.
+    with con:
+        for c in cfg["companies"]:
+            if not c.get("enabled", True):
+                prefix = f"{c['ats']}:{c['slug']}:"
+                con.execute("UPDATE jobs SET closed_at = ? WHERE substr(uid, 1, ?) = ? AND closed_at IS NULL",
+                            (run_at, len(prefix), prefix))
+    known = frozenset(r["uid"] for r in con.execute("SELECT uid FROM jobs"))
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(_fetch_company if kind == "company" else _fetch_feed, src): (kind, src)
+        futures = {pool.submit(_fetch_company, src, known) if kind == "company" else pool.submit(_fetch_feed, src): (kind, src)
                    for kind, src in sources}
         for fut in as_completed(futures):
             kind, src = futures[fut]
@@ -129,6 +168,10 @@ def poll(con, cfg, only=None, workers=8, log=print):
                     if uid in seen:
                         continue
                     seen.add(uid)
+                    if j.get("_known"):
+                        con.execute("UPDATE jobs SET title = ?, family = ?, last_seen = ?, closed_at = NULL WHERE uid = ?",
+                                    (j["title"], j["family"], run_at, uid))
+                        continue
                     company = src["name"] if kind == "company" else (j.get("company") or "")
                     aliases = src.get("aliases", []) if kind == "company" else []
                     policy = src.get("sponsorship") if kind == "company" else None

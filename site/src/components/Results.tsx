@@ -8,7 +8,7 @@ import { MODELS, writePlanWithClaude } from "../engine/claude";
 import { download, planToMarkdown } from "../export";
 import { load, save } from "../store";
 import { flightNo, hub, money } from "../travel";
-import type { Answers, Lang, Market, Profile, Route } from "../types";
+import type { Answers, Lang, Market, Profile, Route, Track } from "../types";
 import Markdown from "./Markdown";
 import { Barcode, Plane } from "./Icons";
 
@@ -42,7 +42,7 @@ export default function Results(props: { cvText: string; profile: Profile; answe
         ))}
       </nav>
       {tab === "overview" && <Overview plan={plan} fits={fits} matches={matches} origin={origin} onTab={setTab} />}
-      {tab === "countries" && <Countries fits={fits} origin={origin} />}
+      {tab === "countries" && <Countries fits={fits} origin={origin} track={track} />}
       {tab === "jobs" && <Jobs matches={matches} fits={fits} />}
       {tab === "plan" && <PlanView plan={plan} />}
       {tab === "claude" && (
@@ -142,7 +142,7 @@ function Overview({ plan, fits, matches, origin, onTab }: { plan: Plan; fits: Co
   );
 }
 
-function Countries({ fits, origin }: { fits: CountryFit[]; origin: string }) {
+function Countries({ fits, origin, track }: { fits: CountryFit[]; origin: string; track: Track }) {
   const { t, tx, lang } = useT();
   return (
     <div className="countries">
@@ -170,6 +170,12 @@ function Countries({ fits, origin }: { fits: CountryFit[]; origin: string }) {
             <div className="main-part" style={{ paddingTop: 0 }}>
               <div className="country-body">
                 <div>
+                  {track.countryNotes?.[f.country.code] && (
+                    <div className="field-note">
+                      <h4>{tx(track.name)}: {t("fieldNote")}</h4>
+                      <p>{tx(track.countryNotes[f.country.code])}</p>
+                    </div>
+                  )}
                   <h4>{t("whyThis")}</h4>
                   <ul className="reasons">
                     {f.reasons.map((r, j) => (

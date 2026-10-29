@@ -73,11 +73,53 @@ class Families(unittest.TestCase):
         self.assertEqual(f("Senior Product Manager, Security"), "product")
         self.assertEqual(f("Product Designer"), "design")
         self.assertEqual(f("Softwareentwickler Java (m/w/d)"), "software")
-        self.assertIsNone(f("Enterprise Security Sales Specialist"))
-        self.assertIsNone(f("Securities Operations Analyst"))
-        self.assertIsNone(f("Mechanical Engineer"))
-        self.assertIsNone(f("Solutions Engineer"))
-        self.assertIsNone(f("Talent Acquisition Partner"))
+        self.assertEqual(f("Enterprise Security Sales Specialist"), "sales")
+        self.assertEqual(f("Securities Operations Analyst"), "finance")
+        self.assertEqual(f("Solutions Engineer"), "sales")
+        self.assertEqual(f("Talent Acquisition Partner"), "people")
+        self.assertIsNone(f("Legal Counsel"))
+        self.assertIsNone(f("Executive Assistant to the CEO"))
+
+    def test_engineering_families(self):
+        f = families.job_family
+        self.assertEqual(f("Mechanical Engineer"), "mechanical")
+        self.assertEqual(f("Maschinenbauingenieur (m/w/d)"), "mechanical")
+        self.assertEqual(f("Supplier Quality Engineer"), "mechanical")
+        self.assertEqual(f("Aerospace Engineer"), "mechanical")
+        self.assertEqual(f("Electrical Engineer"), "electrical")
+        self.assertEqual(f("Controls Engineer"), "electrical")
+        self.assertEqual(f("Power Electronics Engineer"), "electrical")
+        self.assertEqual(f("Civil Engineer"), "civil")
+        self.assertEqual(f("Bauingenieur (m/w/d)"), "civil")
+        self.assertEqual(f("Quantity Surveyor"), "civil")
+        # Chip, software and test-automation roles stay where they were.
+        self.assertEqual(f("Hardware Design Engineer"), "embedded")
+        self.assertEqual(f("Software Design Engineer"), "software")
+        self.assertEqual(f("Test Automation Engineer"), "qa")
+        self.assertEqual(f("Quality Engineer"), "qa")
+
+    def test_business_and_health_families(self):
+        f = families.job_family
+        self.assertEqual(f("Product Marketing Manager"), "marketing")
+        self.assertEqual(f("SEO Specialist"), "marketing")
+        self.assertEqual(f("Analista de Marketing"), "marketing")
+        self.assertEqual(f("Marketing Data Engineer"), "data")
+        self.assertEqual(f("Account Executive, Mid-Market"), "sales")
+        self.assertEqual(f("Vertriebsmitarbeiter (m/w/d)"), "sales")
+        self.assertEqual(f("Medical Sales Representative"), "sales")
+        self.assertEqual(f("FP&A Analyst"), "finance")
+        self.assertEqual(f("Senior Accountant"), "finance")
+        self.assertEqual(f("Security Auditor"), "security")
+        self.assertEqual(f("Supply Chain Analyst"), "operations")
+        self.assertEqual(f("Einkäufer (m/w/d)"), "operations")
+        self.assertEqual(f("Project Manager"), "operations")
+        self.assertEqual(f("HR Business Partner"), "people")
+        self.assertEqual(f("Technical Recruiter"), "people")
+        self.assertEqual(f("Registered Nurse"), "healthcare")
+        self.assertEqual(f("Pflegefachkraft (m/w/d)"), "healthcare")
+        self.assertEqual(f("Enfermeiro"), "healthcare")
+        self.assertEqual(f("Physiotherapist"), "healthcare")
+        self.assertEqual(f("Clinical Data Scientist"), "data")
 
     def test_creative_families(self):
         f = families.job_family
@@ -92,8 +134,7 @@ class Families(unittest.TestCase):
         self.assertIsNone(f("Hardware Designer"))
         self.assertIsNone(f("Instructional Designer"))
         self.assertIsNone(f("Senior Learning Designer, Indian Languages"))
-        self.assertIsNone(f("Recruiter, Design"))
-        self.assertIsNone(f("Product Marketing Manager"))
+        self.assertEqual(f("Recruiter, Design"), "people")
 
     def test_skills(self):
         s = families.skills("We use Python, Django and PostgreSQL on AWS with Kubernetes. Java is a plus. C++ too.")
@@ -140,6 +181,27 @@ class Names(unittest.TestCase):
         self.assertTrue(names.matches(n("Okta"), n("Okta Canada Inc.")))
         self.assertFalse(names.matches(n("Grab"), n("Grab A Bite Catering Ltd")))
         self.assertEqual(n("Booking.com B.V."), "booking com")
+
+
+class Sources(unittest.TestCase):
+    def test_robots_blocked_boards_stay_paused(self):
+        # api.smartrecruiters.com/robots.txt disallows every crawler but LinkedInBot.
+        from jobtracker.pipeline import load_config
+        for c in load_config()["companies"]:
+            if c["ats"] == "smartrecruiters":
+                self.assertFalse(c.get("enabled", True), c["name"])
+
+    def test_nhs_certificate_of_sponsorship(self):
+        from jobtracker.feeds import _nhs_sponsorship
+        yes = ("<h3>Certificate of Sponsorship</h3><p>Applications from job seekers who require current Skilled worker "
+               "sponsorship to work in the UK are welcome and will be considered alongside all other applications.</p>")
+        no = ("<h3>Certificate of Sponsorship</h3><p>This post is not eligible for sponsorship under the Skilled Worker "
+              "route; we are unable to offer sponsorship.</p>")
+        self.assertEqual(_nhs_sponsorship(yes), "yes")
+        self.assertEqual(_nhs_sponsorship(no), "no")
+        self.assertIsNone(_nhs_sponsorship("<p>No section here</p>"))
+        pos, _, neg = scoring.visa_signals("Visa sponsorship available: applicants who need Skilled Worker sponsorship are welcome (NHS Jobs Certificate of Sponsorship field).")
+        self.assertTrue(pos and not neg)
 
 
 if __name__ == "__main__":

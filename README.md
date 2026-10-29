@@ -1,6 +1,6 @@
 # Visa Job Atlas
 
-**Upload your CV, answer a few questions, and get the countries, open jobs and 12-month plan most likely to get you a visa-sponsored tech job.** English and Brazilian Portuguese.
+**Upload your CV, answer a few questions, and get the countries, open jobs and 12-month plan most likely to get you a visa-sponsored job.** 18 career fields across tech, engineering, business, health and creative work. English and Brazilian Portuguese.
 
 **Live:** https://talls2.github.io/visa-job-atlas/
 
@@ -13,7 +13,12 @@ Your CV is read inside your browser and never uploaded. The site is static: ther
    - citizenships (an EU passport changes everything)
    - where you live and where you'd like to go
    - what matters most to you
-   - whether you're staying in your field or switching (security, software, data, DevOps, embedded, QA, product, design, video)
+   - whether you're staying in your field or switching, across 18 fields:
+     - tech: software, data, DevOps, security, embedded, QA, product
+     - creative: design, video
+     - engineering: mechanical, electrical, civil
+     - business: marketing, sales, finance, operations, people/HR
+     - health: healthcare
    - willingness to learn a language
    - hours per week, budget and timeline
 3. **Ranks 22 countries** with an explanation for every point: visa openness, live demand for your field, language fit, degree rules, free movement for EU citizens.
@@ -33,8 +38,8 @@ Export the plan as Markdown, or print it to PDF.
 
 ```
 government sponsor registers ─┐
-employer job boards (130+)  ──┼─► pipeline (Python, stdlib) ─► jobs.json / market.json ─► web app (React, in-browser matching)
-job feeds (17)              ──┘        daily on GitHub Actions             published to GitHub Pages
+employer job boards (230+)  ──┼─► pipeline (Python, stdlib) ─► jobs.json / market.json ─► web app (React, in-browser matching)
+job feeds (19)              ──┘        daily on GitHub Actions             published to GitHub Pages
 ```
 
 - **Sponsor registers:**
@@ -45,13 +50,15 @@ job feeds (17)              ──┘        daily on GitHub Actions            
   - Denmark SIRI fast-track
   - US USCIS H-1B employer data
 - **Employer boards:** public Greenhouse, Lever, Ashby, SmartRecruiters, Workday, Workable, Recruitee and Personio boards, plus Amazon and Google.
-- **Feeds:** Japan Dev, TokyoDev, HN "Who is hiring", Arbeitnow, Bundesagentur für Arbeit, GermanTechJobs, JobTech (Sweden), Jobindex (Denmark), Landing.jobs, Relocate.me, MyCareersFuture (Singapore), Mastodon job tags and more.
+- **Feeds:** EURES (the EU's job-mobility portal, English-language ads by occupation), NHS Jobs (with each advert's Certificate of Sponsorship answer), Japan Dev, TokyoDev, HN "Who is hiring", Arbeitnow, Bundesagentur für Arbeit, GermanTechJobs, JobTech (Sweden), Jobindex (Denmark), Landing.jobs, Relocate.me, MyCareersFuture (Singapore), Mastodon job tags and more.
 - **Each posting** gets:
   - a job family and seniority
   - its required skills (from [`knowledge/skills.json`](knowledge/skills.json))
   - any non-English language it requires
   - a visa label: `explicit` (offers sponsorship), `conditional`, `register` (employer is on that country's sponsor register), `relocation`, `unknown`, or `blocked` ("must have the right to work", clearance, citizens only…). Blocked postings are dropped.
 - **Countries with no public register** (Germany, Japan, the Nordics…): any employer can file a work permit, so English-language roles there count partially toward demand instead of being treated as "no visa".
+
+Every source, the ones evaluated and left out, and why: [`docs/SOURCES.md`](docs/SOURCES.md).
 
 Country rules and career tracks are curated by hand in [`knowledge/`](knowledge/), with sources, and rechecked against official pages (rules as of October 2026).
 

@@ -97,15 +97,23 @@ describe("helpers", () => {
     expect(jobFamily("Software Engineer in Test")).toBe("qa");
     expect(jobFamily("Senior Product Manager, Security")).toBe("product");
     expect(jobFamily("Softwareentwickler Java (m/w/d)")).toBe("software");
-    expect(jobFamily("Solutions Engineer")).toBeNull();
-    expect(jobFamily("Mechanical Engineer")).toBeNull();
+    expect(jobFamily("Solutions Engineer")).toBe("sales");
+    expect(jobFamily("Mechanical Engineer")).toBe("mechanical");
+    expect(jobFamily("Engenheiro Civil")).toBe("civil");
+    expect(jobFamily("Controls Engineer")).toBe("electrical");
+    expect(jobFamily("Analista de Marketing")).toBe("marketing");
+    expect(jobFamily("Analista Financeiro")).toBe("finance");
+    expect(jobFamily("Supply Chain Analyst")).toBe("operations");
+    expect(jobFamily("Analista de RH")).toBe("people");
+    expect(jobFamily("Enfermeira")).toBe("healthcare");
+    expect(jobFamily("Legal Counsel")).toBeNull();
     expect(jobFamily("Video Editor, Marketing")).toBe("video");
     expect(jobFamily("Editor de Vídeo")).toBe("video");
     expect(jobFamily("Senior Motion Designer")).toBe("video");
     expect(jobFamily("Graphic Designer")).toBe("design");
     expect(jobFamily("Hardware Designer")).toBeNull();
     expect(jobFamily("Senior Learning Designer")).toBeNull();
-    expect(jobFamily("Recruiter, Design")).toBeNull();
+    expect(jobFamily("Recruiter, Design")).toBe("people");
   });
 });
 

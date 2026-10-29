@@ -39,6 +39,31 @@ function pickCerts(track: Track, profile: Profile, budget: Answers["budget"]): C
   return ranked.slice(0, n);
 }
 
+// Where each field shows its proof of work.
+function showcase(id: Track["id"]): PlanItem {
+  switch (id) {
+    case "design":
+    case "video":
+      return { kind: "profile", text: L("Put your best work in one place: a short portfolio site or reel (Vimeo, Behance) and LinkedIn Featured", "Reúna seus melhores trabalhos em um lugar: um portfólio ou reel curto (Vimeo, Behance) e o Destaque do LinkedIn") };
+    case "mechanical":
+    case "electrical":
+    case "civil":
+      return { kind: "profile", text: L("Build a short engineering portfolio (PDF and LinkedIn Featured): 3-4 projects with drawings or models, your role, standards used and measurable results", "Monte um portfólio de engenharia curto (PDF e Destaque do LinkedIn): 3-4 projetos com desenhos ou modelos, seu papel, normas usadas e resultados mensuráveis") };
+    case "marketing":
+      return { kind: "profile", text: L("Build a results portfolio: 3-4 campaigns or growth projects with the goal, what you did, channels and numbers", "Monte um portfólio de resultados: 3-4 campanhas ou projetos de crescimento com objetivo, o que você fez, canais e números") };
+    case "sales":
+      return { kind: "profile", text: L("Write a one-page track record: quota attainment by year, deal sizes, markets and languages you sold in", "Escreva um histórico de uma página: atingimento de meta por ano, tamanho dos negócios, mercados e idiomas em que vendeu") };
+    case "finance":
+    case "operations":
+    case "people":
+      return { kind: "profile", text: L("Turn your experience into numbers: a one-page achievements sheet (savings, cycle times, headcount, systems) and LinkedIn Featured", "Transforme sua experiência em números: uma página de conquistas (economias, prazos, headcount, sistemas) e o Destaque do LinkedIn") };
+    case "healthcare":
+      return { kind: "profile", text: L("Start your registration dossier: diploma, transcripts with hours, licence and good-standing letters, with sworn translations", "Comece seu dossiê de registro: diploma, histórico com carga horária, registro profissional e certidões de regularidade, com tradução juramentada") };
+    default:
+      return { kind: "profile", text: L("Put your public work in one place: GitHub profile README, pinned projects and a simple website", "Reúna seu trabalho público em um lugar: README do perfil no GitHub, projetos fixados e um site simples") };
+  }
+}
+
 export function buildPlan(
   track: Track, fits: CountryFit[], market: Market, profile: Profile, answers: Answers, label: (id: string) => string = (id) => id,
 ): Plan {
@@ -62,9 +87,7 @@ export function buildPlan(
   const p1: PlanItem[] = [
     { kind: "profile", text: L("Rewrite your CV and LinkedIn for the target market", "Reescreva seu CV e LinkedIn para o mercado-alvo"),
       detail: top[0] ? top[0].country.cvTips : undefined },
-    track.id === "design" || track.id === "video"
-      ? { kind: "profile", text: L("Put your best work in one place: a short portfolio site or reel (Vimeo, Behance) and LinkedIn Featured", "Reúna seus melhores trabalhos em um lugar: um portfólio ou reel curto (Vimeo, Behance) e o Destaque do LinkedIn") }
-      : { kind: "profile", text: L("Put your public work in one place: GitHub profile README, pinned projects and a simple website", "Reúna seu trabalho público em um lugar: README do perfil no GitHub, projetos fixados e um site simples") },
+    showcase(track.id),
   ];
   if (gaps.length)
     p1.push({ kind: "skill", text: L(`Start the most-requested skill you're missing: ${label(gaps[0].id)}`, `Comece pela habilidade mais pedida que você ainda não mostra: ${label(gaps[0].id)}`),

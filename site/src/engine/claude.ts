@@ -12,7 +12,7 @@ export const MODELS = [
   { id: "claude-haiku-5-5", label: "Claude Haiku 5.5" },
 ];
 
-const SYSTEM = `You are a careful career and immigration-pathway advisor for tech workers who want a visa-sponsored job abroad.
+const SYSTEM = `You are a careful career and immigration-pathway advisor for professionals (tech, engineering, business, health and creative fields) who want a visa-sponsored job abroad.
 You receive: the person's CV text, their answers to an intake interview, and facts computed by the Visa Job Atlas app
 (country ranking with reasons, visa routes and thresholds, live job-market demand, matching open postings, skill gaps,
 and a draft phased plan). Write a personal plan they can act on this week.

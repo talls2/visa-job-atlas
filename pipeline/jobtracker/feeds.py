@@ -228,7 +228,7 @@ def isaca():
 
 
 # --------------------------------------------------------- Germany: Arbeitnow
-def arbeitnow(pages=3):
+def arbeitnow(pages=5):
     out = []
     url = "https://www.arbeitnow.com/api/job-board-api"
     for _ in range(pages):
@@ -253,7 +253,16 @@ def arbeitnow(pages=3):
 BA_QUERIES = ["Software Engineer", "Softwareentwickler", "Backend Developer", "Frontend Developer", "DevOps",
               "Data Engineer", "Data Scientist", "Machine Learning", "IT-Sicherheit", "Security Engineer",
               "Embedded Software", "Testautomatisierung", "Product Manager", "UX Designer",
-              "Grafikdesigner", "Mediengestalter", "Motion Designer", "Video Editor", "Cutter"]
+              "Grafikdesigner", "Mediengestalter", "Motion Designer", "Video Editor", "Cutter",
+              # Engineering
+              "Maschinenbauingenieur", "Konstrukteur", "Verfahrenstechnik", "Mechanical Engineer",
+              "Elektroingenieur", "Automatisierungstechnik", "Electrical Engineer", "Bauingenieur", "Tragwerksplanung",
+              # Business
+              "Marketing Manager", "Online Marketing", "Key Account Manager", "Sales Manager", "Controller",
+              "Bilanzbuchhalter", "Financial Analyst", "Supply Chain", "Einkäufer", "Projektmanager",
+              "HR Business Partner", "Recruiter",
+              # Health
+              "Pflegefachkraft", "Assistenzarzt", "Physiotherapeut", "Apotheker"]
 
 
 def bundesagentur(queries=None, size=100):
@@ -294,7 +303,11 @@ def germantechjobs():
 
 # -------------------------------------------------------- Sweden: JobTech API
 def jobtech(queries=("utvecklare", "software engineer", "devops", "data engineer", "security", "it-säkerhet", "embedded", "testare", "product manager", "ux",
-                         "grafisk designer", "motion designer", "videoredigerare")):
+                         "grafisk designer", "motion designer", "videoredigerare",
+                         "maskiningenjör", "mechanical engineer", "elingenjör", "byggnadsingenjör", "civil engineer",
+                         "marknadsförare", "marketing", "account manager", "säljare", "controller", "redovisningsekonom",
+                         "supply chain", "inköpare", "projektledare", "hr", "rekryterare",
+                         "sjuksköterska", "läkare", "fysioterapeut")):
     out = {}
     for q in queries:
         data = fetch_json(f"https://jobsearch.api.jobtechdev.se/search?q={quote_plus(q)}&limit=100")
@@ -309,7 +322,10 @@ def jobtech(queries=("utvecklare", "software engineer", "devops", "data engineer
 
 
 # ------------------------------------------------------- Denmark: Jobindex
-def jobindex(queries=("udvikler", "software engineer", "devops", "data engineer", "security", "sikkerhed", "grafisk designer", "video")):
+def jobindex(queries=("udvikler", "software engineer", "devops", "data engineer", "security", "sikkerhed", "grafisk designer", "video",
+                          "maskiningeniør", "mechanical engineer", "elektroingeniør", "bygningsingeniør", "marketing", "sales",
+                          "controller", "bogholder", "supply chain", "indkøber", "projektleder", "hr", "rekruttering",
+                          "sygeplejerske", "læge")):
     out = {}
     for q in queries:
         for i in _rss_items(f"https://www.jobindex.dk/jobsoegning.rss?q={quote_plus(q)}"):
@@ -341,7 +357,9 @@ def landingjobs(pages=3):
 
 
 # ------------------------------------------------------------------ Relocate.me
-def relocateme(terms=("software engineer", "backend", "frontend", "mobile", "data", "machine learning", "devops", "security", "qa", "product", "designer", "video", "motion")):
+def relocateme(terms=("software engineer", "backend", "frontend", "mobile", "data", "machine learning", "devops", "security", "qa", "product", "designer", "video", "motion",
+                      "mechanical engineer", "electrical engineer", "civil engineer", "marketing", "sales", "finance", "accountant",
+                      "supply chain", "project manager", "recruiter", "hr", "nurse")):
     out = {}
     for t in terms:
         page = fetch_text(f"https://relocate.me/search/{quote_plus(t)}")
@@ -372,7 +390,10 @@ def mastodon_tags(tags=("fedihire", "getfedihired", "techjobs", "securityjobs", 
 
 # ----------------------------------------------------- Singapore: MyCareersFuture
 def mycareersfuture(queries=("software engineer", "developer", "data engineer", "devops", "cyber security", "product manager",
-                            "graphic designer", "video editor", "motion designer")):
+                            "graphic designer", "video editor", "motion designer",
+                            "mechanical engineer", "electrical engineer", "civil engineer", "marketing", "sales", "accountant",
+                            "financial analyst", "supply chain", "project manager", "human resources", "recruiter",
+                            "nurse", "pharmacist", "physiotherapist")):
     """Singapore's government job portal (search API used by its own site). The
     Employment Pass needs roughly S$5,600+/month, so salary is shown for screening."""
     out = {}
@@ -413,6 +434,143 @@ def swissdevjobs_snapshot():
     return out
 
 
+
+# ------------------------------------------------------------ EU: EURES portal
+# The European Labour Authority's job-mobility portal aggregates the public
+# employment services of the EU/EEA and Switzerland. Its legal notice allows
+# re-use with attribution; europa.eu/robots.txt asks for a 10 s crawl delay.
+# Searches are by ISCO occupation code, limited to ads that require English, so
+# the job family comes from the official code, not from a title in any language.
+EURES_COUNTRIES = ["de", "nl", "se", "dk", "fi", "ie", "lu", "ee", "pt", "es", "no", "ch"]
+EURES_OCCUPATIONS = {
+    "mechanical": ["C2144", "C2141", "C2145", "C3115"],   # mechanical, industrial/production, chemical engineers; mech. technicians
+    "electrical": ["C2151", "C2152", "C3113"],           # electrical, electronics engineers; electrical technicians
+    "civil": ["C2142", "C2161", "C3112"],                # civil engineers, architects, civil technicians
+    "marketing": ["C2431", "C2432", "C1222"],            # marketing, PR professionals; advertising & PR managers
+    "sales": ["C2433", "C2434", "C1221"],                # technical/medical and ICT sales professionals; sales managers
+    "finance": ["C2411", "C2412", "C2413", "C1211"],     # accountants, financial advisers/analysts; finance managers
+    "operations": ["C1324", "C2421", "C1219"],           # supply/logistics managers, management analysts
+    "people": ["C2423", "C1212"],                        # personnel and careers professionals; HR managers
+    "healthcare": ["C2221", "C2211", "C2212", "C2262", "C2264", "C2222"],  # nurses, doctors, pharmacists, physios, midwives
+}
+
+
+def eures(pages=2, per_page=50, delay=10):
+    out = {}
+    url = "https://europa.eu/eures/api/jv-searchengine/public/jv-search/search"
+    for family, codes in EURES_OCCUPATIONS.items():
+        for page in range(1, pages + 1):
+            body = {"resultsPerPage": per_page, "page": page, "sortSearch": "MOST_RECENT", "keywords": [],
+                    "publicationPeriod": None, "occupationUris": [f"http://data.europa.eu/esco/isco/{c}" for c in codes],
+                    "skillUris": [], "requiredExperienceCodes": [], "positionScheduleCodes": [], "sectorCodes": [],
+                    "educationAndQualificationLevelCodes": [], "positionOfferingCodes": [], "locationCodes": EURES_COUNTRIES,
+                    "euresFlagCodes": [], "otherBenefitsCodes": [], "requiredLanguages": [{"isoCode": "en", "level": "B2"}],
+                    "minNumberPost": None, "sessionId": "visa-job-atlas"}
+            data = fetch_json(url, data=body)
+            time.sleep(delay)
+            jvs = data.get("jvs") or []
+            for v in jvs:
+                if v["id"] in out:
+                    continue
+                countries = list((v.get("locationMap") or {}).keys())
+                created = v.get("creationDate")
+                posted = dt.datetime.fromtimestamp(int(created) / 1000, dt.timezone.utc).date().isoformat() if created else None
+                desc = html_to_text(v.get("description") or "")
+                if v.get("euresFlag"):
+                    desc = "The employer recruits across borders through EURES (EURES flag). " + desc
+                j = _job(v["id"], v.get("title"), (v.get("employer") or {}).get("name"), ", ".join(countries),
+                         f"https://europa.eu/eures/portal/jv-se/jv-details/{v['id']}?lang=en", posted, desc,
+                         countries[0] if len(countries) == 1 else "")
+                j["family"] = family
+                out[v["id"]] = j
+            if len(jvs) < per_page:
+                break
+    return list(out.values())
+
+
+# ------------------------------------------------------------- UK: NHS Jobs
+# NHSBSA documents this XML search for websites that embed NHS vacancies. Every
+# advert has a "Certificate of Sponsorship" section saying whether applicants who
+# need a Skilled Worker visa are welcome; it is only on the advert page, so pages
+# are fetched once per relevant advert (at most `max_details` a run) and cached.
+NHS_CACHE = "nhsjobs_sponsorship.json"
+
+
+def _nhs_sponsorship(page):
+    i = page.find("Certificate of Sponsorship")
+    if i < 0:
+        return None
+    section = html_to_text(page[i: i + 1500])
+    if re.search(r"sponsorship[^.]{0,80}\b(are|is) welcome", section, re.I):
+        return "yes"
+    if re.search(r"\b(not|unable|cannot|can't)\b[^.]{0,80}sponsor", section, re.I):
+        return "no"
+    return None
+
+
+def nhsjobs(pages=25, max_details=300, delay=1.0):
+    from .registers import CACHE_DIR
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_path = CACHE_DIR / NHS_CACHE
+    try:
+        cache = json.loads(cache_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        cache = {}
+    from .families import job_family
+    out, details = [], 0
+    for page in range(1, pages + 1):
+        root = ET.fromstring(fetch(f"https://www.jobs.nhs.uk/api/v1/search_xml?limit=100&page={page}&sort=publicationDateDesc"))
+        items = root.findall("vacancyDetails")
+        for v in items:
+            g = lambda tag: (v.findtext(tag) or "").strip()
+            title, ref, link = g("title"), g("reference"), g("url")
+            if not job_family(title):
+                continue
+            if ref not in cache and details < max_details:
+                try:
+                    cache[ref] = _nhs_sponsorship(fetch_text(link))
+                except FetchError:
+                    pass
+                details += 1
+                time.sleep(delay)
+            desc = g("description")
+            sponsor = cache.get(ref)
+            if sponsor == "yes":
+                desc = "Visa sponsorship available: applicants who need Skilled Worker sponsorship are welcome (NHS Jobs Certificate of Sponsorship field). " + desc
+            elif sponsor == "no":
+                desc = "This role does not offer visa sponsorship (NHS Jobs Certificate of Sponsorship field). " + desc
+            locs = "; ".join(x.text or "" for x in v.iter("location"))
+            out.append(_job(ref, title, g("employer"), f"{locs}, United Kingdom", link, g("postDate")[:10] or None,
+                            desc, "GB", salary=g("salary") or None))
+        if len(items) < 100:
+            break
+        time.sleep(delay)
+    live = {j["ext_id"] for j in out}
+    cache_path.write_text(json.dumps({k: v for k, v in cache.items() if k in live}), encoding="utf-8")
+    return out
+
+
+
+# ------------------------------------------------------- Berlin Startup Jobs
+# English-speaking Berlin startups, all functions. Their terms allow crawlers;
+# titles read "Role // Company".
+BSJ_CATEGORIES = ["engineering", "sales", "marketing", "operations", "product-management", "design-ux",
+                  "hr-recruiting", "finance"]
+
+
+def berlinstartupjobs():
+    out = {}
+    for cat in BSJ_CATEGORIES:
+        for i in _rss_items(f"https://berlinstartupjobs.com/{cat}/feed/"):
+            title, _, company = (i.get("title") or "").partition(" // ")
+            out[i.get("link")] = _job(i.get("guid") or i.get("link"), html.unescape(title), html.unescape(company), "Berlin, Germany",
+                                      i.get("link"), _rss_date(i.get("pubDate")),
+                                      html_to_text(i.get("encoded") or i.get("description")), "DE")
+        time.sleep(1)
+    return list(out.values())
+
+
+
 FEEDS = {
     "swissdevjobs_snapshot": swissdevjobs_snapshot,
     "mycareersfuture": mycareersfuture,
@@ -431,4 +589,7 @@ FEEDS = {
     "landingjobs": landingjobs,
     "relocateme": relocateme,
     "mastodon": mastodon_tags,
+    "eures": eures,
+    "nhsjobs": nhsjobs,
+    "berlinstartupjobs": berlinstartupjobs,
 }

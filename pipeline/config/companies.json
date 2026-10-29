@@ -95,7 +95,8 @@
       "slug": "Canva",
       "aliases": [],
       "sponsorship": null,
-      "notes": ""
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29).",
+      "enabled": false
     },
     {
       "name": "Catawiki",
@@ -203,7 +204,8 @@
         "Delivery Hero SE"
       ],
       "sponsorship": null,
-      "notes": ""
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29).",
+      "enabled": false
     },
     {
       "name": "Discord",
@@ -299,7 +301,8 @@
       "slug": "Grab",
       "aliases": [],
       "sponsorship": null,
-      "notes": ""
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29).",
+      "enabled": false
     },
     {
       "name": "Grafana Labs",
@@ -680,7 +683,8 @@
       "slug": "Swissquote",
       "aliases": [],
       "sponsorship": null,
-      "notes": ""
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29).",
+      "enabled": false
     },
     {
       "name": "Synthesia",
@@ -839,8 +843,9 @@
       ],
       "sponsorship": null,
       "sector": "automotive",
-      "notes": "",
-      "query": "engineer"
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29).",
+      "query": "engineer",
+      "enabled": false
     },
     {
       "name": "Continental",
@@ -852,8 +857,9 @@
       ],
       "sponsorship": null,
       "sector": "automotive",
-      "notes": "",
-      "query": "engineer"
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29).",
+      "query": "engineer",
+      "enabled": false
     },
     {
       "name": "CrowdStrike",
@@ -1115,7 +1121,8 @@
       "aliases": [],
       "sponsorship": null,
       "sector": "automotive",
-      "notes": "Vehicle homologation incl. UNECE R155 cyber"
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Vehicle homologation incl. UNECE R155 cyber",
+      "enabled": false
     },
     {
       "name": "Upstream Security",
@@ -1156,6 +1163,1417 @@
       "sector": "security/tech",
       "notes": "Search-based (careers API); rate-limited, so ~30-150 newest per run.",
       "query": "software engineer"
+    },
+    {
+      "name": "Medtronic",
+      "ats": "workday",
+      "slug": "medtronic.wd1.myworkdayjobs.com|medtronic|MedtronicCareers",
+      "aliases": [
+        "Medtronic Limited",
+        "Medtronic B.V.",
+        "Medtronic Bakken Research Center B.V.",
+        "Medtronic Vascular Galway Unlimited Company",
+        "Medtronic Ireland Limited",
+        "MEDTRONIC INC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Medtronic Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Medtronic B.V., Medtronic Bakken Research Center B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Medtronic Vascular Galway Unlimited Company, Medtronic Ireland Limited (28 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: MEDTRONIC INC (106 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1089 postings. Example titles: Sr. Product Manager - Structural Heart, Downstream Marketing | Sales Representative III, Pain Interventions - Meadville, PA/Pittsburgh, PA."
+    },
+    {
+      "name": "Pfizer",
+      "ats": "workday",
+      "slug": "pfizer.wd1.myworkdayjobs.com|pfizer|PfizerCareers",
+      "aliases": [
+        "Pfizer Limited",
+        "Pfizer B.V.",
+        "Pfizer Export B.V.",
+        "Pfizer Ireland Pharmaceuticals Unlimited Company",
+        "Pfizer Healthcare Ireland",
+        "PFIZER INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Pfizer Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Pfizer B.V., Pfizer Export B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Pfizer Ireland Pharmaceuticals Unlimited Company, Pfizer Healthcare Ireland (11 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: PFIZER INC (9 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 604 postings. Example titles: Gestionnaire de comptes - Pharmacies/Pharmacy Key Account Manager , Secteur hospitalier et produits biosimilaires ( Province de Québec) | Pharmacy Key Account Manager / Gestionnaire – Comptes pharmacies, Global Hospital & Biosimilar (Ontario).."
+    },
+    {
+      "name": "Airbus",
+      "ats": "workday",
+      "slug": "ag.wd3.myworkdayjobs.com|ag|Airbus",
+      "aliases": [
+        "Airbus Belfast Limited",
+        "Airbus Defence and Space Limited",
+        "Airbus Netherlands B.V.",
+        "Société en commandite Airbus Canada",
+        "Airbus Atlantique Canada Inc.",
+        "AIRBUS AMERICAS INC"
+      ],
+      "sponsorship": null,
+      "sector": "aerospace",
+      "notes": "Sponsor evidence: GB: Airbus Belfast Limited, Airbus Defence and Space Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Airbus Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); CA: Société en commandite Airbus Canada, Airbus Atlantique Canada Inc. (68 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: AIRBUS AMERICAS INC (3 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Senior Buyer | Project Manager- Project Management Officer Specialist."
+    },
+    {
+      "name": "Boeing",
+      "ats": "workday",
+      "slug": "boeing.wd1.myworkdayjobs.com|boeing|EXTERNAL_CAREERS",
+      "aliases": [
+        "Boeing Defence UK Limited",
+        "Boeing United Kingdom Limited",
+        "Boeing Netherlands B.V.",
+        "Boeing Ireland Limited",
+        "BOEING COMPANY",
+        "BOEING ENCORE INTERIORS LLC"
+      ],
+      "sponsorship": null,
+      "sector": "aerospace",
+      "notes": "Sponsor evidence: GB: Boeing Defence UK Limited, Boeing United Kingdom Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Boeing Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Boeing Ireland Limited (8 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: BOEING COMPANY, BOEING ENCORE INTERIORS LLC (9 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Many US roles are export-controlled/clearance roles; best fit is GB/AU/CA/NL/IE sites. Board verified 2026-10-29: 716 postings. Example titles: Systems Engineering Manager | Lead Wire Design & Install Engineer."
+    },
+    {
+      "name": "Accenture",
+      "ats": "workday",
+      "slug": "accenture.wd103.myworkdayjobs.com|accenture|AccentureCareers",
+      "aliases": [
+        "Accenture (UK) Limited",
+        "Accenture Song Brand UK Limited",
+        "Accenture B.V.",
+        "Accenture Limited",
+        "Accenture Global Solutions Limited",
+        "Accenture A/S"
+      ],
+      "sponsorship": null,
+      "sector": "consulting",
+      "notes": "Sponsor evidence: GB: Accenture (UK) Limited, Accenture Song Brand UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Accenture B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Accenture Limited, Accenture Global Solutions Limited (331 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: Accenture A/S listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); CA: Accenture Inc. (5 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: ACCENTURE LLP (998 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Market Category Manager HR & Professional Services (all genders) | Procurement Reinvention Consultant with German."
+    },
+    {
+      "name": "PwC",
+      "ats": "workday",
+      "slug": "pwc.wd3.myworkdayjobs.com|pwc|Global_Experienced_Careers",
+      "aliases": [
+        "PricewaterhouseCoopers (Northern Ireland) LLP",
+        "PricewaterhouseCoopers LLP",
+        "PricewaterhouseCoopers Accountants N.V.",
+        "PricewaterhouseCoopers Advisory N.V.",
+        "PricewaterhouseCoopers",
+        "PricewaterhouseCoopers Services"
+      ],
+      "sponsorship": null,
+      "sector": "consulting",
+      "notes": "Sponsor evidence: GB: PricewaterhouseCoopers (Northern Ireland) LLP, PricewaterhouseCoopers LLP listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: PricewaterhouseCoopers Accountants N.V., PricewaterhouseCoopers Advisory N.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: PricewaterhouseCoopers, PricewaterhouseCoopers Services (66 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: PRICEWATERHOUSECOOPERS STATSAUTORISERET REVISIONSPARTNERSELSKAB listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: PWC ADVISORY SERVICES LLC, PRICEWATERHOUSECOOPERS LLP (610 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 3895+ (Workday caps total at 2000) postings. Example titles: Assurance | Associate GRC General |Consultor Sostenibilidad| Madrid | Manufacturing & Operations in the Delivering Deal Value team."
+    },
+    {
+      "name": "Stryker",
+      "ats": "workday",
+      "slug": "stryker.wd1.myworkdayjobs.com|stryker|StrykerCareers",
+      "aliases": [
+        "Stryker UK Limited",
+        "Stryker EMEA Supply Chain Services B.V.",
+        "Stryker European Operations Limited",
+        "Stryker Ireland Limited",
+        "STRYKER CORPORATION"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Stryker UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Stryker EMEA Supply Chain Services B.V., Stryker European Operations Limited listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Stryker European Operations Limited, Stryker Ireland Limited (20 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: STRYKER CORPORATION (22 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1485 postings. Example titles: Foot and Ankle Sales Associate - Detroit, MI | Senior Test Engineer (Onsite)- Test Lab."
+    },
+    {
+      "name": "GSK",
+      "ats": "workday",
+      "slug": "gsk.wd5.myworkdayjobs.com|gsk|GSKCareers",
+      "aliases": [
+        "GSK Plc",
+        "GlaxoSmithKline B.V.",
+        "GSK Vaccines B.V.",
+        "GLAXOSMITHKLINE LLC",
+        "CORIXA CORPORATION DBA GLAXOSMITHKLINE VACCINES"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: GSK Plc listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: GlaxoSmithKline B.V., GSK Vaccines B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: GLAXOSMITHKLINE LLC, CORIXA CORPORATION DBA GLAXOSMITHKLINE VACCINES (24 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1056 postings. Example titles: Cluster Compliance Lead | Finance Partner - General Medicine."
+    },
+    {
+      "name": "Novartis",
+      "ats": "workday",
+      "slug": "novartis.wd3.myworkdayjobs.com|novartis|Novartis_Careers",
+      "aliases": [
+        "Novartis Pharmaceuticals UK Ltd",
+        "Novartis",
+        "Novartis Ireland Limited",
+        "NOVARTIS HEALTHCARE A/S",
+        "NOVARTIS PHARMACEUTICALS CORPORATION",
+        "NOVARTIS INSTITUTES FOR BIOMEDICAL RESEARCH INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Novartis Pharmaceuticals UK Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Novartis listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Novartis Ireland Limited (15 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: NOVARTIS HEALTHCARE A/S listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: NOVARTIS PHARMACEUTICALS CORPORATION, NOVARTIS INSTITUTES FOR BIOMEDICAL RESEARCH INC (61 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 897 postings. Example titles: Sales Representative Neuroscience (German speaking part) | Commercial Manager - Gene Therapy."
+    },
+    {
+      "name": "Roche",
+      "ats": "workday",
+      "slug": "roche.wd3.myworkdayjobs.com|roche|roche-ext",
+      "aliases": [
+        "Roche Diagnostics Limited",
+        "Roche Products Limited",
+        "Roche Diabetes Care Nederland B.V.",
+        "Roche Diagnostics Nederland B.V.",
+        "Roche Manufacturing Limited",
+        "Roche Products (Ireland) Limited"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Roche Diagnostics Limited, Roche Products Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Roche Diabetes Care Nederland B.V., Roche Diagnostics Nederland B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Roche Manufacturing Limited, Roche Products (Ireland) Limited (3 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: GENENTECH INC, ROCHE MOLECULAR SYSTEMS INC (71 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1296 postings. Example titles: Accounting Payable Associate / Analyst (Contract, Yearly Basis) | Vice President - Medical Affairs."
+    },
+    {
+      "name": "Philips",
+      "ats": "workday",
+      "slug": "philips.wd3.myworkdayjobs.com|philips|jobs-and-careers",
+      "aliases": [
+        "Philips Electronics UK Ltd",
+        "Koninklijke Philips N.V.",
+        "Philips Consumer Lifestyle B.V.",
+        "Philips Danmark A/S",
+        "PHILIPS NORTH AMERICA LLC",
+        "PHILIPS RS NORTH AMERICA LLC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Philips Electronics UK Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Koninklijke Philips N.V., Philips Consumer Lifestyle B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); DK: Philips Danmark A/S listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: PHILIPS NORTH AMERICA LLC, PHILIPS RS NORTH AMERICA LLC (25 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 806 postings. Example titles: Field Service Engineer – Diagnostics and Treatment (Field: Houston) | Remote Support Engineer – Digital Computational Pathology."
+    },
+    {
+      "name": "AstraZeneca",
+      "ats": "workday",
+      "slug": "astrazeneca.wd3.myworkdayjobs.com|astrazeneca|Careers",
+      "aliases": [
+        "AstraZeneca UK Limited",
+        "AstraZeneca B.V.",
+        "AstraZeneca Pharmaceuticals (Ireland) Designated Activity Company",
+        "AstraZeneca Ireland Limited",
+        "ASTRAZENECA A/S",
+        "ASTRAZENECA PHARMACEUTICALS LP"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: AstraZeneca UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: AstraZeneca B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: AstraZeneca Pharmaceuticals (Ireland) Designated Activity Company, AstraZeneca Ireland Limited (6 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: ASTRAZENECA A/S listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: ASTRAZENECA PHARMACEUTICALS LP (31 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1379 postings. Example titles: US Medical Affairs Oncology, Lung Franchise Intern | Cell Therapy Supply Chain Operational Excellence & Performance Lead."
+    },
+    {
+      "name": "Applied Materials",
+      "ats": "workday",
+      "slug": "amat.wd1.myworkdayjobs.com|amat|External",
+      "aliases": [
+        "Applied Materials UK Ltd",
+        "Applied Materials Europe B.V.",
+        "Applied Materials Ireland Limited",
+        "APPLIED MATERIALS INC"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Sponsor evidence: GB: Applied Materials UK Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Applied Materials Europe B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Applied Materials Ireland Limited (146 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: APPLIED MATERIALS INC (125 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Customer Engineer - C1 | HR Business Partner."
+    },
+    {
+      "name": "Abbott",
+      "ats": "workday",
+      "slug": "abbott.wd5.myworkdayjobs.com|abbott|abbottcareers",
+      "aliases": [
+        "Abbott Diabetes Care UK Limited",
+        "Abbott Laboratories Limited",
+        "Abbott B.V.",
+        "Abbott Laboratories B.V.",
+        "Abbott Ireland",
+        "Abbott Rapid Dx International Limited"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Abbott Diabetes Care UK Limited, Abbott Laboratories Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Abbott B.V., Abbott Laboratories B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Abbott Ireland, Abbott Rapid Dx International Limited (93 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: ABBOTT LABORATORIES, ABBOTT DIABETES CARE INC AN ABBOTT LABORATORIES COMPANY (42 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Internship - Engineering | Clinical Data Manager - Point of Care (Ottawa)."
+    },
+    {
+      "name": "Baxter",
+      "ats": "workday",
+      "slug": "baxter.wd1.myworkdayjobs.com|baxter|baxter",
+      "aliases": [
+        "Baxter Healthcare Limited",
+        "Baxter B.V.",
+        "Baxter Healthcare Limited.",
+        "BAXTER HEALTHCARE CORPORATION"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Baxter Healthcare Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Baxter B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Baxter Healthcare Limited. (1 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: BAXTER HEALTHCARE CORPORATION (6 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 534 postings. Example titles: Senior Quality Manager | Quality Site Head."
+    },
+    {
+      "name": "Thermo Fisher Scientific",
+      "ats": "workday",
+      "slug": "thermofisher.wd5.myworkdayjobs.com|thermofisher|ThermoFisherCareers",
+      "aliases": [
+        "Thermo Fisher Scientific B.V.",
+        "Thermo Fisher Scientific Cork Limited",
+        "Thermo Fisher Diagnostics Ireland Limited",
+        "THERMO FISHER SCIENTIFIC INC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: NL: Thermo Fisher Scientific B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Thermo Fisher Scientific Cork Limited, Thermo Fisher Diagnostics Ireland Limited (3 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: THERMO FISHER SCIENTIFIC INC (76 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 3124+ (Workday caps total at 2000) postings. Example titles: Sr. Intern Project Manager | Quality Specialist II."
+    },
+    {
+      "name": "Diageo",
+      "ats": "workday",
+      "slug": "diageo.wd3.myworkdayjobs.com|diageo|Diageo_Careers",
+      "aliases": [
+        "Diageo plc",
+        "Diageo Brands B.V.",
+        "Diageo Nederland B.V.",
+        "Diageo Ireland Holdings Unlimited Company",
+        "Diageo Denmark A/S",
+        "DIAGEO NORTH AMERICA INC"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: Diageo plc listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Diageo Brands B.V., Diageo Nederland B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Diageo Ireland Holdings Unlimited Company (11 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: Diageo Denmark A/S listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: DIAGEO NORTH AMERICA INC (1 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 270 postings. Example titles: Sales Operations Manager, Key Accounts | Electrical Engineer."
+    },
+    {
+      "name": "Mass General Brigham",
+      "ats": "workday",
+      "slug": "massgeneralbrigham.wd1.myworkdayjobs.com|massgeneralbrigham|MGBExternal",
+      "aliases": [
+        "BRIGHAM AND WOMEN S HOSPITAL",
+        "MASSACHUSETTS GENERAL HOSPITAL/MGPO"
+      ],
+      "sponsorship": null,
+      "sector": "healthcare",
+      "notes": "Sponsor evidence: US: BRIGHAM AND WOMEN S HOSPITAL, MASSACHUSETTS GENERAL HOSPITAL/MGPO (97 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). US academic health system (H-1B cap-exempt affiliates). Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Medical Dosimetrist | Primary Care Physician - Mass General Brigham - Belchertown, MA."
+    },
+    {
+      "name": "KLA",
+      "ats": "workday",
+      "slug": "kla.wd1.myworkdayjobs.com|kla|Search",
+      "aliases": [
+        "KLA Corporation UK Limited",
+        "KLA-Tencor Ireland Limited",
+        "KLA CORPORATION"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Sponsor evidence: GB: KLA Corporation UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); IE: KLA-Tencor Ireland Limited (55 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: KLA CORPORATION (85 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1161 postings. Example titles: Engineering Director (Global Products Group) | Customer Engagement Applications Engineer."
+    },
+    {
+      "name": "Analog Devices",
+      "ats": "workday",
+      "slug": "analogdevices.wd1.myworkdayjobs.com|analogdevices|External",
+      "aliases": [
+        "Analog Devices Limited",
+        "Analog Devices International Unlimited Company",
+        "ANALOG DEVICES INC"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Sponsor evidence: GB: Analog Devices Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); IE: Analog Devices International Unlimited Company (163 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: ANALOG DEVICES INC (41 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 833 postings. Example titles: Associate Test Engineer | Principal Analog Design Engineer."
+    },
+    {
+      "name": "Micron Technology",
+      "ats": "workday",
+      "slug": "micron.wd1.myworkdayjobs.com|micron|External",
+      "aliases": [
+        "Micron Semiconductor Ltd",
+        "MICRON TECHNOLOGY INC",
+        "MICRON SEMICONDUCTOR PRODUCTS INC"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Sponsor evidence: GB: Micron Semiconductor Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: MICRON TECHNOLOGY INC, MICRON SEMICONDUCTOR PRODUCTS INC (76 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 3098+ (Workday caps total at 2000) postings. Example titles: HBM SIPI, Senior Engineer | Senior Engineer, Technology AMAIS."
+    },
+    {
+      "name": "Hitachi",
+      "ats": "workday",
+      "slug": "hitachi.wd1.myworkdayjobs.com|hitachi|hitachi",
+      "aliases": [
+        "Hitachi Construction Machinery (UK) Limited",
+        "Hitachi Digital Services UK Limited",
+        "Hitachi Astemo Netherlands B.V.",
+        "Hitachi Construction Machinery (Europe) N.V.",
+        "Hitachi Energy Ireland Limited",
+        "Hitachi High-Tech Ireland Ltd"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Sponsor evidence: GB: Hitachi Construction Machinery (UK) Limited, Hitachi Digital Services UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Hitachi Astemo Netherlands B.V., Hitachi Construction Machinery (Europe) N.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Hitachi Energy Ireland Limited, Hitachi High-Tech Ireland Ltd (19 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: Hitachi Energy Denmark A/S, Hitachi Rail STS, filial af Hitachi Rail STS S.p.A. Italien listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); CA: Hitachi Rail GTS Canada Inc., HITACHI ENERGIE CANADA INC. (4 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: HITACHI VANTARA LLC, HITACHI ASTEMO AMERICAS INC (119 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Global Quality & Continuous Improvement Manager | R&D Engineer – Simulation / Mechanical Design."
+    },
+    {
+      "name": "GE Vernova",
+      "ats": "workday",
+      "slug": "gevernova.wd5.myworkdayjobs.com|gevernova|Vernova_ExternalSite",
+      "aliases": [
+        "GE Vernova International LLC",
+        "GE Vernova Nederland B.V.",
+        "GE Vernova Global Services GMBH",
+        "GE Renewable Energy Canada inc.",
+        "GE ENERGY MANAGEMENT SERVICES LLC",
+        "GE GRID SOLUTIONS LLC"
+      ],
+      "sponsorship": null,
+      "sector": "energy",
+      "notes": "Sponsor evidence: GB: GE Vernova International LLC listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: GE Vernova Nederland B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: GE Vernova International LLC, GE Vernova Global Services GMBH (7 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); CA: GE Renewable Energy Canada inc. (3 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: GE ENERGY MANAGEMENT SERVICES LLC, GE GRID SOLUTIONS LLC (16 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2282+ (Workday caps total at 2000) postings. Example titles: Manufacturing Shop Operations Manager | Responsable Achats Stratégiques : Installation, Mise en service et Génie Civil (H/F) - Sourcing manager Installation & Commissioning & Civil works."
+    },
+    {
+      "name": "GE Aerospace",
+      "ats": "workday",
+      "slug": "geaerospace.wd5.myworkdayjobs.com|geaerospace|GE_ExternalSite",
+      "aliases": [
+        "GE Aviation Systems Limited",
+        "GE Aviation Netherlands B.V.",
+        "GENERAL ELECTRIC COMPANY",
+        "GE AVIATION SYSTEMS LLC"
+      ],
+      "sponsorship": null,
+      "sector": "aerospace",
+      "notes": "Sponsor evidence: GB: GE Aviation Systems Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: GE Aviation Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: GENERAL ELECTRIC COMPANY, GE AVIATION SYSTEMS LLC (14 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 655 postings. Example titles: Lead Manufacturing Engineer | Lead Manufacturing Engineer - 2nd Shift."
+    },
+    {
+      "name": "GE HealthCare",
+      "ats": "workday",
+      "slug": "gehc.wd5.myworkdayjobs.com|gehc|GEHC_ExternalSite",
+      "aliases": [
+        "GE Medical Systems Limited",
+        "GE Healthcare",
+        "GE Healthcare Ireland Limited",
+        "GE Medical Systems Ireland Limited",
+        "GE HEALTHCARE IITS USA CORP",
+        "GE MEDICAL SYSTEMS LLC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: GE Medical Systems Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: GE Healthcare listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: GE Healthcare Ireland Limited, GE Medical Systems Ireland Limited (12 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: GE HEALTHCARE IITS USA CORP, GE MEDICAL SYSTEMS LLC (27 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1064 postings. Example titles: Innovation Project Manager | Field Service Engineer 1."
+    },
+    {
+      "name": "Thales",
+      "ats": "workday",
+      "slug": "thales.wd3.myworkdayjobs.com|thales|Careers",
+      "aliases": [
+        "Thales UK Limited",
+        "Thales DIS Technologies B.V.",
+        "Thales Nederland",
+        "Thales DIS Danmark A/S",
+        "Thales Digital Solutions Inc.",
+        "Thales DIS Canada Inc."
+      ],
+      "sponsorship": null,
+      "sector": "aerospace",
+      "notes": "Sponsor evidence: GB: Thales UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Thales DIS Technologies B.V., Thales Nederland listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); DK: Thales DIS Danmark A/S listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); CA: Thales Digital Solutions Inc., Thales DIS Canada Inc. (3 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: THALES AVIONICS INC, THALES DIS USA INC (17 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Defence employer: some roles need national security clearance. Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Senior Systems Engineer."
+    },
+    {
+      "name": "Shell",
+      "ats": "workday",
+      "slug": "shell.wd3.myworkdayjobs.com|shell|ShellCareers",
+      "aliases": [
+        "Shell International Ltd",
+        "Shell Global Solutions International B.V.",
+        "SHELL Information Technology International B.V.",
+        "SHELL EXPLORATION AND PRODUCTION COMPANY",
+        "SHELL INTERNATIONAL EXPLORATION AND PRODUCTION INC"
+      ],
+      "sponsorship": null,
+      "sector": "energy",
+      "notes": "Sponsor evidence: GB: Shell International Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Shell Global Solutions International B.V., SHELL Information Technology International B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: SHELL EXPLORATION AND PRODUCTION COMPANY, SHELL INTERNATIONAL EXPLORATION AND PRODUCTION INC (5 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 151 postings. Example titles: MENA Business Development Manager | Principal Consultant & Practice Lead."
+    },
+    {
+      "name": "Procter & Gamble",
+      "ats": "workday",
+      "slug": "pg.wd5.myworkdayjobs.com|pg|1000",
+      "aliases": [
+        "Procter & Gamble Limited",
+        "Procter & Gamble Nederland B.V.",
+        "Procter & Gamble Ireland",
+        "Procter & Gamble UK - Irish Branch",
+        "THE PROCTER & GAMBLE U S BUSINESS SERVICES COMPANY",
+        "THE PROCTER & GAMBLE DISTRIBUTING LLC"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: Procter & Gamble Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Procter & Gamble Nederland B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Procter & Gamble Ireland, Procter & Gamble UK - Irish Branch (3 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: THE PROCTER & GAMBLE U S BUSINESS SERVICES COMPANY, THE PROCTER & GAMBLE DISTRIBUTING LLC (4 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 846 postings. Example titles: Trainee Engineering (m/f/d) | Process Engineer (m/f/d)."
+    },
+    {
+      "name": "Mondelez International",
+      "ats": "workday",
+      "slug": "mdlz.wd3.myworkdayjobs.com|mdlz|External",
+      "aliases": [
+        "Mondelez UK Limited",
+        "Mondelez Nederland B.V.",
+        "Mondelez Nederland Services B.V.",
+        "Mondelez Europe Services GMBH",
+        "Mondelez Ireland Production Limited",
+        "MONDELEZ GLOBAL LLC"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: Mondelez UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Mondelez Nederland B.V., Mondelez Nederland Services B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Mondelez Europe Services GMBH, Mondelez Ireland Production Limited (2 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: MONDELEZ GLOBAL LLC (5 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1377 postings. Example titles: Taste the Future - Process Engineer Intern - Montornes, Spain | Finance Intern (M/F/X) - 6 months Internship - Mechelen (near Brussels) - March 2027."
+    },
+    {
+      "name": "Kraft Heinz",
+      "ats": "workday",
+      "slug": "heinz.wd1.myworkdayjobs.com|heinz|KraftHeinz_Careers",
+      "aliases": [
+        "H J Heinz Co Ltd",
+        "H.J. Heinz B.V.",
+        "H.J. Heinz European Holding B.V.",
+        "KRAFT HEINZ FOODS COMPANY"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: H J Heinz Co Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: H.J. Heinz B.V., H.J. Heinz European Holding B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: KRAFT HEINZ FOODS COMPANY (9 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 913 postings. Example titles: Brand Build Activation Analyst | Sr. Human Resources Generalist – Onsite Manufacturing."
+    },
+    {
+      "name": "Coca-Cola Company",
+      "ats": "workday",
+      "slug": "coke.wd1.myworkdayjobs.com|coke|coca-cola-careers",
+      "aliases": [
+        "THE COCA COLA COMPANY"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: US: THE COCA COLA COMPANY (3 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 230 postings. Example titles: Senior Manager, Operations Finance - Middle East Region | Maintenance Engineer."
+    },
+    {
+      "name": "Nike",
+      "ats": "workday",
+      "slug": "nike.wd1.myworkdayjobs.com|nike|nke",
+      "aliases": [
+        "Nike Retail UK",
+        "Nike Retail",
+        "NIKE INC",
+        "NIKE USA INC"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: Nike Retail UK listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Nike Retail listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: NIKE INC, NIKE USA INC (135 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 775 postings. Example titles: Manufacturing Systems Engineer | Lead, Procurement, Marketing & Places, NA."
+    },
+    {
+      "name": "Sanofi",
+      "ats": "workday",
+      "slug": "sanofi.wd3.myworkdayjobs.com|sanofi|SanofiCareers",
+      "aliases": [
+        "aventis pharma Ltd  t/a Sanofi",
+        "Sanofi B.V.",
+        "Sanofi Foreign Participations B.V.",
+        "Genzyme Ireland Limited",
+        "SANOFI US SERVICES INC",
+        "SANOFI PASTEUR INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: aventis pharma Ltd  t/a Sanofi listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Sanofi B.V., Sanofi Foreign Participations B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Genzyme Ireland Limited (3 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: SANOFI US SERVICES INC, SANOFI PASTEUR INC (49 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1055 postings. Example titles: Sales Representative | Controlling Operations GBU Financial Analyst."
+    },
+    {
+      "name": "MSD (Merck & Co.)",
+      "ats": "workday",
+      "slug": "msd.wd5.myworkdayjobs.com|msd|SearchJobs",
+      "aliases": [
+        "Merck Sharp & Dohme (UK) Limited",
+        "Merck Sharp & Dohme B.V.",
+        "Merck Sharp & Dohme International Services B.V.",
+        "MSD International GmBh",
+        "MSD International GmBh T/A MSD Ireland (Dunboyne Biologics)",
+        "MERCK SHARP DOHME LLC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Merck Sharp & Dohme (UK) Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Merck Sharp & Dohme B.V., Merck Sharp & Dohme International Services B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: MSD International GmBh, MSD International GmBh T/A MSD Ireland (Dunboyne Biologics) (50 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: MERCK SHARP DOHME LLC (24 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 939 postings. Example titles: Associate Specialist, Operations (Onsite) | Brand & Customer Product Manager."
+    },
+    {
+      "name": "Bristol Myers Squibb",
+      "ats": "workday",
+      "slug": "bristolmyerssquibb.wd5.myworkdayjobs.com|bristolmyerssquibb|BMS",
+      "aliases": [
+        "Bristol-Myers Squibb Pharmaceuticals Limited",
+        "BRISTOL MYERS SQUIBB COMPANY"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Bristol-Myers Squibb Pharmaceuticals Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: BRISTOL MYERS SQUIBB COMPANY (57 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 655 postings. Example titles: Team Lead, Value Stream Cryo Operations | Operator - Isotope Production."
+    },
+    {
+      "name": "Moderna",
+      "ats": "workday",
+      "slug": "modernatx.wd1.myworkdayjobs.com|modernatx|M_tx",
+      "aliases": [
+        "MODERNATX INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: US: MODERNATX INC (17 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 268 postings. Example titles: Associate Director, Clinical Operations – Oncology/Therapeutics | (Fixed Term) Manufacturing Associate."
+    },
+    {
+      "name": "Gilead Sciences",
+      "ats": "workday",
+      "slug": "gilead.wd1.myworkdayjobs.com|gilead|gileadcareers",
+      "aliases": [
+        "Gilead Sciences Europe Limited",
+        "Gilead Sciences Netherlands B.V.",
+        "Gilead Sciences Ireland UC",
+        "GILEAD SCIENCES INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Gilead Sciences Europe Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Gilead Sciences Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Gilead Sciences Ireland UC (5 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: GILEAD SCIENCES INC (75 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 401 postings. Example titles: Director, Product Quality Leader, Biologics."
+    },
+    {
+      "name": "Amgen",
+      "ats": "workday",
+      "slug": "amgen.wd1.myworkdayjobs.com|amgen|Careers",
+      "aliases": [
+        "Amgen Limited",
+        "Amgen B.V.",
+        "Amgen Europe B.V.",
+        "Amgen Technology (Ireland) Unlimited Company",
+        "AMGEN INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Amgen Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Amgen B.V., Amgen Europe B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Amgen Technology (Ireland) Unlimited Company (11 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: AMGEN INC (137 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1839 postings. Example titles: Global Category Lead, Full-Service CRO - Associate Director, Global Procurement R&D | Business Performance Manager Supply Chain AXP."
+    },
+    {
+      "name": "Smith+Nephew",
+      "ats": "workday",
+      "slug": "smithnephew.wd5.myworkdayjobs.com|smithnephew|External",
+      "aliases": [
+        "Smith & Nephew Plc",
+        "Smith & Nephew Operations B.V.",
+        "SMITH & NEPHEW INC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Smith & Nephew Plc listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Smith & Nephew Operations B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: SMITH & NEPHEW INC (22 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 351 postings. Example titles: Reporting Accountant Specialist | Sales Associate."
+    },
+    {
+      "name": "CSL",
+      "ats": "workday",
+      "slug": "csl.wd1.myworkdayjobs.com|csl|CSL_External",
+      "aliases": [
+        "Seqirus UK Limited",
+        "Seqirus Netherlands B.V.",
+        "CSL BEHRING L L C",
+        "SEQIRUS INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Seqirus UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Seqirus Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: CSL BEHRING L L C, SEQIRUS INC (12 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 185 postings. Example titles: Medical Evaluator - Global Case Management | Senior Analyst, Planning & Reporting Operations."
+    },
+    {
+      "name": "ResMed",
+      "ats": "workday",
+      "slug": "resmed.wd3.myworkdayjobs.com|resmed|ResMed_External_Careers",
+      "aliases": [
+        "ResMed (UK) Limited",
+        "ResMed Nederland B.V.",
+        "ResMed Sensor Technologies Limited",
+        "ResMed",
+        "RESMED DIGITAL HEALTH INC",
+        "RESMED MOTOR TECHNOLOGIES INC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: ResMed (UK) Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: ResMed Nederland B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: ResMed Sensor Technologies Limited (5 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); CA: ResMed (2 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: RESMED DIGITAL HEALTH INC, RESMED MOTOR TECHNOLOGIES INC (13 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 263 postings. Example titles: Data Analyst, Manufacturing | QA Engineer (Post Market Quality)."
+    },
+    {
+      "name": "Caterpillar",
+      "ats": "workday",
+      "slug": "cat.wd5.myworkdayjobs.com|cat|CaterpillarCareers",
+      "aliases": [
+        "Caterpillar UK Holdings Limited",
+        "Caterpillar Work Tools B.V.",
+        "CATERPILLAR INC"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Sponsor evidence: GB: Caterpillar UK Holdings Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Caterpillar Work Tools B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: CATERPILLAR INC (106 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 993 postings. Example titles: Operations Quality Auditor | Territory Sales Representative - Paving Products."
+    },
+    {
+      "name": "Maersk",
+      "ats": "workday",
+      "slug": "maersk.wd3.myworkdayjobs.com|maersk|Maersk_Careers",
+      "aliases": [
+        "MAERSK LINE UK LIMITED",
+        "Maersk Logistics and Services UK Ltd",
+        "Maersk Line Netherlands B.V.",
+        "Maersk Logistics & Services International B.V.",
+        "Maersk Logistics & Services Ireland Limited",
+        "Maersk Air Crew & Training Company A/S"
+      ],
+      "sponsorship": null,
+      "sector": "logistics",
+      "notes": "Sponsor evidence: GB: MAERSK LINE UK LIMITED, Maersk Logistics and Services UK Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Maersk Line Netherlands B.V., Maersk Logistics & Services International B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Maersk Logistics & Services Ireland Limited (1 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: Maersk Air Crew & Training Company A/S, Maersk Logistics & Services Denmark A/S listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: MAERSK AGENCY USA INC, MAERSK A/S T/A SEALAND AMERICAS (3 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1245 postings. Example titles: Cross-Border Transport Operations Agent | Lead Logistics Customer Experience and Operations Specialist - Japanese Speaker."
+    },
+    {
+      "name": "JLL",
+      "ats": "workday",
+      "slug": "jll.wd1.myworkdayjobs.com|jll|jllcareers",
+      "aliases": [
+        "Jones Lang LaSalle Limited",
+        "Jones Lang LaSalle Services LTD",
+        "Jones Lang LaSalle B.V.",
+        "Jones Lang Lasalle Services Limited",
+        "JONES LANG LASALLE AMERICAS INC"
+      ],
+      "sponsorship": null,
+      "sector": "other",
+      "notes": "Sponsor evidence: GB: Jones Lang LaSalle Limited, Jones Lang LaSalle Services LTD listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Jones Lang LaSalle B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Jones Lang Lasalle Services Limited (4 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: JONES LANG LASALLE AMERICAS INC (25 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Sales Coordinator | Sr. Project Manager - Mission Critical, Data Centers."
+    },
+    {
+      "name": "BlackRock",
+      "ats": "workday",
+      "slug": "blackrock.wd1.myworkdayjobs.com|blackrock|BlackRock_Professional",
+      "aliases": [
+        "BLACKROCK INVESTMENT MANAGEMENT (UK) LIMITED",
+        "BlackRock Investment Management (UK) Limited",
+        "BlackRock (Netherlands) B.V.",
+        "Blackrock Asset Management Ireland Limited",
+        "BLACKROCK FINANCIAL MANAGEMENT INC",
+        "BLACKROCK INVESTMENT MANAGEMENT LLC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: BLACKROCK INVESTMENT MANAGEMENT (UK) LIMITED, BlackRock Investment Management (UK) Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: BlackRock (Netherlands) B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Blackrock Asset Management Ireland Limited (1 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: BLACKROCK FINANCIAL MANAGEMENT INC, BLACKROCK INVESTMENT MANAGEMENT LLC (106 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 285 postings. Example titles: Vice President, Alternatives Tax Law | Institutional Billing & Controllers, Analyst, Finance."
+    },
+    {
+      "name": "State Street",
+      "ats": "workday",
+      "slug": "statestreet.wd1.myworkdayjobs.com|statestreet|Global",
+      "aliases": [
+        "State Street Bank and Trust Company",
+        "State Street Bank International GmbH Amsterdam Branch",
+        "State Street International (Ireland) Limited",
+        "STATE STREET BANK AND TRUST COMPANY"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: State Street Bank and Trust Company listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: State Street Bank International GmbH Amsterdam Branch listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: State Street International (Ireland) Limited (30 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: STATE STREET BANK AND TRUST COMPANY (116 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1386 postings. Example titles: Program Manager - Ways of Working Transformation, VP II - State Street Investment Management | Network Infrastructure Engineer, AVP."
+    },
+    {
+      "name": "Fidelity Investments",
+      "ats": "workday",
+      "slug": "fmr.wd1.myworkdayjobs.com|fmr|FidelityCareers",
+      "aliases": [
+        "FMR Investment Management (UK) Ltd",
+        "FIDELITY INVESTMENTS",
+        "FMR LLC D/B/A FIDELITY INVESTMENTS"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: FMR Investment Management (UK) Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: FIDELITY INVESTMENTS, FMR LLC D/B/A FIDELITY INVESTMENTS (735 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 811 postings. Example titles: Financial Planning Consultant - Westlake, TX | Financial Consultant - Garden City, NY."
+    },
+    {
+      "name": "University of Chicago",
+      "ats": "workday",
+      "slug": "uchicago.wd5.myworkdayjobs.com|uchicago|External",
+      "aliases": [
+        "University of Chicago Booth School of Business",
+        "THE UNIVERSITY OF CHICAGO",
+        "UNIVERSITY OF CHICAGO MEDICAL CENTER"
+      ],
+      "sponsorship": null,
+      "sector": "education",
+      "notes": "Sponsor evidence: GB: University of Chicago Booth School of Business listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: THE UNIVERSITY OF CHICAGO, UNIVERSITY OF CHICAGO MEDICAL CENTER (118 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). US university (H-1B cap-exempt employer). Board verified 2026-10-29: 381 postings. Example titles: Senior Program Manager and SBDC Director, Polsky Exchange | Financial Analyst."
+    },
+    {
+      "name": "Rolls-Royce",
+      "ats": "workday",
+      "slug": "rollsroyce.wd3.myworkdayjobs.com|rollsroyce|professional",
+      "aliases": [
+        "Rolls-Royce plc",
+        "Rolls-Royce SMR Limited",
+        "Rolls-Royce Solutions Benelux",
+        "ROLLS ROYCE SOLUTIONS AMERICA INC"
+      ],
+      "sponsorship": null,
+      "sector": "aerospace",
+      "notes": "Sponsor evidence: GB: Rolls-Royce plc, Rolls-Royce SMR Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Rolls-Royce Solutions Benelux listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: ROLLS ROYCE SOLUTIONS AMERICA INC (7 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 550 postings. Example titles: Service Operations Coordinator | Manager, Learning Excellence & Compliance."
+    },
+    {
+      "name": "Unilever",
+      "ats": "workday",
+      "slug": "unilever.wd3.myworkdayjobs.com|unilever|Unilever_Experienced_Professionals",
+      "aliases": [
+        "Unilever UK Limited",
+        "Unilever Europe B.V.",
+        "Unilever Europe Business Center B.V.",
+        "Unilever Ireland Limited",
+        "UNILEVER UNITED STATES INC"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: Unilever UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Unilever Europe B.V., Unilever Europe Business Center B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Unilever Ireland Limited (1 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: UNILEVER UNITED STATES INC (2 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 282 postings. Example titles: Brand Manager - Foods Knorr | HR Executive / Sr. HR Executive."
+    },
+    {
+      "name": "Cochlear",
+      "ats": "workday",
+      "slug": "cochlear.wd3.myworkdayjobs.com|cochlear|Cochlear_Careers",
+      "aliases": [
+        "Cochlear Europe Limited"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Cochlear Europe Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers). Board verified 2026-10-29: 90 postings. Example titles: Manufacturing Operator | Manager CGS Manufacturing & Logistics Operations."
+    },
+    {
+      "name": "BD (Becton Dickinson)",
+      "ats": "workday",
+      "slug": "bdx.wd1.myworkdayjobs.com|bdx|EXTERNAL_CAREER_SITE_USA",
+      "aliases": [
+        "Becton Dickinson Infusion Therapy",
+        "Becton Dickinson",
+        "Becton Dickinson Research Centre Ireland Limited",
+        "Becton Dickinson Research Centre Ireland Ltd",
+        "BECTON DICKINSON AND COMPANY"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Becton Dickinson Infusion Therapy listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Becton Dickinson listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Becton Dickinson Research Centre Ireland Limited, Becton Dickinson Research Centre Ireland Ltd (3 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: BECTON DICKINSON AND COMPANY (32 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 604 postings. Example titles: Staff Quality Engineer - Instruments | Sr Engr, Supplier Quality."
+    },
+    {
+      "name": "Edwards Lifesciences",
+      "ats": "workday",
+      "slug": "edwards.wd5.myworkdayjobs.com|edwards|EdwardsCareers",
+      "aliases": [
+        "Edwards Lifesciences Ltd",
+        "Edwards Lifesciences B.V.",
+        "Edwards Lifesciences Ireland Limited",
+        "EDWARDS LIFESCIENCES LLC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Edwards Lifesciences Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Edwards Lifesciences B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Edwards Lifesciences Ireland Limited (4 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: EDWARDS LIFESCIENCES LLC (24 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 376 postings. Example titles: Manufacturing Engineer II - Evening Shift | Engineer II, Manufacturing."
+    },
+    {
+      "name": "Illumina",
+      "ats": "workday",
+      "slug": "illumina.wd1.myworkdayjobs.com|illumina|illumina-careers",
+      "aliases": [
+        "Illumina Cambridge Limited",
+        "illumina Netherlands B.V.",
+        "ILLUMINA INC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Illumina Cambridge Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: illumina Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: ILLUMINA INC (53 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 167 postings. Example titles: Clinical Laboratory Technician | Director, Market Access – Commercial Coverage & Reimbursement."
+    },
+    {
+      "name": "Agilent Technologies",
+      "ats": "workday",
+      "slug": "agilent.wd5.myworkdayjobs.com|agilent|Agilent_Careers",
+      "aliases": [
+        "AGILENT TECHNOLOGIES LDA UK LIMITED",
+        "Agilent Technologies Netherlands B.V.",
+        "Agilent Technologies Ireland Limited",
+        "Agilent Technologies Denmark ApS",
+        "AGILENT TECHNOLOGIES INC"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: AGILENT TECHNOLOGIES LDA UK LIMITED listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Agilent Technologies Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Agilent Technologies Ireland Limited (2 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: Agilent Technologies Denmark ApS listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: AGILENT TECHNOLOGIES INC (16 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 364 postings. Example titles: HR Administration and Payroll Specialist Italy & Spain | Simulation & Digital Twin Engineer."
+    },
+    {
+      "name": "Danaher",
+      "ats": "workday",
+      "slug": "danaher.wd1.myworkdayjobs.com|danaher|DanaherJobs",
+      "aliases": [
+        "Cepheid UK Limited",
+        "Beckman Coulter Nederland B.V.",
+        "Cepheid Netherlands B.V.",
+        "Cytiva Ireland Limited",
+        "Radiometer Medical ApS",
+        "CEPHEID"
+      ],
+      "sponsorship": null,
+      "sector": "medtech",
+      "notes": "Sponsor evidence: GB: Cepheid UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Beckman Coulter Nederland B.V., Cepheid Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Cytiva Ireland Limited (1 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: Radiometer Medical ApS listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: CEPHEID, BECKMAN COULTER INC (36 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1457 postings. Example titles: Technical Sales Engineer - Custom Single-Use Solutions | Clinical Territory Manager."
+    },
+    {
+      "name": "Samsung Semiconductor",
+      "ats": "workday",
+      "slug": "sec.wd3.myworkdayjobs.com|sec|Samsung_Careers",
+      "aliases": [
+        "Samsung Electronics (UK) Limited",
+        "Samsung Electronics (UK) Ltd  (EHQ)",
+        "Samsung Electronics Air Conditioner Europe B.V.",
+        "Samsung Electronics Benelux B.V.",
+        "Samsung Electronics, Filial af Samsung Electronics Nordic AB, Sverige",
+        "Samsung Electronics Canada Inc."
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Sponsor evidence: GB: Samsung Electronics (UK) Limited, Samsung Electronics (UK) Ltd  (EHQ) listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Samsung Electronics Air Conditioner Europe B.V., Samsung Electronics Benelux B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); DK: Samsung Electronics, Filial af Samsung Electronics Nordic AB, Sverige listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); CA: Samsung Electronics Canada Inc. (4 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: SAMSUNG AUSTIN SEMICONDUCTOR LLC, SAMSUNG ELECTRONICS AMERICA INC (201 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board covers Samsung Semiconductor/Electronics overseas entities (US, DE, GB, KR...). Board verified 2026-10-29: 666 postings. Example titles: Talent Rewards Supervisor | Samsung Electronics | Display Accounting Specialist."
+    },
+    {
+      "name": "Citi",
+      "ats": "workday",
+      "slug": "citi.wd5.myworkdayjobs.com|citi|2",
+      "aliases": [
+        "Citibank Europe Public Limited Company Netherlands Branch",
+        "Citibank Europe Public Limited Company",
+        "Citibank N.A.",
+        "CITIBANK NA",
+        "CITIGROUP GLOBAL MARKETS INC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: NL: Citibank Europe Public Limited Company Netherlands Branch listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Citibank Europe Public Limited Company, Citibank N.A. (57 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: CITIBANK NA, CITIGROUP GLOBAL MARKETS INC (551 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2000+ (Workday caps total at 2000) postings. Example titles: Head of Product Engineering, HR Total Rewards | Banking – Citi Commercial Banking, Full-Time Analyst, Mexico City– Mexico, 2027."
+    },
+    {
+      "name": "Barclays",
+      "ats": "workday",
+      "slug": "barclays.wd3.myworkdayjobs.com|barclays|External_Career_Site_Barclays",
+      "aliases": [
+        "Barclays Bank PLC",
+        "Barclays Bank UK PLC",
+        "Barclays Bank Ireland Plc, Netherlands branch",
+        "Barclays Bank Ireland PLC",
+        "BARCLAYS SERVICES CORP",
+        "BARCLAYS SERVICES LLC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: Barclays Bank PLC, Barclays Bank UK PLC listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Barclays Bank Ireland Plc, Netherlands branch listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Barclays Bank Ireland PLC (2 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: BARCLAYS SERVICES CORP, BARCLAYS SERVICES LLC (367 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 751 postings. Example titles: Product Owner - Capital Risk Technology: Regulatory Reporting | Data Engineering Lead."
+    },
+    {
+      "name": "Nasdaq",
+      "ats": "workday",
+      "slug": "nasdaq.wd1.myworkdayjobs.com|nasdaq|Global_External_Site",
+      "aliases": [
+        "Nasdaq Limited",
+        "Nasdaq Canada Inc.",
+        "NASDAQ INC",
+        "NASDAQ ISE LLC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: Nasdaq Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); CA: Nasdaq Canada Inc. (1 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: NASDAQ INC, NASDAQ ISE LLC (5 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 164 postings. Example titles: Observability Engineer | QA Engineer – Regulatory Reporting."
+    },
+    {
+      "name": "Morgan Stanley",
+      "ats": "workday",
+      "slug": "ms.wd5.myworkdayjobs.com|ms|External",
+      "aliases": [
+        "Morgan Stanley UK Limited",
+        "Morgan Stanley Services Canada Corp",
+        "MORGAN STANLEY SERVICES GROUP INC",
+        "MORGAN STANLEY CO LLC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: Morgan Stanley UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); CA: Morgan Stanley Services Canada Corp (24 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: MORGAN STANLEY SERVICES GROUP INC, MORGAN STANLEY CO LLC (303 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1240 postings. Example titles: Global Financial Crime Screening Optimization & Governance Vice President | Alternative Investments Sales Desk Associate."
+    },
+    {
+      "name": "Vanguard",
+      "ats": "workday",
+      "slug": "vanguard.wd5.myworkdayjobs.com|vanguard|vanguard_external",
+      "aliases": [
+        "Vanguard Investments UK Ltd",
+        "Vanguard Group (Ireland) Limited",
+        "THE VANGUARD GROUP"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: Vanguard Investments UK Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); IE: Vanguard Group (Ireland) Limited (8 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: THE VANGUARD GROUP (71 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 372 postings. Example titles: Solutions Consultant | Wealth Planning Consultant, Senior Specialist."
+    },
+    {
+      "name": "Cleveland Clinic",
+      "ats": "workday",
+      "slug": "ccf.wd1.myworkdayjobs.com|ccf|ClevelandClinicCareers",
+      "aliases": [
+        "Cleveland Clinic London Ltd",
+        "CLEVELAND CLINIC",
+        "CLEVELAND CLINIC FLORIDA"
+      ],
+      "sponsorship": null,
+      "sector": "healthcare",
+      "notes": "Sponsor evidence: GB: Cleveland Clinic London Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: CLEVELAND CLINIC, CLEVELAND CLINIC FLORIDA (131 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). US health system; also Cleveland Clinic Abu Dhabi and London. Board includes AE postings. Board verified 2026-10-29: 2381+ (Workday caps total at 2000) postings. Example titles: Medical Assistant - OBGYN | Medical Assistant - Cardiology."
+    },
+    {
+      "name": "Takeda",
+      "ats": "workday",
+      "slug": "takeda.wd502.myworkdayjobs.com|takeda|External",
+      "aliases": [
+        "Takeda UK Limited",
+        "Takeda Nederland B.V.",
+        "Takeda Ireland Limited",
+        "TAKEDA DEVELOPMENT CENTER AMERICAS INC",
+        "TAKEDA PHARMACEUTICALS USA INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Takeda UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Takeda Nederland B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Takeda Ireland Limited (3 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: TAKEDA DEVELOPMENT CENTER AMERICAS INC, TAKEDA PHARMACEUTICALS USA INC (58 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Workday host is wd502 (not wd3). Board verified 2026-10-29: 1918 postings. Example titles: Senior Medical Science Liaison – Rheumatology - Midwest | Senior Medical Science Liaison – Rheumatology - Southwest."
+    },
+    {
+      "name": "Marsh McLennan",
+      "ats": "workday",
+      "slug": "mmc.wd1.myworkdayjobs.com|mmc|MMC",
+      "aliases": [
+        "Mercer Ltd",
+        "Oliver Wyman Limited",
+        "Guy Carpenter, Netherlands Branch",
+        "Mercer (Nederland) B.V.",
+        "Marsh & McLennan Innovation Centre Limited",
+        "Mercer (Ireland) Limited"
+      ],
+      "sponsorship": null,
+      "sector": "consulting",
+      "notes": "Sponsor evidence: GB: Mercer Ltd, Oliver Wyman Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Guy Carpenter, Netherlands Branch, Mercer (Nederland) B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Marsh & McLennan Innovation Centre Limited, Mercer (Ireland) Limited (10 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: MARSH MCLENNAN SHARED SERVICES LLC, MARSH USA INC (31 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1990+ (Workday caps total at 2000) postings. Example titles: Portfolio Design, Analytics, & Risk Principal | Associate FinOps Engineer."
+    },
+    {
+      "name": "Logitech",
+      "ats": "workday",
+      "slug": "logitech.wd5.myworkdayjobs.com|logitech|Logitech",
+      "aliases": [
+        "Logitech Ltd",
+        "Logitech UK Limited",
+        "Logitech Benelux B.V.",
+        "Logitech Europe S.A.",
+        "Logitech Ireland Services Limited",
+        "LOGITECH INC"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: Logitech Ltd, Logitech UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Logitech Benelux B.V., Logitech Europe S.A. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Logitech Ireland Services Limited (18 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: LOGITECH INC (19 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 218 postings. Example titles: Spring Internship Program - Regional Tax Intern | Marketing Innovation Manager."
+    },
+    {
+      "name": "Lonza",
+      "ats": "workday",
+      "slug": "lonza.wd3.myworkdayjobs.com|lonza|Lonza_Careers",
+      "aliases": [
+        "Lonza Biologics Plc",
+        "Lonza Netherlands B.V.",
+        "LONZA HOUSTON INC",
+        "LONZA BIOLOGICS INC"
+      ],
+      "sponsorship": null,
+      "sector": "pharma",
+      "notes": "Sponsor evidence: GB: Lonza Biologics Plc listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Lonza Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: LONZA HOUSTON INC, LONZA BIOLOGICS INC (13 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 570 postings. Example titles: Bioprocess Engineer USP (80-100%) | Production Operator."
+    },
+    {
+      "name": "Wolters Kluwer",
+      "ats": "workday",
+      "slug": "wk.wd3.myworkdayjobs.com|wk|External",
+      "aliases": [
+        "Wolters Kluwer (UK) Ltd",
+        "Wolters Kluwer Financial Services UK Ltd",
+        "Wolters Kluwer Financial Services Netherlands B.V.",
+        "Wolters Kluwer Global Business Services B.V.",
+        "WOLTERS KLUWER UNITED STATES INC",
+        "WOLTERS KLUWER DXG US INC"
+      ],
+      "sponsorship": null,
+      "sector": "other",
+      "notes": "Sponsor evidence: GB: Wolters Kluwer (UK) Ltd, Wolters Kluwer Financial Services UK Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Wolters Kluwer Financial Services Netherlands B.V., Wolters Kluwer Global Business Services B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: WOLTERS KLUWER UNITED STATES INC, WOLTERS KLUWER DXG US INC (76 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 470 postings. Example titles: SAP Senior Funtional Consultant P2P/O2C | FP&A Corporate Senior Financial Planning Analyst."
+    },
+    {
+      "name": "RBC (Royal Bank of Canada)",
+      "ats": "workday",
+      "slug": "rbc.wd3.myworkdayjobs.com|rbc|RBCGLOBAL1",
+      "aliases": [
+        "Royal Bank of Canada",
+        "RBC CAPITAL MARKETS LLC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: Royal Bank of Canada listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); CA: Royal Bank of Canada (18 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: RBC CAPITAL MARKETS LLC (38 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 843 postings. Example titles: Data Platform Operations Engineer (London) | Prod Srvc Lead, Client Technology Support– Salesforce CRM."
+    },
+    {
+      "name": "TD Bank",
+      "ats": "workday",
+      "slug": "td.wd3.myworkdayjobs.com|td|TD_Bank_Careers",
+      "aliases": [
+        "The Toronto Dominion Bank",
+        "TD BANK NATIONAL ASSOCIATION DBA TD BANK AMERICAS MOST CONVENIENT BANK",
+        "TD SECURITIES USA LLC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: The Toronto Dominion Bank listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: TD BANK NATIONAL ASSOCIATION DBA TD BANK AMERICAS MOST CONVENIENT BANK, TD SECURITIES USA LLC (28 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 1765 postings. Example titles: AVP, Regulatory Issues Management, Governance and Control, TD Securities | Head of Retail Internal Quality Controls (US)."
+    },
+    {
+      "name": "Manulife",
+      "ats": "workday",
+      "slug": "manulife.wd3.myworkdayjobs.com|manulife|MFCJH_Jobs",
+      "aliases": [
+        "Manulife Investment Management (Europe) Ltd",
+        "JOHN HANCOCK LIFE INSURANCE COMPANY USA"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: GB: Manulife Investment Management (Europe) Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: JOHN HANCOCK LIFE INSURANCE COMPANY USA (13 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 624 postings. Example titles: Balikpapan - Area Business Development Manager | Manager, Digital Sales Strategy."
+    },
+    {
+      "name": "Sun Life",
+      "ats": "workday",
+      "slug": "sunlife.wd3.myworkdayjobs.com|sunlife|Experienced-Jobs",
+      "aliases": [
+        "SUN LIFE FINANCIAL US SERVICES COMPANY INC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: US: SUN LIFE FINANCIAL US SERVICES COMPANY INC (7 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 302 postings. Example titles: Senior Reliability Site Engineer (Operations) | Manager, Brand Management."
+    },
+    {
+      "name": "Cornell University",
+      "ats": "workday",
+      "slug": "cornell.wd1.myworkdayjobs.com|cornell|CornellCareerPage",
+      "aliases": [
+        "CORNELL UNIVERSITY"
+      ],
+      "sponsorship": null,
+      "sector": "education",
+      "notes": "Sponsor evidence: US: CORNELL UNIVERSITY (74 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). US university (H-1B cap-exempt employer). Board verified 2026-10-29: 172 postings. Example titles: Finance Specialist II - CAS - Department of Physics/LASSP | Compliance Specialist, IACUC."
+    },
+    {
+      "name": "ServiceNow",
+      "ats": "smartrecruiters",
+      "slug": "ServiceNow",
+      "aliases": [
+        "ServiceNow UK Limited",
+        "ServiceNow Nederland B.V.",
+        "ServiceNow Ireland Limited",
+        "ServiceNow International Treasury Limited",
+        "SERVICENOW DENMARK ApS",
+        "SERVICENOW CANADA INC."
+      ],
+      "sponsorship": null,
+      "sector": "other",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: ServiceNow UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: ServiceNow Nederland B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: ServiceNow Ireland Limited, ServiceNow International Treasury Limited (67 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); DK: SERVICENOW DENMARK ApS listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); CA: SERVICENOW CANADA INC. (1 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: SERVICENOW INC (185 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 751 postings. Example titles: Sr Advisory Solution Consultant | Senior Manager, ITOM & AIOps Solution Consulting.",
+      "enabled": false
+    },
+    {
+      "name": "Experian",
+      "ats": "smartrecruiters",
+      "slug": "Experian",
+      "aliases": [
+        "EXPERIAN LIMITED",
+        "Experian Nederland B.V.",
+        "Experian A/S",
+        "EXPERIAN INFORMATION SOLUTIONS INC",
+        "EXPERIAN HEALTH INC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: EXPERIAN LIMITED listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Experian Nederland B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); DK: Experian A/S listed on SIRI Fast-track certified companies (https://www.nyidanmark.dk/en-GB/Words-and-concepts/SIRI/Certified-companies); US: EXPERIAN INFORMATION SOLUTIONS INC, EXPERIAN HEALTH INC (36 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). SmartRecruiters sample is mostly BR/US/BG/IN; GB/DE roles present. Board verified 2026-10-29: 389 postings. Example titles: Working Student Legal & Compliance (m/f/d) | Analytics Consultant.",
+      "enabled": false
+    },
+    {
+      "name": "Eurofins",
+      "ats": "smartrecruiters",
+      "slug": "Eurofins",
+      "aliases": [
+        "Eurofins Agroscience Services Limited",
+        "Eurofins Chemtest Limited",
+        "Eurofins Analytico B.V.",
+        "Eurofins Bactimm B.V.",
+        "Eurofins Biomnis Ireland Limited",
+        "Eurofins Biopharma Product Testing Ireland Limited"
+      ],
+      "sponsorship": null,
+      "sector": "healthcare",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: Eurofins Agroscience Services Limited, Eurofins Chemtest Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Eurofins Analytico B.V., Eurofins Bactimm B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Eurofins Biomnis Ireland Limited, Eurofins Biopharma Product Testing Ireland Limited (23 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); CA: EUROFINS ESSAIS ENVIRONNEMENTAUX CANADA (7 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: EUROFINS LANCASTER LABORATORIES PROFESSIONAL SCIENTIFIC SERVICES LLC DBA EUROFINS PSS INSOURCING SOLUTIONS, EUROFINS LANCASTER LABORATORIES INC (15 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 2545 postings. Example titles: HR-Adviseur | Principal .Net Engineer.",
+      "enabled": false
+    },
+    {
+      "name": "Wabtec",
+      "ats": "smartrecruiters",
+      "slug": "Wabtec",
+      "aliases": [
+        "Wabtec UK Limited",
+        "WABTEC US RAIL INC",
+        "WABTEC RAILWAY ELECTRONICS INC"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: Wabtec UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: WABTEC US RAIL INC, WABTEC RAILWAY ELECTRONICS INC (18 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 774 postings. Example titles: Customs Compliance Region Leader-LATAM | Procurement Specialist.",
+      "enabled": false
+    },
+    {
+      "name": "Avery Dennison",
+      "ats": "smartrecruiters",
+      "slug": "AveryDennison",
+      "aliases": [
+        "Avery Dennison Materials UK Limited",
+        "AVERY DENNISON RETAIL INFORMATION SERVICES UK LIMITED",
+        "Avery Dennison Hong Kong B.V.",
+        "Avery Dennison Management Services Netherlands B.V.",
+        "Avery Dennison Medical Limited",
+        "AVERY DENNISON CORPORATION"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: Avery Dennison Materials UK Limited, AVERY DENNISON RETAIL INFORMATION SERVICES UK LIMITED listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Avery Dennison Hong Kong B.V., Avery Dennison Management Services Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Avery Dennison Medical Limited (2 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); US: AVERY DENNISON CORPORATION (7 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 481 postings. Example titles: HR data operation specialist | Operations MIS - Data Analyst.",
+      "enabled": false
+    },
+    {
+      "name": "Colliers (Australia & New Zealand)",
+      "ats": "smartrecruiters",
+      "slug": "Colliers",
+      "aliases": [
+        "Colliers International Property Consultants Limited",
+        "COLLIERS ENGINEERING DESIGN INC",
+        "COLLIERS INTERNATIONAL SOUTH CAROLINA INC"
+      ],
+      "sponsorship": null,
+      "sector": "other",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: Colliers International Property Consultants Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: COLLIERS ENGINEERING DESIGN INC, COLLIERS INTERNATIONAL SOUTH CAROLINA INC (8 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). SmartRecruiters slug 'Colliers' is the Australia/New Zealand board only. Board verified 2026-10-29: 82 postings. Example titles: Assistant Project Manager | Senior Commercial Property Manager.",
+      "enabled": false
+    },
+    {
+      "name": "Western Digital",
+      "ats": "smartrecruiters",
+      "slug": "WesternDigital",
+      "aliases": [
+        "Western Digital (UK) Limited",
+        "WESTERN DIGITAL TECHNOLOGIES INC"
+      ],
+      "sponsorship": null,
+      "sector": "industrial",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: Western Digital (UK) Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: WESTERN DIGITAL TECHNOLOGIES INC (56 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board mostly MY/US/CN/PH; JP/SG/US roles relevant. Board verified 2026-10-29: 347 postings. Example titles: 組立装置設備保全エンジニア (Assembly Equipment Maintenance Engineer) | Sr Manager-Strategic Recruiting Initiatives & Talent Insights.",
+      "enabled": false
+    },
+    {
+      "name": "Sodexo (Australia)",
+      "ats": "smartrecruiters",
+      "slug": "Sodexo",
+      "aliases": [
+        "Sodexo UK Limited",
+        "Sodexo Altys B.V.",
+        "Sodexo Ireland Limited",
+        "Sodexo Finance DAC",
+        "Sodexo Quebec Limitée",
+        "SODEXO INC"
+      ],
+      "sponsorship": null,
+      "sector": "other",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: Sodexo UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Sodexo Altys B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); IE: Sodexo Ireland Limited, Sodexo Finance DAC (2 permits) in Irish DETE employment permits issued to companies 2025-2026 (https://enterprise.gov.ie/en/publications/employment-permit-statistics-2026.html); CA: Sodexo Quebec Limitée (2 LMIA positions (all occupations)) in Canada positive LMIA employers 2025Q2-2026Q1 (https://open.canada.ca/data/en/dataset/90fed587-1364-4f33-a9ee-208181dc0b97); US: SODEXO INC (8 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). SmartRecruiters slug 'Sodexo' is Sodexo Australia's board only (all sampled postings in AU). Board verified 2026-10-29: 151 postings. Example titles: Senior Finance Business Partner | Mon - Fri | Melbourne Support Centre | Development Project Manager | Mon to Fri 38 hours | Balcatta Support Centre.",
+      "enabled": false
+    },
+    {
+      "name": "NielsenIQ",
+      "ats": "smartrecruiters",
+      "slug": "NielsenIQ",
+      "aliases": [
+        "NIELSEN CONSUMER LLC DBA NIELSENIQ"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: US: NIELSEN CONSUMER LLC DBA NIELSENIQ (13 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 394 postings. Example titles: Senior Tax Latam Analyst | Tax Manager.",
+      "enabled": false
+    },
+    {
+      "name": "Sixt",
+      "ats": "smartrecruiters",
+      "slug": "Sixt",
+      "aliases": [
+        "SIXT Rent a Car Ltd"
+      ],
+      "sponsorship": null,
+      "sector": "logistics",
+      "notes": "Paused: api.smartrecruiters.com/robots.txt disallows all crawlers except LinkedInBot (checked 2026-10-29). Sponsor evidence: GB: SIXT Rent a Car Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers). Board verified 2026-10-29: 544 postings. Example titles: Sales Manager im Inside Sales (m/w/d) | Conseiller Commercial (F/H/X) - Angoulême Gare - CDI.",
+      "enabled": false
+    },
+    {
+      "name": "Rocket Lab",
+      "ats": "greenhouse",
+      "slug": "rocketlab",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "aerospace",
+      "notes": "Sponsor evidence: none found in UK/NL/IE/DK/CA/US registers. NZ (Auckland) roles; many US roles are export-controlled (US person). No explicit sponsorship statement found in postings. Board verified 2026-10-29: 551 postings. Example titles: Accounts Receivable Accountant II | Additive Manufacturing Intern Spring 2027."
+    },
+    {
+      "name": "Redwood Materials",
+      "ats": "greenhouse",
+      "slug": "redwoodmaterials",
+      "aliases": [
+        "REDWOOD MATERIALS INC"
+      ],
+      "sponsorship": null,
+      "sector": "energy",
+      "notes": "Sponsor evidence: US: REDWOOD MATERIALS INC (3 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 132 postings. Example titles: Abuse Test Engineer, Energy Storage | Account Manager, Business Development."
+    },
+    {
+      "name": "Helsing",
+      "ats": "greenhouse",
+      "slug": "helsing",
+      "aliases": [
+        "Helsing Limited"
+      ],
+      "sponsorship": null,
+      "sector": "aerospace",
+      "notes": "Sponsor evidence: GB: Helsing Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers). Defence AI company; some roles may need security clearance. Board verified 2026-10-29: 159 postings. Example titles: Accountant | Accountant - Part time."
+    },
+    {
+      "name": "Gymshark",
+      "ats": "greenhouse",
+      "slug": "gymshark",
+      "aliases": [
+        "Gymshark Ltd"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: Gymshark Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers). UK roles only for sponsorship: US retail postings say 'Authorization to work in the United States without sponsorship'. Board verified 2026-10-29: 15 postings. Example titles: Commercial Finance Manager | Mobile Engineer - IOS."
+    },
+    {
+      "name": "Peloton",
+      "ats": "greenhouse",
+      "slug": "peloton",
+      "aliases": [
+        "Peloton Interactive UK Limited",
+        "PELOTON INTERACTIVE INC"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: Peloton Interactive UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: PELOTON INTERACTIVE INC (34 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 57 postings. Example titles: Android Engineer III | Electrical Engineer III."
+    },
+    {
+      "name": "Archer Aviation",
+      "ats": "greenhouse",
+      "slug": "archer56",
+      "aliases": [
+        "Archer Aviation UK Limited",
+        "ARCHER AVIATION INC"
+      ],
+      "sponsorship": "yes",
+      "sector": "aerospace",
+      "notes": "Sponsor evidence: GB: Archer Aviation UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); US: ARCHER AVIATION INC (6 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Postings state 'Certain positions may be eligible for visa sponsorship' (e.g. https://job-boards.greenhouse.io/archer56/jobs/7976318003); a few roles say no sponsorship. Board verified 2026-10-29: 98 postings. Example titles: Aerodynamics Engineer – Conceptual Sizing & Performance | Aircraft Architecture & Integration Engineer."
+    },
+    {
+      "name": "Coupang",
+      "ats": "greenhouse",
+      "slug": "coupang",
+      "aliases": [
+        "COUPANG GLOBAL LLC"
+      ],
+      "sponsorship": null,
+      "sector": "logistics",
+      "notes": "Sponsor evidence: US: COUPANG GLOBAL LLC (31 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Korea/Taiwan postings in Korean/Chinese plus US; US H-1B filer. Board verified 2026-10-29: 690 postings. Example titles: [쿠팡] [대규모채용] 로켓그로스 패션 Account Management & Business Development | Associate, CX Auditor."
+    },
+    {
+      "name": "Flexport",
+      "ats": "greenhouse",
+      "slug": "flexport",
+      "aliases": [
+        "Flexport International Limited",
+        "Flexport Customs B.V.",
+        "Flexport Group B.V.",
+        "FLEXPORT INC"
+      ],
+      "sponsorship": "yes",
+      "sector": "logistics",
+      "notes": "Sponsor evidence: GB: Flexport International Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Flexport Customs B.V., Flexport Group B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: FLEXPORT INC (39 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Postings state 'Visa sponsorship: we sponsor visas for the right candidates and help you move to Amsterdam' (https://job-boards.greenhouse.io/flexport/jobs/8141246). Board verified 2026-10-29: 191 postings. Example titles: Accounting Analyst | Air and Ocean Operations Associate."
+    },
+    {
+      "name": "Brex",
+      "ats": "greenhouse",
+      "slug": "brex",
+      "aliases": [
+        "BREX INC"
+      ],
+      "sponsorship": null,
+      "sector": "finance",
+      "notes": "Sponsor evidence: US: BREX INC (17 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 262 postings. Example titles: Accountant Partnerships Manager | Accounting Channel Partner Manager."
+    },
+    {
+      "name": "Sword Health",
+      "ats": "greenhouse",
+      "slug": "swordhealth",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "healthcare",
+      "notes": "Sponsor evidence: none found in UK/NL/IE/DK/CA/US registers. Portugal/EU: no public sponsor register; sponsorship not stated in postings. Board verified 2026-10-29: 59 postings. Example titles: Business Development Manager - Germany | Business Development Manager - Greece."
+    },
+    {
+      "name": "On (On Running)",
+      "ats": "greenhouse",
+      "slug": "onrunning",
+      "aliases": [
+        "On Running UK Ltd"
+      ],
+      "sponsorship": null,
+      "sector": "consumer",
+      "notes": "Sponsor evidence: GB: On Running UK Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers). Board verified 2026-10-29: 182 postings. Example titles: Consultor(a) de Loja, JK Iguatemi | Global Senior Director of Brand Apparel Marketing."
+    },
+    {
+      "name": "Cabify",
+      "ats": "greenhouse",
+      "slug": "cabify",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "logistics",
+      "notes": "Sponsor evidence: none found in UK/NL/IE/DK/CA/US registers. Spain: no public sponsor register; sponsorship not stated in postings. Board verified 2026-10-29: 59 postings. Example titles: CCO Coordinator (Contact Center Operations) | Commercial Growth Specialist."
+    },
+    {
+      "name": "Careem",
+      "ats": "greenhouse",
+      "slug": "careem",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "logistics",
+      "notes": "Sponsor evidence: none found in UK/NL/IE/DK/CA/US registers. UAE: employers must sponsor residence/work visas for expatriate hires; no public sponsor register exists. Board verified 2026-10-29: 11 postings. Example titles: Associate Director of Ads Sales | Sales Executive."
+    },
+    {
+      "name": "ChargePoint",
+      "ats": "greenhouse",
+      "slug": "chargepoint",
+      "aliases": [
+        "Chargepoint Network (UK) Ltd",
+        "ChargePoint Network (Netherlands) B.V.",
+        "CHARGEPOINT INC"
+      ],
+      "sponsorship": null,
+      "sector": "energy",
+      "notes": "Sponsor evidence: GB: Chargepoint Network (UK) Ltd listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: ChargePoint Network (Netherlands) B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work); US: CHARGEPOINT INC (14 H-1B approvals) in USCIS H-1B Employer Data Hub FY2023 (https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub). Board verified 2026-10-29: 41 postings. Example titles: Associate Technical Support Engineer(BBA/BA/Bcom/BSc/BCA) | Associate Technical Support Engineer (Only BCA/BBA/B.Com/B.Sc. graduates)."
+    },
+    {
+      "name": "Deliveroo",
+      "ats": "greenhouse",
+      "slug": "deliveroo",
+      "aliases": [
+        "Roofoods Ltd t/a Deliveroo",
+        "Deliveroo Netherlands B.V."
+      ],
+      "sponsorship": null,
+      "sector": "logistics",
+      "notes": "Sponsor evidence: GB: Roofoods Ltd t/a Deliveroo listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Deliveroo Netherlands B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work). Board verified 2026-10-29: 208 postings. Example titles: Analytics Engineer – BI Platform | Analytics Engineering Manager."
+    },
+    {
+      "name": "Ninja Van",
+      "ats": "lever",
+      "slug": "ninjavan",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "logistics",
+      "notes": "Sponsor evidence: none found in UK/NL/IE/DK/CA/US registers. Singapore: Employment Pass applications are employer-filed; no public sponsor register exists. Board verified 2026-10-29: 143 postings. Example titles: Assistant Manager, Business Development (B2B) | Assistant, Retail (Sales)."
+    },
+    {
+      "name": "1KOMMA5°",
+      "ats": "personio",
+      "slug": "1komma5grad",
+      "aliases": [],
+      "sponsorship": null,
+      "sector": "energy",
+      "notes": "Sponsor evidence: none found in UK/NL/IE/DK/CA/US registers. Germany: no sponsor register (EU Blue Card is employer-independent); sponsorship not stated in postings. Board verified 2026-10-29: 311 postings. Example titles: (Senior) Bid & Commercial Project Manager (m/w/d) – Commercial Solutions | (Senior) Product Engineer - Heartbeat (m/f/d)."
+    },
+    {
+      "name": "Fastned",
+      "ats": "recruitee",
+      "slug": "fastned",
+      "aliases": [
+        "Fastned UK Limited",
+        "Fastned B.V."
+      ],
+      "sponsorship": null,
+      "sector": "energy",
+      "notes": "Sponsor evidence: GB: Fastned UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers); NL: Fastned B.V. listed on IND public register of recognised sponsors (https://ind.nl/en/public-register-recognised-sponsors/public-register-work). Board verified 2026-10-29: 42 postings. Example titles: Business Development Manager UK | Sales Manager UK."
+    },
+    {
+      "name": "Neko Health",
+      "ats": "ashby",
+      "slug": "neko-health",
+      "aliases": [
+        "Neko Health UK Limited"
+      ],
+      "sponsorship": null,
+      "sector": "healthcare",
+      "notes": "Sponsor evidence: GB: Neko Health UK Limited listed on UK Register of Licensed Sponsors (https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers). Board verified 2026-10-29: 136 postings. Example titles: System Verification Engineer, Test Automation | Optics Engineer."
     }
   ],
   "feeds": [
@@ -1244,6 +2662,21 @@
       "type": "swissdevjobs_snapshot",
       "notes": "Cloudflare blocks automated access; enable only with a local browser snapshot",
       "enabled": false
+    },
+    {
+      "name": "EURES (EU/EEA + CH)",
+      "type": "eures",
+      "notes": "European Labour Authority job-mobility portal; ads requiring English, by ISCO occupation. Re-use allowed with attribution; 10 s crawl delay."
+    },
+    {
+      "name": "NHS Jobs (UK)",
+      "type": "nhsjobs",
+      "notes": "NHSBSA XML search API; each advert's Certificate of Sponsorship section sets the visa signal."
+    },
+    {
+      "name": "Berlin Startup Jobs",
+      "type": "berlinstartupjobs",
+      "notes": "English-speaking Berlin startups across engineering, sales, marketing, ops, HR and finance (RSS per category)."
     }
   ]
 }

@@ -49,7 +49,13 @@ Bilingual text is always an object `{"en": "...", "pt": "..."}` ("L10n" below). 
 
 ## knowledge/tracks.json (curated)
 
-One track per job family. Family ids (shared with the pipeline): `security`, `software`, `data`, `devops`, `embedded`, `qa`, `product`, `design` (UX/UI, product, graphic and brand design), `video` (video editing, motion, colour, post-production).
+One track per job family. Family ids (shared with the pipeline, classified in `pipeline/jobtracker/families.py`; `site/src/cv/family.ts` is generated from it by `pipeline/gen_family_ts.py`):
+
+- tech: `security`, `software`, `data`, `devops`, `embedded`, `qa`, `product`
+- creative: `design` (UX/UI, product, graphic and brand design), `video` (video editing, motion, colour, post-production)
+- engineering: `mechanical` (incl. manufacturing, process, aerospace), `electrical` (power, controls, automation), `civil` (structural, construction, BIM)
+- business: `marketing`, `sales` (incl. customer success, solutions engineering), `finance` (accounting, FP&A, tax, risk), `operations` (supply chain, procurement, project management), `people` (HR, recruiting)
+- health: `healthcare` (nursing, medicine, pharmacy, allied health)
 
 ```jsonc
 {
@@ -67,7 +73,8 @@ One track per job family. Family ids (shared with the pipeline): `security`, `so
       "firstSponsoredRoles": L10n,          // which roles realistically get a first visa
       "switchTips": {"software": L10n, "...": L10n},     // advice when moving INTO this track from another family
       "weeklyQuests": [L10n],               // small repeatable habits
-      "milestones": {"m3": [L10n], "m6": [L10n], "m12": [L10n]}
+      "milestones": {"m3": [L10n], "m6": [L10n], "m12": [L10n]},
+      "countryNotes": {"GB": L10n}       // optional: licensing/recognition and the usual route for this field per country
     }
   ]
 }
